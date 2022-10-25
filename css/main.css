@@ -1,0 +1,243 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* container  */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+header {
+  position: fixed;
+  width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+header .container .contentHH {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  height: 125px;
+  position: relative;
+}
+header .container .contentHH::before {
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: var(--opacity, auto) !important;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(222, 144, 0);
+  bottom: -1px;
+}
+header .container .imagesHead {
+  height: 100%;
+  width: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .container .imagesHead img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 100%;
+}
+header .container .imagesHead:hover .logo-white {
+  opacity: 0;
+}
+header .container .imagesHead:hover .logo-orange {
+  opacity: 1;
+  cursor: pointer;
+}
+header .container .imagesHead .logo-orange {
+  opacity: 0;
+  position: relative;
+  left: -130px;
+  top: 1px;
+}
+@media (max-width: 992px) {
+  header .container .imagesHead .logo-orange {
+    left: -2px;
+    top: -128px;
+  }
+}
+@media (max-width: 767px) {
+  header .container .imagesHead .logo-orange {
+    display: none;
+  }
+}
+header .container .imagesHead .logo-white {
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  header .container .imagesHead:hover .logo-white {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+header .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+header .container ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: "Cairo", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+header .container ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(222, 144, 0);
+  bottom: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .container ul li a:hover {
+  color: rgb(222, 144, 0);
+}
+header .container ul li a:hover:before {
+  width: 100%;
+}
+header .container ul li a.active {
+  color: rgb(222, 144, 0);
+}
+header .container ul li a.active:before {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  header .container .navforDesk {
+    display: none;
+  }
+}
+header .burgericon {
+  display: none;
+  color: white;
+  width: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .burgericon .burger-icon-to-x {
+  width: 30px;
+  height: 17px;
+  cursor: pointer;
+  position: relative;
+}
+header .burgericon .burger-icon-to-x span {
+  background-color: white;
+  height: 2.5px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .burgericon .burger-icon-to-x .num1 {
+  top: 0;
+}
+header .burgericon .burger-icon-to-x .num2 {
+  top: 7px;
+}
+header .burgericon .burger-icon-to-x .num3 {
+  top: 14px;
+}
+header .burgericon .x-icon-to-burger {
+  display: none;
+  width: 30px;
+  height: 17px;
+  cursor: pointer;
+  position: relative;
+}
+header .burgericon .x-icon-to-burger span {
+  height: 2.5px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .burgericon .x-icon-to-burger .num2 {
+  opacity: 0;
+}
+header .burgericon .x-icon-to-burger .num1,
+header .burgericon .x-icon-to-burger .num3 {
+  top: 6px;
+  background-color: red;
+}
+header .burgericon .x-icon-to-burger .num1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+header .burgericon .x-icon-to-burger .num3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+@media (max-width: 767px) {
+  header .burgericon {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.landing img {
+  width: 100%;
+}

@@ -1,0 +1,262 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* container  */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+
+    }
+}
+
+/* large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+
+    transition: all 0.3s ease 0s;
+    .container {
+
+.contentHH{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 125px;
+    position: relative;
+      &::before{
+        content: "";
+        transition: 0.3s;
+        
+        opacity: var(--opacity, auto) !important;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: rgb(222, 144, 0);
+        bottom: -1px;
+    }
+}
+        .imagesHead {
+            height: 100%;
+            width: auto;
+            transition: 0.3s;
+
+            img {
+
+                transition: 0.3s;
+                height: 100%;
+            }
+
+            &:hover {
+
+                .logo-white {
+                    opacity: 0;
+
+                }
+
+                .logo-orange {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+
+            .logo-orange {
+                opacity: 0;
+                position: relative;
+                left: -130px;
+                top: 1px;
+            }
+
+            @media (max-width:992px) {
+                .logo-orange {
+                    left: -2px;
+                    top: -128px;
+                }
+            }
+            @media (max-width:767px) {
+                .logo-orange{
+                display: none;
+                }
+            }
+            .logo-white {
+                opacity: 1;
+            }
+        }
+        @media (max-width:767px) {
+            .imagesHead:hover {
+
+                .logo-white {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+
+
+            }
+        }
+
+
+        ul {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            gap: 25px;
+
+            li {
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'Cairo', sans-serif;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    transition: 0.3s;
+                    overflow: hidden;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 0%;
+                        height: 2px;
+                        background-color: rgb(222, 144, 0);
+                        bottom: 0px;
+                        transition: 0.3s;
+                    }
+
+                    &:hover {
+                        color: rgb(222, 144, 0);
+
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                    &.active{
+                        color: rgb(222, 144, 0);
+
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media (max-width:767px) {
+            .navforDesk{
+            display: none;
+            }
+        }
+    }
+    .burgericon {
+        display: none;
+        color: white;
+        width: 30px;
+        transition: 0.3s;
+        .burger-icon-to-x {
+            width: 30px;
+            height: 17px;
+            cursor: pointer;
+            position: relative;
+            span {
+                background-color: white;
+                height: 2.5px;
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                transition: all 0.3s ease;
+            }
+            .num1 {
+                top: 0;
+            }
+            .num2 {
+                top: 7px;
+            }
+            .num3 {
+                top: 14px;
+            }
+        }
+        .x-icon-to-burger {
+            display: none;
+            width: 30px;
+            height: 17px;
+            cursor: pointer;
+            position: relative;
+            span {
+                height: 2.5px;
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                transition: all 0.3s ease;
+            }
+            .num2 {
+                opacity: 0;
+            }
+            .num1,
+            .num3 {
+                top: 6px;
+                background-color: red;
+            }
+            .num1 {
+                transform: rotate(45deg);
+            }
+            .num3 {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    @media (max-width:767px) {
+        .burgericon {
+            display: block;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+
+}
+
+.landing {
+    img {
+        width: 100%;
+    }
+}
