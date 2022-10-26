@@ -62,7 +62,7 @@ header {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    height: 125px;
+    height: 100px;
     position: relative;
       &::before{
         content: "";
@@ -94,29 +94,29 @@ header {
 
                 }
 
-                .logo-orange {
+                .clickOnOrangeLogo {
                     opacity: 1;
                     cursor: pointer;
                 }
             }
 
-            .logo-orange {
+            .clickOnOrangeLogo {
                 opacity: 0;
                 position: relative;
-                left: -130px;
+                left: -106px;
                 top: 1px;
             }
 
             @media (max-width:992px) {
-                .logo-orange {
-                    left: -2px;
-                    top: -128px;
+                .clickOnOrangeLogo {
+                    left: -105px;
                 }
             }
             @media (max-width:767px) {
-                .logo-orange{
+                .clickOnOrangeLogo{
                 display: none;
                 }
+
             }
             .logo-white {
                 opacity: 1;
@@ -143,12 +143,13 @@ header {
             gap: 25px;
 
             li {
+
                 a {
                     position: relative;
                     text-decoration: none;
                     color: white;
                     font-family: 'Cairo', sans-serif;
-                    font-size: 18px;
+                  
                     letter-spacing: 1px;
                     font-weight: 500;
                     transition: 0.3s;
@@ -179,6 +180,7 @@ header {
                         }
                     }
                 }
+
             }
         }
 

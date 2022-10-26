@@ -58,7 +58,7 @@ header .container .contentHH {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  height: 125px;
+  height: 100px;
   position: relative;
 }
 header .container .contentHH::before {
@@ -86,24 +86,23 @@ header .container .imagesHead img {
 header .container .imagesHead:hover .logo-white {
   opacity: 0;
 }
-header .container .imagesHead:hover .logo-orange {
+header .container .imagesHead:hover .clickOnOrangeLogo {
   opacity: 1;
   cursor: pointer;
 }
-header .container .imagesHead .logo-orange {
+header .container .imagesHead .clickOnOrangeLogo {
   opacity: 0;
   position: relative;
-  left: -130px;
+  left: -106px;
   top: 1px;
 }
 @media (max-width: 992px) {
-  header .container .imagesHead .logo-orange {
-    left: -2px;
-    top: -128px;
+  header .container .imagesHead .clickOnOrangeLogo {
+    left: -105px;
   }
 }
 @media (max-width: 767px) {
-  header .container .imagesHead .logo-orange {
+  header .container .imagesHead .clickOnOrangeLogo {
     display: none;
   }
 }
@@ -134,7 +133,6 @@ header .container ul li a {
   text-decoration: none;
   color: white;
   font-family: "Cairo", sans-serif;
-  font-size: 18px;
   letter-spacing: 1px;
   font-weight: 500;
   -webkit-transition: 0.3s;
