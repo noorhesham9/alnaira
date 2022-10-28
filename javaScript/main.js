@@ -105,7 +105,14 @@ function imagenum1() {
     landimg1.style.left = "0"
     landimg2.style.left = "100%"
     landimg3.style.left = "200%"
-    landimg4.style.left = "300%"
+    landimg4.style.left = "-100%"
+  
+        landimg4.style.visibility = "hidden"
+
+    setTimeout(function(){
+        landimg4.style.left = "300%"
+        
+    }, 2000)
 }
 
 function imagenum2() {
@@ -114,6 +121,10 @@ function imagenum2() {
     landDot3.classList.remove("active")
     landDot4.classList.remove("active")
     landimg1.style.left = "-100%"
+    setTimeout(function(){
+        landimg1.style.left = "300%"
+        landimg4.style.visibility = "visible"
+    }, 2000)
     landimg2.style.left = "0%"
     landimg3.style.left = "100%"
     landimg4.style.left = "200%"
@@ -124,8 +135,12 @@ function imagenum3() {
     landDot2.classList.remove("active")
     landDot4.classList.remove("active")
     landDot3.classList.add("active")
-    landimg1.style.left = "-200%"
+
+    landimg1.style.left = "200%"
     landimg2.style.left = "-100%"
+    setTimeout(function(){
+        landimg2.style.left = "300%"
+    }, 2000)
     landimg3.style.left = "0%"
     landimg4.style.left = "100%"
 }
@@ -135,54 +150,57 @@ function imagenum4() {
     landDot3.classList.remove("active")
     landDot4.classList.add("active")
 
-    landimg1.style.left = "-300%"
-    landimg2.style.left = "-200%"
+    landimg1.style.left = "100%"
+    landimg2.style.left = "200%"
     landimg3.style.left = "-100%"
+    setTimeout(function(){
+        landimg3.style.left = "300%"
+    }, 2000)
     landimg4.style.left = "0%"
 }
-landDot1.addEventListener("click", function imagenum1() {
-    landDot1.classList.add("active")
-    landDot2.classList.remove("active")
-    landDot3.classList.remove("active")
-    landDot4.classList.remove("active")
-    landimg1.style.left = "0"
-    landimg2.style.left = "100%"
-    landimg3.style.left = "200%"
-    landimg4.style.left = "300%"
-})
+// landDot1.addEventListener("click", function imagenum1() {
+//     landDot1.classList.add("active")
+//     landDot2.classList.remove("active")
+//     landDot3.classList.remove("active")
+//     landDot4.classList.remove("active")
+//     landimg1.style.left = "0"
+//     landimg2.style.left = "100%"
+//     landimg3.style.left = "200%"
+//     landimg4.style.left = "300%"
+// })
 
 
-landDot2.addEventListener("click", function imagenum2() {
-    landDot1.classList.remove("active")
-    landDot2.classList.add("active")
-    landDot3.classList.remove("active")
-    landDot4.classList.remove("active")
-    landimg1.style.left = "-100%"
-    landimg2.style.left = "0%"
-    landimg3.style.left = "100%"
-    landimg4.style.left = "200%"
-})
+// landDot2.addEventListener("click", function imagenum2() {
+//     landDot1.classList.remove("active")
+//     landDot2.classList.add("active")
+//     landDot3.classList.remove("active")
+//     landDot4.classList.remove("active")
+//     landimg1.style.left = "-100%"
+//     landimg2.style.left = "0%"
+//     landimg3.style.left = "100%"
+//     landimg4.style.left = "200%"
+// })
 
-landDot3.addEventListener("click", function imagenum3() {
-    landDot1.classList.remove("active")
-    landDot2.classList.remove("active")
-    landDot4.classList.remove("active")
-    landDot3.classList.add("active")
-    landimg1.style.left = "-200%"
-    landimg2.style.left = "-100%"
-    landimg3.style.left = "0%"
-    landimg4.style.left = "100%"
-})
-landDot4.addEventListener("click", function imagenum4() {
-    landDot1.classList.remove("active")
-    landDot2.classList.remove("active")
-    landDot3.classList.remove("active")
-    landDot4.classList.add("active")
-    landimg1.style.left = "-300%"
-    landimg2.style.left = "-200%"
-    landimg3.style.left = "-100%"
-    landimg4.style.left = "0%"
-})
+// landDot3.addEventListener("click", function imagenum3() {
+//     landDot1.classList.remove("active")
+//     landDot2.classList.remove("active")
+//     landDot4.classList.remove("active")
+//     landDot3.classList.add("active")
+//     landimg1.style.left = "-200%"
+//     landimg2.style.left = "-100%"
+//     landimg3.style.left = "0%"
+//     landimg4.style.left = "100%"
+// })
+// landDot4.addEventListener("click", function imagenum4() {
+//     landDot1.classList.remove("active")
+//     landDot2.classList.remove("active")
+//     landDot3.classList.remove("active")
+//     landDot4.classList.add("active")
+//     landimg1.style.left = "-300%"
+//     landimg2.style.left = "-200%"
+//     landimg3.style.left = "-100%"
+//     landimg4.style.left = "0%"
+// })
 
 function all() {
     setTimeout(imagenum1, 16000)
