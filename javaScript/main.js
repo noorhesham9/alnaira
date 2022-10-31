@@ -402,13 +402,13 @@ setInterval(function () {
     ) {
       image1button4();
     }
-    // if (value == "imagenum1") {
-    //   setTimeout(function () {
-    //     if (value == "imagenum1") {
-    //       image1button2();
-    //     }
-    //   }, 4000);
-    // }
+    if (value == "imagenum1") {
+      setTimeout(function () {
+        if (value == "imagenum1") {
+          image1button2();
+        }
+      }, 4000);
+    }
   }
 
   if (value == "imagenum2") {
@@ -432,13 +432,13 @@ setInterval(function () {
     if (button == "4") {
       image2button4();
     }
-    // if (value == "imagenum2") {
-    //   setTimeout(function () {
-    //     if (value == "imagenum2") {
-    //       image2button3();
-    //     }
-    //   }, 4000);
-    // }
+    if (value == "imagenum2") {
+      setTimeout(function () {
+        if (value == "imagenum2") {
+          image2button3();
+        }
+      }, 4000);
+    }
   }
   //   image num3333333333333333
   if (value == "imagenum3") {
@@ -462,13 +462,13 @@ setInterval(function () {
     ) {
       image3button4();
     }
-    // if (value == "imagenum3") {
-    //   setTimeout(function () {
-    //     if (value == "imagenum3") {
-    //       image3button4();
-    //     }
-    //   }, 4000);
-    // }
+    if (value == "imagenum3") {
+      setTimeout(function () {
+        if (value == "imagenum3") {
+          image3button4();
+        }
+      }, 4000);
+    }
   }
   if (value == "imagenum4") {
     if (
@@ -490,13 +490,13 @@ setInterval(function () {
     ) {
       image4button3();
     }
-    // if (value == "imagenum4") {
-    //   setTimeout(function () {
-    //     if (value == "imagenum4") {
-    //       image4button1();
-    //     }
-    //   }, 4000);
-    // }
+    if (value == "imagenum4") {
+      setTimeout(function () {
+        if (value == "imagenum4") {
+          image4button1();
+        }
+      }, 4000);
+    }
   }
 }, 300);
 
