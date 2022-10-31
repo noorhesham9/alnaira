@@ -533,3 +533,20 @@ Mfuchsia.addEventListener("click", function () {
   root.style.setProperty("--secondcolor", "rgb(245, 6, 229)");
   root.style.setProperty("--secondcolor", "rgb(245, 6, 229,0.65)");
 });
+
+let loadddd = document.getElementById("loadddd");
+
+function checkLoaded() {
+  return (
+    document.readyState === "complete" || document.readyState === "interactive"
+  );
+}
+// console.log(checkLoaded());
+
+setInterval(function () {
+  if (document.readyState == "complete") {
+    loadddd.style.top = "-100vh";
+  } else {
+    loadddd.style.top = "0";
+  }
+}, 1000);
