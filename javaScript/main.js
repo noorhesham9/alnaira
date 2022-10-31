@@ -14,7 +14,7 @@ window.onload = WindowSize;
 let myWidth = window.innerWidth;
 function WindowSize() {
   myWidth = window.innerWidth;
-  console.log(myWidth);
+
   imagesLanding.style.width = `${myWidth.toString()}px - 20px`;
   // الرقم اللي تحت ده هو ال النسبه بين الطول والعرض للصوره علشان اخلي الاب يتغير علي اساس الصوره
   imagesLanding.style.height = `calc(${myWidth.toString() / 1.81}px)`;
@@ -24,9 +24,10 @@ function WindowSize() {
       return `1`;
     };
     OrangelineINHead.style.setProperty("--opacity", opacityNumber());
+    imagesLanding.style.top = "100px";
   } else {
     head.style.backgroundColor = "transparent";
-
+    imagesLanding.style.top = "0px";
     const opacityNumber = () => {
       return `0`;
     };
@@ -41,9 +42,10 @@ window.onscroll = function () {
       return `1`;
     };
     OrangelineINHead.style.setProperty("--opacity", opacityNumber());
+    imagesLanding.style.top = "100px";
   } else if (window.scrollY <= 130 && myWidth > 767) {
     head.style.backgroundColor = "transparent";
-
+    imagesLanding.style.top = "0px";
     const opacityNumber = () => {
       return `0`;
     };
@@ -59,6 +61,7 @@ let xnum1 = document.querySelector(".x-icon-to-burger .num1");
 let xnum2 = document.querySelector(".x-icon-to-burger .num2");
 let xnum3 = document.querySelector(".x-icon-to-burger .num3");
 let nav = document.getElementById("navforMopile");
+let layoutforbody = document.querySelector(".layout ");
 burger.addEventListener("click", function () {
   nav.style.right = "0";
   burgernum2.style.opacity = "0";
@@ -68,6 +71,8 @@ burger.addEventListener("click", function () {
   burgernum3.style.top = "7px";
   burgernum3.style.backgroundcolor = "red";
   burgernum3.style.rotate = "-45deg";
+  document.body.style.overflow = "hidden";
+  layoutforbody.style.left = "0vw";
   setTimeout(function () {
     x.style.display = "block";
     burger.style.display = "none";
@@ -86,7 +91,8 @@ burger.addEventListener("click", function () {
 
 x.addEventListener("click", function () {
   nav.style.right = "-100%";
-
+  document.body.style.overflow = "visible ";
+  layoutforbody.style.left = "-100vw";
   xnum2.style.backgroundcolor = "white";
   xnum2.style.opacity = "1";
   xnum2.style.top = "7";
@@ -370,7 +376,6 @@ function touchEnd() {
 }
 
 setInterval(function () {
-  //   console.log(direction);
   if (value == "imagenum1") {
     landimg2.style.left = "100%";
     landimg1.style.left = "0%";
@@ -397,14 +402,13 @@ setInterval(function () {
     ) {
       image1button4();
     }
-    if (value == "imagenum1") {
-      setTimeout(function () {
-        if (value == "imagenum1") {
-          image1button2();
-          console.log("image1");
-        }
-      }, 4000);
-    }
+    // if (value == "imagenum1") {
+    //   setTimeout(function () {
+    //     if (value == "imagenum1") {
+    //       image1button2();
+    //     }
+    //   }, 4000);
+    // }
   }
 
   if (value == "imagenum2") {
@@ -428,14 +432,13 @@ setInterval(function () {
     if (button == "4") {
       image2button4();
     }
-    if (value == "imagenum2") {
-      setTimeout(function () {
-        if (value == "imagenum2") {
-          image2button3();
-          console.log("2");
-        }
-      }, 4000);
-    }
+    // if (value == "imagenum2") {
+    //   setTimeout(function () {
+    //     if (value == "imagenum2") {
+    //       image2button3();
+    //     }
+    //   }, 4000);
+    // }
   }
   //   image num3333333333333333
   if (value == "imagenum3") {
@@ -459,14 +462,13 @@ setInterval(function () {
     ) {
       image3button4();
     }
-    if (value == "imagenum3") {
-      setTimeout(function () {
-        if (value == "imagenum3") {
-          image3button4();
-          console.log("3");
-        }
-      }, 4000);
-    }
+    // if (value == "imagenum3") {
+    //   setTimeout(function () {
+    //     if (value == "imagenum3") {
+    //       image3button4();
+    //     }
+    //   }, 4000);
+    // }
   }
   if (value == "imagenum4") {
     if (
@@ -488,25 +490,46 @@ setInterval(function () {
     ) {
       image4button3();
     }
-    if (value == "imagenum4") {
-      setTimeout(function () {
-        if (value == "imagenum4") {
-          image4button1();
-          console.log("4");
-        }
-      }, 4000);
-    }
+    // if (value == "imagenum4") {
+    //   setTimeout(function () {
+    //     if (value == "imagenum4") {
+    //       image4button1();
+    //     }
+    //   }, 4000);
+    // }
   }
 }, 300);
 
-//  trying to disable scrolling
-// function disableScroll() {
-//   // Get the current page scroll position
-//   scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//   (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
-//     // if any scroll is attempted, set this to the previous value
-//     (window.onscroll = function () {
-//       window.scrollTo(scrollLeft, scrollTop);
-//     });
-// }
-// disableScroll();
+//عمل الالوان للموقع
+let Morange = document.getElementById("Morange");
+let Mred = document.getElementById("Mred");
+let Mblue = document.getElementById("Mblue");
+let Mcyan = document.getElementById("Mcyan");
+let Mgreen = document.getElementById("Mgreen");
+let Mfuchsia = document.getElementById("Mfuchsia");
+var root = document.querySelector(":root");
+
+Morange.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgba(255, 165, 0)");
+  root.style.setProperty("--secondcolor6", "rgba(255, 165, 0,65)");
+});
+Mred.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgba(255, 0, 0)");
+  root.style.setProperty("--secondcolor6", "rgba(255, 0, 0,65)");
+});
+Mblue.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgb(0, 0, 255)");
+  root.style.setProperty("--secondcolor6", "rgb(0, 0, 255,0.65)");
+});
+Mcyan.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgb(0, 174, 255)");
+  root.style.setProperty("--secondcolor6", "rgb(0, 174, 255,0.65)");
+});
+Mgreen.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgb(0, 128, 0)");
+  root.style.setProperty("--secondcolor6", "rgb(0, 128, 0,0.65)");
+});
+Mfuchsia.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgb(245, 6, 229)");
+  root.style.setProperty("--secondcolor", "rgb(245, 6, 229,0.65)");
+});

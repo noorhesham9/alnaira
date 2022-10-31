@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+:root {
+  --secondcolor: rgb(255, 165, 0);
+  --secondcolor6: rgba(255, 165, 0, 0.65);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,6 +20,10 @@ body {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* container  */
@@ -70,7 +79,7 @@ header .container .contentHH::before {
   position: absolute;
   height: 2px;
   width: 100%;
-  background-color: rgb(222, 144, 0);
+  background-color: var(--secondcolor);
   bottom: -1px;
 }
 header .container .imagesHead {
@@ -145,19 +154,23 @@ header .container ul li a:before {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: rgb(222, 144, 0);
+  background-color: var(--secondcolor);
   bottom: 0px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 header .container ul li a:hover {
-  color: rgb(222, 144, 0);
+  color: var(--secondcolor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 header .container ul li a:hover:before {
   width: 100%;
 }
 header .container ul li a.active {
-  color: rgb(222, 144, 0);
+  color: var(--secondcolor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 header .container ul li a.active:before {
   width: 100%;
@@ -219,7 +232,9 @@ header .burgericon .x-icon-to-burger .num2 {
 header .burgericon .x-icon-to-burger .num1,
 header .burgericon .x-icon-to-burger .num3 {
   top: 6px;
-  background-color: red;
+  background-color: var(--secondcolor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 header .burgericon .x-icon-to-burger .num1 {
   -webkit-transform: rotate(45deg);
@@ -240,6 +255,7 @@ header .burgericon .x-icon-to-burger .num3 {
 .imagesLanding {
   overflow: hidden;
   max-height: 100vh;
+  position: relative;
 }
 
 .landing {
@@ -294,7 +310,9 @@ header .burgericon .x-icon-to-burger .num3 {
   transition: 0.5s;
 }
 .landing .rightandleft .right:hover {
-  color: rgb(222, 144, 0);
+  color: var(--secondcolor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 .landing .rightandleft .right:hover:after {
@@ -341,7 +359,9 @@ header .burgericon .x-icon-to-burger .num3 {
 }
 .landing .rightandleft .left:hover {
   cursor: pointer;
-  color: rgb(222, 144, 0);
+  color: var(--secondcolor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .landing .rightandleft .left:hover:after {
   opacity: 1;
@@ -447,41 +467,84 @@ header .burgericon .x-icon-to-burger .num3 {
   width: 100%;
 }
 .landing .dots span {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   position: relative;
   border-radius: 50%;
-  border: 1px solid rgba(222, 144, 0, 0.621);
+  border: 1px solid var(--secondcolor6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .landing .dots span:hover {
   cursor: pointer;
+  background-color: var(--secondcolor6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .landing .dots span:hover:before {
-  content: "";
-  width: 15px;
-  position: absolute;
-  height: 15px;
-  border-radius: 50%;
-  background-color: rgba(222, 144, 0, 0.621);
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  left: 50%;
+  color: rgba(0, 0, 0, 0.9);
 }
 .landing .dots span.active {
-  border: 1px solid rgb(222, 144, 0);
+  border: 1px solid var(--secondcolor);
+  background-color: var(--secondcolor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .landing .dots span.active:before {
-  content: "";
-  width: 15px;
+  color: black;
+  font-weight: 700;
+}
+.landing .dots .one::before {
+  content: "1";
   position: absolute;
-  height: 15px;
-  border-radius: 50%;
-  background-color: rgb(222, 144, 0);
   top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+.landing .dots .four::before {
+  content: "4";
+  position: absolute;
+  top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+.landing .dots .two::before {
+  content: "2";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+.landing .dots .three::before {
+  content: "3";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 500;
+  font-size: 15px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
 }
 @media (max-width: 400px) {
   .landing .dots {
@@ -491,13 +554,17 @@ header .burgericon .x-icon-to-burger .num3 {
     width: 15px;
     height: 15px;
   }
-  .landing .dots span:hover:before {
-    width: 10px;
-    height: 10px;
+  .landing .dots span::before {
+    font-size: 11px !important;
+    font-weight: 400 !important;
   }
-  .landing .dots span.active:before {
-    width: 10px;
-    height: 10px;
+  .landing .dots span.active::before {
+    font-weight: 600 !important;
+  }
+}
+@media (max-width: 300px) {
+  .landing .dots {
+    bottom: 40px;
   }
 }
 @media (min-width: 399px) {
@@ -507,9 +574,9 @@ header .burgericon .x-icon-to-burger .num3 {
 }
 
 nav {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.95);
   -webkit-box-shadow: 0 0 #000 10px;
           box-shadow: 0 0 #000 10px;
   position: absolute;
@@ -518,11 +585,155 @@ nav {
   width: 50%;
   min-width: 235px;
   height: 100vh;
-  z-index: -1;
+  z-index: 6;
 }
-nav .search,
 nav .links {
   margin-left: 15px;
   margin-top: 20px;
   margin-right: 15px;
+}
+nav .links li {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+nav .links li::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(rgb(0, 0, 0)), to(var(--secondcolor)));
+  background: linear-gradient(270deg, rgb(0, 0, 0) 0%, var(--secondcolor) 100%);
+  position: absolute;
+  bottom: -2px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+nav .links li a {
+  color: white;
+  margin-left: 3px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-weight: 400;
+}
+nav .links li.active a {
+  color: var(--secondcolor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 800;
+}
+nav .links li.active::before {
+  width: 100%;
+}
+nav .links li:hover a {
+  color: var(--secondcolor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 700;
+}
+nav .links li:hover::before {
+  width: 100%;
+}
+nav::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 12px;
+  z-index: 6;
+  top: calc(50% - 101px);
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  background-color: var(--secondcolor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+nav .colors {
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% - 40px);
+}
+nav .colors span {
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+}
+nav .colors .orange {
+  background-color: rgb(222, 144, 0);
+}
+nav .colors .red {
+  background-color: red;
+}
+nav .colors .fuchsia {
+  background-color: rgb(245, 6, 229);
+}
+nav .colors .green {
+  background-color: green;
+}
+nav .colors .cyan {
+  background-color: #00aeff;
+}
+nav .colors .blue {
+  background-color: blue;
+}
+@media (max-width: 612px) {
+  nav .colors span {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 520px) {
+  nav .colors span {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.layout {
+  top: 101px;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  left: -100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.layout::before {
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 12px;
+  z-index: 6;
+  top: calc(50% - 101px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: var(--secondcolor);
+  border-radius: 50%;
 }
