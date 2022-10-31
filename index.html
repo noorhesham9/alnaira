@@ -26,7 +26,12 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body style="height: 20000px">
+  <body
+    ontouchstart="touchStart(event)"
+    ontouchmove="touchMove(event)"
+    ontouchend="touchEnd()"
+    style="height: 6000px"
+  >
     <header id="Mainheader">
       <div class="container">
         <div class="contentHH">
@@ -67,6 +72,19 @@
           </div>
         </div>
       </div>
+      <nav id="navforMopile">
+        <div class="links">
+          <ul class="links">
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <a href="#">ABOUT</a>
+            </li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">CONTACTS</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <section id="imagesLanding" class="imagesLanding">
       <div class="landing">
@@ -81,9 +99,34 @@
             src="image/choosen/Logo_mockup2_.png"
             alt=""
           />
-          <img class="image1" src="image/choosen/landing2.jpeg" alt="" />
-          <img class="image2" src="image/choosen/landing3.jpeg" alt="" />
-          <img class="image3" src="image/choosen/landing4.jpeg" alt="" />
+          <img
+            class="image1"
+            ontouchstart="p2handletouchstart(event)"
+            ontouchend="p2handletouchend(event)"
+            ontouchmove="p2handletouchmove(event)"
+            src="image/choosen/landing2.jpeg"
+            alt=""
+          />
+          <img
+            class="image2"
+            ontouchstart="p3handletouchstart(event)"
+            ontouchend="p3handletouchend(event)"
+            ontouchmove="p3handletouchmove(event)"
+            src="image/choosen/landing3.jpeg"
+            alt=""
+          />
+          <img
+            class="image3"
+            ontouchstart="p4handletouchstart(event)"
+            ontouchend="p4handletouchend(event)"
+            ontouchmove="p4handletouchmove(event)"
+            src="image/choosen/landing4.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="rightandleft">
+          <i id="left" class="fa-regular fa-hand-point-left left"></i>
+          <i id="right" class="fa-regular fa-hand-point-right right"></i>
         </div>
         <div class="dots">
           <span id="dot1" class="active"> </span>
