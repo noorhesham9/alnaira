@@ -546,7 +546,9 @@ function checkLoaded() {
 setInterval(function () {
   if (document.readyState == "complete") {
     loadddd.style.top = "-100vh";
+    document.body.style.overflow = "visible ";
   } else {
     loadddd.style.top = "0";
+    document.body.style.overflow = "hidden";
   }
 }, 1000);

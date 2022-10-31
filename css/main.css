@@ -740,7 +740,7 @@ nav .colors .blue {
 
 .loading {
   background-color: white;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: 60;
   display: -webkit-box;
