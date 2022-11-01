@@ -531,7 +531,7 @@ Mgreen.addEventListener("click", function () {
 });
 Mfuchsia.addEventListener("click", function () {
   root.style.setProperty("--secondcolor", "rgb(245, 6, 229)");
-  root.style.setProperty("--secondcolor", "rgb(245, 6, 229,0.65)");
+  root.style.setProperty("--secondcolor6", "rgb(245, 6, 229,0.65)");
 });
 
 let MorangeP = document.getElementById("orange");
@@ -563,7 +563,7 @@ MgreenP.addEventListener("click", function () {
 });
 MfuchsiaP.addEventListener("click", function () {
   root.style.setProperty("--secondcolor", "rgb(245, 6, 229)");
-  root.style.setProperty("--secondcolor", "rgb(245, 6, 229,0.65)");
+  root.style.setProperty("--secondcolor6", "rgb(245, 6, 229,0.65)");
 });
 let loadddd = document.getElementById("loadddd");
 
@@ -593,7 +593,7 @@ palette.addEventListener("click", function () {
   document.body.style.setProperty("overflow", "hidden", "important");
 });
 layoutTrans.addEventListener("click", function () {
-  paletteIMG.style.right = "-40vw";
+  paletteIMG.style.right = " -66vw";
   layoutTrans.style.display = "none";
   document.body.style.setProperty("overflow", "visible", "important");
 });
