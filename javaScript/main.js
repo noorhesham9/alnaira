@@ -534,6 +534,37 @@ Mfuchsia.addEventListener("click", function () {
   root.style.setProperty("--secondcolor", "rgb(245, 6, 229,0.65)");
 });
 
+let MorangeP = document.getElementById("orange");
+let MredP = document.getElementById("red");
+let MblueP = document.getElementById("blue");
+let McyanP = document.getElementById("cyan");
+let MgreenP = document.getElementById("green");
+let MfuchsiaP = document.getElementById("fuchsia");
+
+MorangeP.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgba(255, 165, 0)");
+  root.style.setProperty("--secondcolor6", "rgba(255, 165, 0,65)");
+});
+MredP.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgba(255, 0, 0)");
+  root.style.setProperty("--secondcolor6", "rgba(255, 0, 0,65)");
+});
+MblueP.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgb(0, 0, 255)");
+  root.style.setProperty("--secondcolor6", "rgb(0, 0, 255,0.65)");
+});
+McyanP.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgb(0, 174, 255)");
+  root.style.setProperty("--secondcolor6", "rgb(0, 174, 255,0.65)");
+});
+MgreenP.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgb(0, 128, 0)");
+  root.style.setProperty("--secondcolor6", "rgb(0, 128, 0,0.65)");
+});
+MfuchsiaP.addEventListener("click", function () {
+  root.style.setProperty("--secondcolor", "rgb(245, 6, 229)");
+  root.style.setProperty("--secondcolor", "rgb(245, 6, 229,0.65)");
+});
 let loadddd = document.getElementById("loadddd");
 
 function checkLoaded() {
@@ -541,14 +572,28 @@ function checkLoaded() {
     document.readyState === "complete" || document.readyState === "interactive"
   );
 }
-// console.log(checkLoaded());
 
-setInterval(function () {
+document.body.style.overflow = "hidden ";
+setTimeout(function () {
   if (document.readyState == "complete") {
+    time = 1000;
     loadddd.style.top = "-100vh";
     document.body.style.overflow = "visible ";
-  } else {
-    loadddd.style.top = "0";
-    document.body.style.overflow = "hidden";
   }
-}, 1000);
+}, 2200);
+
+let palette = document.getElementById("palette");
+
+let paletteIMG = document.getElementById("paletteIMG");
+let layoutTrans = document.getElementById("layoutTrans");
+
+palette.addEventListener("click", function () {
+  paletteIMG.style.right = "-10px";
+  layoutTrans.style.display = "block";
+  document.body.style.setProperty("overflow", "hidden", "important");
+});
+layoutTrans.addEventListener("click", function () {
+  paletteIMG.style.right = "-40vw";
+  layoutTrans.style.display = "none";
+  document.body.style.setProperty("overflow", "visible", "important");
+});

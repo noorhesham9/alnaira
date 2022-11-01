@@ -134,7 +134,17 @@ header {
       text-align: center;
       align-items: center;
       gap: 25px;
-
+      i {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+          color: var(--secondcolor);
+        }
+      }
       li {
         a {
           position: relative;
@@ -172,6 +182,93 @@ header {
             }
           }
         }
+      }
+    }
+    .img2 {
+      position: absolute;
+      right: 0;
+      top: 90px;
+      width: 150px;
+      right: -40vw;
+      transition: 0.7s;
+      .palette {
+        z-index: 102;
+
+        position: absolute;
+        width: 100%;
+        right: 0;
+        border: 1px solid var(--secondcolor);
+
+        background-color: #1e1e1e;
+        border-radius: 25px;
+      }
+      span {
+        z-index: 102;
+      }
+      .red {
+        cursor: pointer;
+
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: #ff0000;
+        top: 32px;
+        position: absolute;
+        right: 29px;
+      }
+      .orange {
+        cursor: pointer;
+
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: #de9000;
+        position: absolute;
+        top: 15.1px;
+        right: 49.2px;
+      }
+      .blue {
+        cursor: pointer;
+
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: #0000ff;
+        position: absolute;
+
+        top: 16.8px;
+        left: 47.2px;
+      }
+      .cyan {
+        cursor: pointer;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: #00aeff;
+        position: absolute;
+        top: 39.5px;
+        left: 29.3px;
+      }
+      .green {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: #008000;
+        position: absolute;
+        cursor: pointer;
+
+        top: 65px;
+        left: 29px;
+      }
+      .fuchsia {
+        cursor: pointer;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background-color: #f506e5;
+        position: absolute;
+        top: 84.6px;
+        left: 45px;
       }
     }
 
@@ -612,7 +709,7 @@ nav {
     z-index: 6;
     top: calc(50% - 101px);
     transform: translatey(-50%);
-    background-color: var(--secondcolor);
+    background-color: #c0c0c0;
     transition: 0.3s;
     border-radius: 50%;
   }
@@ -631,6 +728,7 @@ nav {
       width: 75px;
       height: 75px;
       border-radius: 5px;
+      cursor: pointer;
     }
     .orange {
       background-color: #de9000;
@@ -683,9 +781,18 @@ nav {
     z-index: 6;
     top: calc(50% - 101px);
     transition: 0.3s;
-    background-color: var(--secondcolor);
+    background-color: #c0c0c0;
     border-radius: 50%;
   }
+}
+.layoutTrans {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000080;
+  z-index: 101;
+  display: none;
 }
 .loading {
   background-color: white;
