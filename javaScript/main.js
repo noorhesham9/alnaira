@@ -576,7 +576,6 @@ function checkLoaded() {
 document.body.style.overflow = "hidden ";
 setTimeout(function () {
   if (document.readyState == "complete") {
-    time = 1000;
     loadddd.style.top = "-100vh";
     document.body.style.overflow = "visible ";
   }
