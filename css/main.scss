@@ -15,6 +15,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: black;
 }
 
 ul {
@@ -163,7 +164,7 @@ header {
             width: 0%;
             height: 2px;
             background-color: var(--secondcolor);
-            bottom: 0px;
+            bottom: -4px;
             transition: 0.3s;
           }
 
@@ -349,6 +350,7 @@ header {
   overflow: hidden;
   max-height: 100vh;
   position: relative;
+  transition: 0.4s;
 }
 .landing {
   width: 100%;
@@ -947,5 +949,161 @@ nav {
   }
   100% {
     transform: translate(100%, 100%);
+  }
+}
+
+.top {
+  cursor: pointer;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--secondcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(-200px);
+  right: 35px;
+  transition: 1s;
+  &:hover {
+    i {
+      animation: totop 1s linear 0s infinite;
+      color: black;
+    }
+  }
+  i {
+    color: white;
+    font-size: 25px;
+    transform: translateY(2px);
+    transition: 0.5s;
+  }
+  &:before {
+    content: "";
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--secondcolor);
+    animation: topButton 2s linear infinite;
+    opacity: 1;
+  }
+  &:after {
+    content: "";
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--secondcolor);
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-name: topButton;
+    animation-iteration-count: infinite;
+    opacity: 1;
+  }
+}
+@keyframes topButton {
+  0% {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    opacity: 1;
+  }
+  100% {
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    opacity: 0;
+  }
+}
+
+@keyframes totop {
+  25% {
+    transform: translateY(5px);
+  }
+
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+.socialMedia {
+  position: fixed;
+  display: flex;
+  width: fit-content;
+  height: 250px;
+  right: -51px;
+  transition: 0.4s;
+  // right: 0px;
+  transform: translatey(-50%);
+  top: 50%;
+  align-items: center;
+  z-index: 5;
+  .right {
+    cursor: pointer;
+    // transform: rotate(180deg);
+    font-size: 17px;
+    width: 23px;
+    font-size: 17px;
+    height: 93px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -14px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    transition: 0.4s;
+    &:hover {
+      color: var(--secondcolor);
+      left: -22px;
+    }
+  }
+  .left {
+    display: none;
+    cursor: pointer;
+    font-size: 17px;
+    width: 23px;
+    font-size: 17px;
+    height: 93px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -22px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    transition: 0.4s;
+    &:hover {
+      color: var(--secondcolor);
+      left: -14px;
+    }
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 48px;
+    height: 185px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    i {
+      font-size: 29px;
+      color: black;
+      transition: 0.4s;
+      &:hover {
+        color: var(--secondcolor);
+      }
+    }
   }
 }
