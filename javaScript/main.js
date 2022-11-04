@@ -578,7 +578,7 @@ function checkLoaded() {
   );
 }
 
-document.body.style.overflow = "hidden ";
+// document.body.style.overflow = "hidden ";
 setTimeout(function () {
   if (document.readyState == "complete") {
     loadddd.style.top = "-100vh";
