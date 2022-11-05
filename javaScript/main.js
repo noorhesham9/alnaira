@@ -572,18 +572,16 @@ MfuchsiaP.addEventListener("click", function () {
 });
 let loadddd = document.getElementById("loadddd");
 
-function checkLoaded() {
-  return (
-    document.readyState === "complete" || document.readyState === "interactive"
-  );
-}
+// function checkLoaded() {
+//   return (
+//     document.readyState === "complete" || document.readyState === "interactive"
+//   );
+// }
 
-// document.body.style.overflow = "hidden ";
+document.body.style.overflow = "hidden ";
 setTimeout(function () {
-  if (document.readyState == "complete") {
-    loadddd.style.top = "-100vh";
-    document.body.style.overflow = "visible ";
-  }
+  loadddd.style.top = "-100vh";
+  document.body.style.overflow = "visible ";
 }, 2200);
 
 let palette = document.getElementById("palette");
