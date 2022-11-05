@@ -582,7 +582,7 @@ document.body.style.overflow = "hidden ";
 setTimeout(function () {
   loadddd.style.top = "-100vh";
   document.body.style.overflow = "visible ";
-}, 2200);
+}, 3000);
 
 let palette = document.getElementById("palette");
 
