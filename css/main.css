@@ -1073,6 +1073,7 @@ nav .colors .blue {
   right: 35px;
   -webkit-transition: 1s;
   transition: 1s;
+  z-index: 150;
 }
 .top:hover i {
   -webkit-animation: totop 1s linear 0s infinite;
@@ -1274,4 +1275,265 @@ nav .colors .blue {
 }
 .socialMedia .links i:hover {
   color: var(--secondcolor);
+}
+
+section {
+  position: relative;
+  top: 120px;
+}
+section .Fhead {
+  margin-bottom: 80px;
+}
+section .Fhead h2 {
+  margin: auto;
+  color: white;
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-size: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-weight: 600;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: context-menu;
+}
+section .Fhead h2:hover {
+  color: var(--secondcolor);
+}
+section .whatImage {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7px;
+  grid-template-columns: repeat(auto-fill, minmax(222px, 1fr));
+}
+section .whatImage div {
+  aspect-ratio: 1.49;
+  width: 100%;
+}
+section .whatImage div img {
+  width: 100%;
+}
+
+/* strat article  */
+.whatdo {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+section .main-title {
+  margin: 0 auto 80px;
+  border: 2px solid var(--secondcolor);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+section .main-title::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--secondcolor);
+  border-radius: 50%;
+  left: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+section .main-title:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--secondcolor);
+  border-radius: 50%;
+  right: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+section .main-title:hover {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  color: black;
+}
+section .main-title:hover::before {
+  z-index: -1;
+  -webkit-animation: left-move 0.5s linear forwards;
+          animation: left-move 0.5s linear forwards;
+}
+section .main-title:hover::after {
+  z-index: -1;
+  -webkit-animation: right-move 0.5s linear forwards;
+          animation: right-move 0.5s linear forwards;
+}
+
+@-webkit-keyframes left-move {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    border-radius: 0;
+    left: 0;
+    width: 52%;
+    height: 103%;
+  }
+}
+
+@keyframes left-move {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    border-radius: 0;
+    left: 0;
+    width: 52%;
+    height: 103%;
+  }
+}
+@-webkit-keyframes right-move {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    border-radius: 0;
+    right: 0;
+    width: 52%;
+    height: 103%;
+  }
+}
+@keyframes right-move {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    border-radius: 0;
+    right: 0;
+    width: 52%;
+    height: 103%;
+  }
+}
+.whatdo .container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.whatdo .box {
+  -webkit-box-shadow: 0 2px 15px rgba(255, 255, 255, 0.32);
+          box-shadow: 0 2px 15px rgba(255, 255, 255, 0.32);
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s, -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+}
+
+.whatdo .box:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 2px 15px var(--secondcolor);
+          box-shadow: 0 2px 15px var(--secondcolor);
+}
+.whatdo .box:hover .content h3 {
+  color: var(--secondcolor);
+}
+.whatdo .box:hover .info {
+  border-top: 1px solid var(--secondcolor);
+}
+
+.whatdo .box img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.whatdo .box .content {
+  padding: 20px;
+}
+
+.whatdo .box .content h3 {
+  margin: 0;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.whatdo .box .content p {
+  margin: 10px 0 0;
+  color: #bbb;
+}
+
+.whatdo .box .info {
+  padding: 20px;
+  border-top: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.whatdo .box .info:hover a {
+  color: var(--secondcolor);
+}
+.whatdo .box .info:hover i {
+  color: var(--secondcolor);
+}
+
+.whatdo .box .info a {
+  color: white;
+  font-weight: bold;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.whatdo .box .info i {
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.whatdo .box:hover .info i {
+  -webkit-animation: moving-arrow 0.6s linear infinite;
+          animation: moving-arrow 0.6s linear infinite;
+}
+
+@-webkit-keyframes moving-arrow {
+  100% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes moving-arrow {
+  100% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
 }
