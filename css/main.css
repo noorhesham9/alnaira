@@ -1318,7 +1318,7 @@ section .whatImage div img {
   width: 100%;
 }
 
-/* strat article  */
+/* strat whatdo  */
 .whatdo {
   padding-top: 60px;
   padding-bottom: 80px;
@@ -1338,6 +1338,7 @@ section .main-title {
   color: white;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  border-radius: 5px;
 }
 section .main-title::before {
   content: "";
@@ -1435,7 +1436,7 @@ section .main-title:hover::after {
 .whatdo .container {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
 }
 
@@ -1539,8 +1540,8 @@ section .main-title:hover::after {
 }
 /* strat secnum2  */
 .secnum2 {
-  padding-top: 60PX;
-  padding-bottom: 80PX;
+  padding-top: 60px;
+  padding-bottom: 80px;
   position: relative;
   background-color: black;
 }
@@ -1555,6 +1556,8 @@ section .main-title:hover::after {
 .secnum2 .box {
   text-align: center;
   border: 1px solid var(--secondcolor);
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .secnum2 .box .img-holder {
@@ -1578,9 +1581,9 @@ section .main-title:hover::after {
   right: 0;
   border-style: solid;
   border-width: 0px 0px 160px 500px;
-  border-color: transparent transparent white transparent;
-  -webkit-transition: var(--main-transition);
-  transition: var(--main-transition);
+  border-color: transparent transparent var(--secondcolor) transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   z-index: 3;
 }
 
@@ -1599,6 +1602,8 @@ section .main-title:hover::after {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  color: white;
+  padding-top: 15px;
 }
 
 .secnum2 .box h2::after {
@@ -1620,7 +1625,7 @@ section .main-title:hover::after {
 
 .secnum2 .box a {
   display: block;
-  border: 3px solid;
+  border: 2px solid;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1629,64 +1634,70 @@ section .main-title:hover::after {
   font-weight: bold;
   padding: 10px 30px;
   border-radius: 7px;
-  -webkit-transition: var(--main-transition);
-  transition: var(--main-transition);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: white;
 }
 
 .secnum2 .Quality .img-holder::before {
-  background-color: var(--secondcolor6);
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .secnum2 .Quality h2::after {
-  background-color: rgb(244, 64, 54);
+  background-color: var(--secondcolor);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .secnum2 .Quality a {
   border-color: var(--secondcolor);
-  color: rgb(244, 64, 54);
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(244, 64, 54)), color-stop(50%, white));
-  background: linear-gradient(to right, rgb(244, 64, 54) 50%, white 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--secondcolor)), color-stop(50%, black));
+  background: linear-gradient(to right, var(--secondcolor) 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .secnum2 .Passion .img-holder::before {
-  background-color: var(--secondcolor6);
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .secnum2 .Passion h2::after {
-  background-color: rgb(3, 169, 244);
+  background-color: var(--secondcolor);
 }
 
 .secnum2 .Passion a {
   border-color: var(--secondcolor);
-  color: rgb(3, 169, 244);
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(3, 169, 244)), color-stop(50%, white));
-  background: linear-gradient(to right, rgb(3, 169, 244) 50%, white 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--secondcolor)), color-stop(50%, black));
+  background: linear-gradient(to right, var(--secondcolor) 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .secnum2 .Time .img-holder::before {
-  background-color: var(--secondcolor6);
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .secnum2 .Time h2::after {
-  background-color: rgb(0, 150, 136);
+  background-color: var(--secondcolor);
 }
 
 .secnum2 .Time a {
   border-color: var(--secondcolor);
-  color: rgb(0, 150, 136);
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(0, 150, 136)), color-stop(50%, white));
-  background: linear-gradient(to right, rgb(0, 150, 136) 50%, white 50%);
-  background-size: 200% 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--secondcolor)), color-stop(50%, black));
+  background: linear-gradient(to right, var(--secondcolor) 50%, black 50%);
+  background-size: 200%;
   background-position: right bottom;
 }
 
 .secnum2 .box:hover a {
   background-position: left bottom;
-  color: white;
+  color: black;
 }
 
 /* end secnum2  */
