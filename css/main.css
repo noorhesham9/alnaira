@@ -1558,6 +1558,8 @@ section .main-title:hover::after {
   border: 1px solid var(--secondcolor);
   overflow: hidden;
   border-radius: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .secnum2 .box .img-holder {
@@ -1572,6 +1574,12 @@ section .main-title:hover::after {
   left: 0;
   width: 100%;
   height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.secnum2 .box:hover .img-holder::before {
+  left: -100%;
 }
 
 .secnum2 .box .img-holder::after {
@@ -1698,6 +1706,11 @@ section .main-title:hover::after {
 .secnum2 .box:hover a {
   background-position: left bottom;
   color: black;
+}
+
+.secnum2 .box:hover {
+  -webkit-box-shadow: 0 2px 15px var(--secondcolor);
+          box-shadow: 0 2px 15px var(--secondcolor);
 }
 
 /* end secnum2  */
