@@ -1590,8 +1590,8 @@ section .main-title:hover::after {
   border-style: solid;
   border-width: 0px 0px 160px 500px;
   border-color: transparent transparent var(--secondcolor) transparent;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 3;
 }
 
@@ -1612,6 +1612,16 @@ section .main-title:hover::after {
   width: fit-content;
   color: white;
   padding-top: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.secnum2 .box:hover h2 {
+  color: var(--secondcolor);
+  font-weight: 600;
+}
+.secnum2 .box:hover h2:after {
+  background-color: var(--secondcolor);
 }
 
 .secnum2 .box h2::after {
@@ -1621,6 +1631,9 @@ section .main-title:hover::after {
   left: 15px;
   height: 5px;
   width: calc(100% - 30px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: white;
 }
 
 .secnum2 .box p {
@@ -1651,12 +1664,6 @@ section .main-title:hover::after {
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.secnum2 .Quality h2::after {
-  background-color: var(--secondcolor);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
 .secnum2 .Quality a {
   border-color: var(--secondcolor);
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--secondcolor)), color-stop(50%, black));
@@ -1671,10 +1678,6 @@ section .main-title:hover::after {
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.secnum2 .Passion h2::after {
-  background-color: var(--secondcolor);
-}
-
 .secnum2 .Passion a {
   border-color: var(--secondcolor);
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, var(--secondcolor)), color-stop(50%, black));
@@ -1687,10 +1690,6 @@ section .main-title:hover::after {
 
 .secnum2 .Time .img-holder::before {
   background-color: rgba(0, 0, 0, 0.55);
-}
-
-.secnum2 .Time h2::after {
-  background-color: var(--secondcolor);
 }
 
 .secnum2 .Time a {
@@ -1714,3 +1713,76 @@ section .main-title:hover::after {
 }
 
 /* end secnum2  */
+/* end secnum3  */
+.secnum3 .backgroundsection {
+  background-image: url(../image/choosen/pexels-igor-haritanovich-1695052.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+}
+.secnum3 .backgroundsection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.secnum3 .backgroundsection .container .image {
+  max-width: 50%;
+}
+.secnum3 .backgroundsection .container .image img {
+  width: 100%;
+  position: relative;
+  bottom: -123px;
+}
+.secnum3 .backgroundsection .container .points {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  left: 50%;
+  height: calc(100% - 250px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.secnum3 .backgroundsection .container .points div {
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+.secnum3 .backgroundsection .container .points div:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: white;
+  left: -28px;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.secnum3 .backgroundsection:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  position: absolute;
+}
