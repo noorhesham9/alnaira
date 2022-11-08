@@ -1721,6 +1721,8 @@ section .main-title:hover::after {
   overflow: hidden;
   height: 600px;
   position: relative;
+  border-top: 2px solid var(--secondcolor);
+  border-bottom: 2px solid var(--secondcolor);
 }
 .secnum3 .backgroundsection .container {
   display: -webkit-box;
@@ -1760,22 +1762,42 @@ section .main-title:hover::after {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .secnum3 .backgroundsection .container .points div {
-  margin-left: 50px;
+  padding-left: 50px;
   font-size: 20px;
   font-weight: 600;
   position: relative;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .secnum3 .backgroundsection .container .points div:before {
   content: "";
   width: 15px;
+  color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 15px;
   position: absolute;
   background-color: white;
-  left: -28px;
+  left: 20px;
   border-radius: 50%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.secnum3 .backgroundsection .container .points div:hover {
+  color: var(--secondcolor);
+}
+.secnum3 .backgroundsection .container .points div:hover::before {
+  background-color: var(--secondcolor);
 }
 .secnum3 .backgroundsection:before {
   width: 100%;

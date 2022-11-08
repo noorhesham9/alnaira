@@ -1473,6 +1473,8 @@ section .main-title {
     overflow: hidden;
     height: 600px;
     position: relative;
+    border-top: 2px solid var(--secondcolor);
+    border-bottom: 2px solid var(--secondcolor);
     .container {
       display: flex;
       .image {
@@ -1499,20 +1501,32 @@ section .main-title {
         border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.6);
         div {
-          margin-left: 50px;
+          padding-left: 50px;
           font-size: 20px;
           font-weight: 600;
           position: relative;
+          transition: 0.4s;
           &:before {
             content: "";
             width: 15px;
+            color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 15px;
             position: absolute;
             background-color: white;
-            left: -28px;
+            left: 20px;
             border-radius: 50%;
             top: 50%;
             transform: translateY(-50%);
+            transition: 0.4s;
+          }
+          &:hover {
+            color: var(--secondcolor);
+            &::before {
+              background-color: var(--secondcolor);
+            }
           }
         }
       }
