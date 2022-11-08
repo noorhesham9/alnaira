@@ -1724,20 +1724,29 @@ section .main-title:hover::after {
   border-top: 2px solid var(--secondcolor);
   border-bottom: 2px solid var(--secondcolor);
 }
-.secnum3 .backgroundsection .container {
+.secnum3 .backgroundsection .contain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
-.secnum3 .backgroundsection .container .image {
-  max-width: 50%;
+.secnum3 .backgroundsection .contain .image {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.secnum3 .backgroundsection .container .image img {
-  width: 100%;
+.secnum3 .backgroundsection .contain .image img {
+  height: 100%;
+  /* width: 100%; */
   position: relative;
-  bottom: -123px;
+  bottom: -86px;
 }
-.secnum3 .backgroundsection .container .points {
+.secnum3 .backgroundsection .contain .points {
   position: absolute;
   top: 50%;
   width: 50%;
@@ -1761,7 +1770,7 @@ section .main-title:hover::after {
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.secnum3 .backgroundsection .container .points div {
+.secnum3 .backgroundsection .contain .points div {
   padding-left: 50px;
   font-size: 20px;
   font-weight: 600;
@@ -1769,7 +1778,7 @@ section .main-title:hover::after {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.secnum3 .backgroundsection .container .points div:before {
+.secnum3 .backgroundsection .contain .points div:before {
   content: "";
   width: 15px;
   color: transparent;
@@ -1793,10 +1802,10 @@ section .main-title:hover::after {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.secnum3 .backgroundsection .container .points div:hover {
+.secnum3 .backgroundsection .contain .points div:hover {
   color: var(--secondcolor);
 }
-.secnum3 .backgroundsection .container .points div:hover::before {
+.secnum3 .backgroundsection .contain .points div:hover::before {
   background-color: var(--secondcolor);
 }
 .secnum3 .backgroundsection:before {
