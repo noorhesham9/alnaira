@@ -1483,7 +1483,6 @@ section .main-title {
         height: 100%;
         display: flex;
         justify-content: center;
-
         img {
           height: 100%;
           /* width: 100%; */
@@ -1491,23 +1490,39 @@ section .main-title {
           bottom: -86px;
         }
       }
+      @media (max-width: 900px) {
+        .image {
+          display: none;
+        }
+      }
+
       .points {
-        position: absolute;
+        padding: 50px;
+        position: relative;
         top: 50%;
-        width: 50%;
-        left: 50%;
+        /* width: 50%; */
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
         height: calc(100% - 250px);
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column;
         color: white;
         gap: 20px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin-left: 30px;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         border-radius: 20px;
+
+        left: 20px;
         background-color: rgba(0, 0, 0, 0.6);
         div {
-          padding-left: 50px;
+          // padding-left: 50px;
           font-size: 20px;
           font-weight: 600;
           position: relative;
@@ -1522,7 +1537,7 @@ section .main-title {
             height: 15px;
             position: absolute;
             background-color: white;
-            left: 20px;
+            left: -25px;
             border-radius: 50%;
             top: 50%;
             transform: translateY(-50%);
@@ -1536,6 +1551,13 @@ section .main-title {
           }
         }
       }
+      @media (max-width: 900px) {
+        .points {
+          margin-left: 0px;
+          left: 0px;
+          border-radius: 5px;
+        }
+      }
     }
     &:before {
       width: 100%;
@@ -1545,6 +1567,195 @@ section .main-title {
       top: 0;
       left: 0;
       position: absolute;
+    }
+  }
+}
+.products {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  .shuffle {
+    // margin: 0 auto 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    a.active {
+      // background-color: var(--secondcolor);
+      color: black;
+      font-weight: 700;
+      &:before {
+        left: 00;
+      }
+    }
+    a {
+      overflow: hidden;
+      position: relative;
+      transition: 0.4s;
+      color: white;
+      padding: 14px 15px;
+      border-radius: 7px;
+      border: 2px solid var(--secondcolor);
+      font-weight: 500;
+      &:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--secondcolor);
+        content: "";
+        top: 0;
+        left: -100%;
+        z-index: -1;
+        transition: 0.4s;
+      }
+      &:hover {
+        color: black;
+        font-weight: 700;
+
+        &:before {
+          left: 0%;
+        }
+      }
+    }
+  }
+  .imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: center;
+    transition: 0.4s;
+    gap: 10px;
+    .box {
+      position: relative;
+      overflow: hidden;
+      transition: 0.4s;
+      border: 1.5px solid var(--secondcolor);
+      img {
+        width: 100%;
+        height: 100%;
+        transition: 0.4s;
+      }
+
+      .mask {
+        transition: 0.4s;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        .mask-content {
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0 5%;
+          font-size: 13px;
+          line-height: 18px;
+          .mask-head {
+            a {
+              color: white;
+              font-weight: 600;
+              font-size: 22px;
+              transition: 0.4s;
+              position: relative;
+              top: -50px;
+              &:hover {
+                color: var(--secondcolor);
+              }
+            }
+            width: 100%;
+            color: white;
+            font-weight: 600;
+            font-size: 22px;
+            position: absolute;
+            top: 12%;
+            left: 50%;
+            transform: translatex(-50%);
+            height: 30px;
+          }
+          .maskP {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            position: absolute;
+            top: 150%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            transition: 0.4s;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .mask-more {
+            position: absolute;
+            bottom: 12%;
+            display: flex;
+            justify-content: center;
+            gap: 17px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            a {
+              color: white;
+              font-size: 24px;
+              transition: 0.4s;
+              &:hover {
+                color: var(--secondcolor);
+              }
+            }
+          }
+          @media (min-width: 540px) and (max-width: 767px) {
+            .mask-head {
+              font-size: 28px;
+            }
+            .maskP {
+              font-size: 20px;
+            }
+            .mask-more {
+              gap: 23px;
+
+              a {
+                font-size: 27px;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        img {
+          transform: rotate(3.5deg) scale(1.15);
+        }
+        .mask {
+          opacity: 0.9;
+        }
+        .mask-head {
+          a {
+            top: 0px !important;
+          }
+        }
+        .maskP {
+          top: 50% !important;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      .box {
+        flex-basis: calc(50% - 10px);
+      }
+    }
+
+    @media (min-width: 1199px) {
+      .box {
+        flex-basis: calc(25% - 10px);
+      }
+    }
+    @media (max-width: 767px) {
+      .box {
+        flex-basis: 100%;
+      }
     }
   }
 }
