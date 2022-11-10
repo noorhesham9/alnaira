@@ -2009,8 +2009,8 @@ section .main-title:hover::after {
   }
 }
 .products .imgs-container .box:hover img {
-  -webkit-transform: rotate(3.5deg) scale(1.15);
-          transform: rotate(3.5deg) scale(1.15);
+  -webkit-transform: rotate(1deg) scale(1.15);
+          transform: rotate(1deg) scale(1.15);
 }
 .products .imgs-container .box:hover .mask {
   opacity: 0.9;
