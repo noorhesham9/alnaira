@@ -1009,6 +1009,11 @@ nav {
     opacity: 1;
   }
 }
+@media (max-width: 420px) {
+  .top {
+    display: none;
+  }
+}
 @keyframes topButton {
   0% {
     width: calc(100% - 2px);
@@ -1863,6 +1868,23 @@ section .main-title {
     max-width: 250px;
   }
 }
+.contacts {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: -1;
+  // color: red;
+}
+
 .contact-info {
   display: flex;
   justify-content: space-evenly;
@@ -1920,6 +1942,349 @@ section .main-title {
       svg {
         path {
           fill: var(--secondcolor);
+        }
+      }
+    }
+  }
+}
+
+$pi: 3.14159265359;
+$_precision: 10;
+
+@function pow($base, $exp) {
+  $value: $base;
+  @if $exp > 1 {
+    @for $i from 2 through $exp {
+      $value: $value * $base;
+    }
+  }
+  @if $exp < 1 {
+    @for $i from 0 through -$exp {
+      $value: $value / $base;
+    }
+  }
+  @return $value;
+}
+
+@function fact($num) {
+  $fact: 1;
+  @if $num > 0 {
+    @for $i from 1 through $num {
+      $fact: $fact * $i;
+    }
+  }
+  @return $fact;
+}
+
+@function _to_unitless_rad($angle) {
+  @if unit($angle) == "deg" {
+    $angle: $angle / 180deg * $pi;
+  }
+  @if unit($angle) == "rad" {
+    $angle: $angle / 1rad;
+  }
+  @return $angle;
+}
+
+@function sin($angle) {
+  $a: _to_unitless_rad($angle);
+  $sin: $a;
+  @for $n from 1 through $_precision {
+    $sin: $sin + (pow(-1, $n) / fact(2 * $n + 1)) * pow($a, (2 * $n + 1));
+  }
+  @return $sin;
+}
+
+@function cos($angle) {
+  $a: _to_unitless_rad($angle);
+  $cos: 1;
+  @for $n from 1 through $_precision {
+    $cos: $cos + (pow(-1, $n) / fact(2 * $n)) * pow($a, 2 * $n);
+  }
+  @return $cos;
+}
+
+@function tan($angle) {
+  @return sin($angle) / cos($angle);
+}
+
+@function reminder($origin, $mod) {
+  $q: if(($origin / $mod) > 0, floor($origin / $mod), ceil($origin / $mod));
+  @return $origin - ($mod * $q);
+}
+
+// html,
+// body {
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+// }
+.contain-s {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#sky {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  z-index: -1;
+}
+
+.star {
+  opacity: 0;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px white;
+  border-radius: 100%;
+  transform-origin: 0, 0;
+  animation-timing-function: linear, linear !important;
+  animation-iteration-count: infinite, infinite !important;
+  animation-delay: -30s, -30s !important;
+}
+
+.size-1 {
+  width: 2px;
+  height: 2px;
+}
+
+.size-2 {
+  width: 3px;
+  height: 3px;
+}
+
+@for $i from 1 to 361 {
+  $t: random(40000) + 5000;
+  $angle: $i - reminder($i, 4);
+
+  .axis-#{$i} {
+    animation: anim#{$angle} #{$t}ms, fade#{random(10)} #{$t}ms;
+  }
+}
+
+@for $i from 1 to 11 {
+  $start: random(20);
+  $end: $start + 10;
+  @keyframes fade#{$i} {
+    #{$start + "%"} {
+      opacity: 0;
+    }
+    #{$end + "%"} {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@for $i from 1 to 91 {
+  $a: $i * 4;
+  @keyframes anim#{$a} {
+    $angle: $pi * 2 * ($a / 360);
+    $y: 80 * sin($angle);
+    $x: 80 * cos($angle);
+    100% {
+      transform: translate(#{$x}vw, #{$y}vh);
+    }
+  }
+}
+
+footer {
+  border-top: 2px solid var(--secondcolor);
+  position: relative;
+  top: 120px;
+  overflow: hidden;
+  .fotercont {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex-wrap: wrap;
+    .up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+      flex-wrap: wrap;
+      .logo {
+        min-width: 190px;
+        flex-basis: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+
+        img {
+          max-height: 100%;
+        }
+      }
+
+      .linksforfooternum1 {
+        height: 100%;
+        min-width: 190px;
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li {
+          position: relative;
+          a {
+            color: white;
+            transition: 0.4s;
+            &:before {
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 2px;
+              background-color: var(--secondcolor);
+              bottom: -4px;
+              -webkit-transition: 0.3s;
+              transition: 0.4s;
+            }
+          }
+          &:hover {
+            a {
+              color: var(--secondcolor);
+              &:before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .linksforfooternum2 {
+        height: 100%;
+        min-width: 190px;
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li {
+          position: relative;
+          a {
+            color: white;
+            transition: 0.4s;
+            &:before {
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 2px;
+              background-color: var(--secondcolor);
+              bottom: -4px;
+              -webkit-transition: 0.3s;
+              transition: 0.4s;
+            }
+          }
+          &:hover {
+            a {
+              color: var(--secondcolor);
+              &:before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .social {
+        flex-basis: 25%;
+        min-width: 190px;
+        .links {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          a {
+            color: white;
+            transition: 0.4s;
+            font-size: 30px;
+            i {
+            }
+            &:hover {
+              color: var(--secondcolor);
+            }
+          }
+        }
+      }
+      @media (max-width: 427px) {
+        .linksforfooternum2,
+        .linksforfooternum1 {
+          gap: 10px;
+          padding-bottom: 15px;
+        }
+        .social {
+          padding-bottom: 30px;
+        }
+      }
+      @media (max-width: 618px) {
+        .linksforfooternum2,
+        .linksforfooternum1 {
+          gap: 10px;
+        }
+        .social,
+        .linksforfooternum2 {
+          padding-bottom: 30px;
+        }
+      }
+      @media (max-width: 990px) {
+        .linksforfooternum2,
+        .linksforfooternum1 {
+          gap: 10px;
+        }
+        .social {
+          padding-bottom: 30px;
+        }
+      }
+      // @media (min-width: 991px) {
+      //   .linksforfooternum2,
+      //   .linksforfooternum1 {
+      //     gap: 10px;
+      //   }
+      //   .social {
+      //     padding-bottom: 30px;
+      //   }
+      // }
+    }
+    .down {
+      margin-bottom: 12px;
+      .copy {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        p {
+          padding-bottom: 5px;
+          text-align: center;
+          a {
+            text-align: center;
+            margin-left: 3px;
+            margin-right: 3px;
+            color: var(--secondcolor);
+            transition: 0.4s;
+            position: relative;
+            &:before {
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 2px;
+              background-color: var(--secondcolor);
+              bottom: -4px;
+              -webkit-transition: 0.3s;
+              transition: 0.4s;
+            }
+            &:hover {
+              color: var(--secondcolor);
+              &:before {
+                width: 100%;
+              }
+            }
+          }
         }
       }
     }
