@@ -807,7 +807,8 @@ nav {
   z-index: 200;
   position: absolute;
   transition: 1s;
-  top: 0;
+  
+  left: 0;
   span {
     font-family: "Pacifico", cursive;
     font-size: 40px;
@@ -1926,6 +1927,8 @@ section .main-title {
   a {
     color: white;
     transition: 0.4s;
+    padding-bottom: 5px;
+
     svg {
       width: 20px;
       height: 20px;
@@ -2130,6 +2133,7 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        gap: 10px;
 
         li {
           position: relative;
@@ -2165,6 +2169,8 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        gap: 10px;
+
 
         li {
           position: relative;

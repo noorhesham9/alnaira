@@ -9,31 +9,7 @@ OrangelineINHead.style.setProperty("--opacity", opacityNumber());
 let width = innerWidth;
 let imagesLanding = document.getElementById("imagesLanding");
 
-window.onresize = WindowSize;
-window.onload = WindowSize;
-let myWidth = window.innerWidth;
-function WindowSize() {
-  myWidth = window.innerWidth;
 
-  imagesLanding.style.width = `${myWidth.toString()}px - 20px`;
-  // الرقم اللي تحت ده هو ال النسبه بين الطول والعرض للصوره علشان اخلي الاب يتغير علي اساس الصوره
-  imagesLanding.style.height = `calc(${myWidth.toString() / 1.81}px)`;
-  if (myWidth < 767) {
-    head.style.backgroundColor = "black";
-    const opacityNumber = () => {
-      return `1`;
-    };
-    OrangelineINHead.style.setProperty("--opacity", opacityNumber());
-    imagesLanding.style.top = "100px";
-  } else {
-    head.style.backgroundColor = "transparent";
-    imagesLanding.style.top = "0px";
-    const opacityNumber = () => {
-      return `0`;
-    };
-    OrangelineINHead.style.setProperty("--opacity", opacityNumber());
-  }
-}
 let totopbutton = document.getElementById("top");
 window.onscroll = function () {
   if (window.scrollY >= 130) {
@@ -582,11 +558,6 @@ let loadddd = document.getElementById("loadddd");
 //   );
 // }
 
-document.body.style.overflow = "hidden ";
-setTimeout(function () {
-  loadddd.style.top = "-100vh";
-  document.body.style.overflow = "visible ";
-}, 3000);
 
 let palette = document.getElementById("palette");
 
@@ -749,6 +720,43 @@ function clear() {
 }
 
 function init() {
+
+}
+
+// window.onload = init;
+window.onresize = WindowSize;
+window.onload = WindowSize;
+let myWidth = window.innerWidth;
+
+function WindowSize() {
+  // loadddd.style.top = `${window.scrollY.toString()}px` ;
+
+  console.log(window.scrollY)
+  myWidth = window.innerWidth;
+
+  imagesLanding.style.width = `${myWidth.toString()}px - 20px`;
+  // الرقم اللي تحت ده هو ال النسبه بين الطول والعرض للصوره علشان اخلي الاب يتغير علي اساس الصوره
+  imagesLanding.style.height = `calc(${myWidth.toString() / 1.81}px)`;
+  if (myWidth < 767) {
+    head.style.backgroundColor = "black";
+    const opacityNumber = () => {
+      return `1`;
+    };
+    OrangelineINHead.style.setProperty("--opacity", opacityNumber());
+    imagesLanding.style.top = "100px";
+  } else {
+    head.style.backgroundColor = "transparent";
+    imagesLanding.style.top = "0px";
+    const opacityNumber = () => {
+      return `0`;
+    };
+    OrangelineINHead.style.setProperty("--opacity", opacityNumber());
+  }
+
+
+
+
+
   sky = document.querySelector("#sky");
   center = {
     x: sky.clientWidth / 2,
@@ -756,6 +764,21 @@ function init() {
   };
   clear();
   for (let i = 0; i < 360; i++) sky.appendChild(dot(i));
+
+
+    document.body.style.overflow = "hidden ";
+
+
 }
 
-window.onload = init;
+setTimeout(function(){
+  loadddd.style.top = `${window.scrollY.toString()}px` ;
+},300)
+setTimeout(function () {
+  loadddd.style.top = "-100vh";
+  document.body.style.overflow = "visible ";
+}, 3500);
+
+
+
+// animaition js 
