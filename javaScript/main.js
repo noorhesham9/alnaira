@@ -726,7 +726,7 @@ let myWidth = window.innerWidth;
 
 function WindowSize() {
   // loadddd.style.top = `${window.scrollY.toString()}px` ;
-
+  console.log("noor");
   myWidth = window.innerWidth;
 
   imagesLanding.style.width = `${myWidth.toString()}px - 20px`;
@@ -903,11 +903,6 @@ let productsh2 = document.getElementById("productsh2");
 
 let secnum3img = document.getElementById("secnum3img");
 let secnum3points = document.getElementById("secnum3points");
-
-// let AlLbutton = document.getElementById("Allproducts");
-// let inDoorbutton = document.getElementById("inDoorproducts");
-// let outDoorbutton = document.getElementById("outDoorproducts");
-// let decorbutton = document.getElementById("decorproducts");
 let moreproducts = document.getElementById("moreproducts");
 let customerh2 = document.getElementById("customerh2");
 let contactsh2 = document.getElementById("contactsh2");
@@ -935,6 +930,29 @@ function animation() {
     if (animaitionH < 880) {
       h2secnum3.style.top = "-150px";
     }
+    if (animaitionH < 1307) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1307) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 1719) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 1901) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 2609) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 3021) {
+      contactsh2.style.top = "-150px";
+    }
+
     // animation
     if (animaitionH >= 170) {
       whatdoH2.style.top = "0px";
@@ -951,6 +969,28 @@ function animation() {
 
     if (animaitionH >= 880) {
       h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1307) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1307) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 1719) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 1901) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 2609) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 3021) {
+      contactsh2.style.top = "0px";
     }
   }
   // **************************************
@@ -1044,6 +1084,593 @@ function animation() {
       customerh2.style.top = "0px";
     }
     if (animaitionH >= 3182) {
+      contactsh2.style.top = "0px";
+    }
+  }
+  // form 1200 px too 1300px
+  if (animaitionW >= 1200 && animaitionW < 1300) {
+    // default
+    if (animaitionH < 200) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 410) {
+      whatcontboxnum1.style.left = "-50vw";
+
+      whatcontboxnum3.style.right = "-50vw";
+      whatcontboxnum2.style.top = "-120%";
+    }
+
+    if (animaitionH < 793) {
+      h2secnum3.style.top = "-150px";
+    }
+    if (animaitionH < 1180) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1180) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 1562) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 1750) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 2371) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 2742) {
+      contactsh2.style.top = "-150px";
+    }
+
+    // animation
+
+    if (animaitionH >= 200) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 410) {
+      whatcontboxnum1.style.left = "0px";
+      whatcontboxnum3.style.right = "0px";
+      whatcontboxnum2.style.top = "0px";
+    }
+
+    if (animaitionH >= 793) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1180) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1180) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 1562) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 1750) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 2371) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 2742) {
+      contactsh2.style.top = "0px";
+    }
+  }
+  // form 1100 px too 1200px
+  if (animaitionW >= 1100 && animaitionW < 1200) {
+    // default
+    if (animaitionH < 135) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 312) {
+      whatcontboxnum1.style.left = "-50vw";
+
+      whatcontboxnum2.style.right = "-50vw";
+    }
+    if (animaitionH < 809) {
+      whatcontboxnum3.style.left = "-50vw";
+    }
+
+    if (animaitionH < 1316) {
+      h2secnum3.style.top = "-150px";
+    }
+    if (animaitionH < 1707) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1707) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2116) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2253) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 3967) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 4322) {
+      contactsh2.style.top = "-150px";
+    }
+
+    // animation
+
+    if (animaitionH >= 135) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 312) {
+      whatcontboxnum1.style.left = "0px";
+
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 809) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1316) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1707) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1707) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2116) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2253) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 3967) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 4322) {
+      contactsh2.style.top = "0px";
+    }
+  }
+  // form 1000 px too 1100px
+  if (animaitionW >= 1000 && animaitionW < 1100) {
+    // default
+
+    if (animaitionH < 233) {
+      whatcontboxnum1.style.left = "-50vw";
+
+      whatcontboxnum2.style.right = "-50vw";
+    }
+    if (animaitionH < 643) {
+      whatcontboxnum3.style.left = "-50vw";
+    }
+
+    if (animaitionH < 1077) {
+      h2secnum3.style.top = "-150px";
+    }
+    if (animaitionH < 1512) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1512) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 1884) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2010) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 3454) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 3826) {
+      contactsh2.style.top = "-150px";
+    }
+
+    // animation
+
+    if (animaitionH >= 233) {
+      whatcontboxnum1.style.left = "0px";
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 643) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1077) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1512) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1512) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 1884) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2010) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 3454) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 3826) {
+      contactsh2.style.top = "0px";
+    }
+  }
+  // from 900 to 1000 px
+  if (animaitionW >= 900 && animaitionW < 1000) {
+    // default
+
+    if (animaitionH < 233) {
+      whatcontboxnum1.style.left = "-50vw";
+
+      whatcontboxnum2.style.right = "-50vw";
+    }
+    if (animaitionH < 643) {
+      whatcontboxnum3.style.left = "-50vw";
+    }
+
+    if (animaitionH < 1077) {
+      h2secnum3.style.top = "-150px";
+    }
+    if (animaitionH < 1512) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1512) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 1884) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2010) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 3454) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 3826) {
+      contactsh2.style.top = "-150px";
+    }
+
+    // animation
+
+    if (animaitionH >= 233) {
+      whatcontboxnum1.style.left = "0px";
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 643) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1077) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1512) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1512) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 1884) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2010) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 3454) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 3826) {
+      contactsh2.style.top = "0px";
+    }
+  }
+
+  if (animaitionW >= 770 && animaitionW < 900) {
+    // default
+
+    if (animaitionH < 138) {
+      whatcontboxnum1.style.left = "-50vw";
+
+      whatcontboxnum2.style.right = "-50vw";
+    }
+    if (animaitionH < 560) {
+      whatcontboxnum3.style.left = "-50vw";
+    }
+
+    if (animaitionH < 1000) {
+      h2secnum3.style.top = "-150px";
+    }
+
+    if (animaitionH < 1385) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 1800) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 1957) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 3220) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 3540) {
+      contactsh2.style.top = "-150px";
+    }
+
+    // animation
+
+    if (animaitionH >= 138) {
+      whatcontboxnum1.style.left = "0px";
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 560) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1000) {
+      h2secnum3.style.top = "0";
+    }
+
+    if (animaitionH >= 1385) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 1800) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 1957) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 3220) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 3540) {
+      contactsh2.style.top = "0px";
+    }
+  }
+
+  if (animaitionW >= 600 && animaitionW < 770) {
+    // default
+
+    if (animaitionH < 95) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 677) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1239) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
+
+    if (animaitionH < 1849) {
+      h2secnum3.style.top = "-150px";
+    }
+
+    if (animaitionH < 2212) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2641) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2784) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 6641) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 7067) {
+      contactsh2.style.top = "-150px";
+    }
+
+    // animation
+
+    if (animaitionH >= 95) {
+      whatcontboxnum1.style.left = "0";
+    }
+    if (animaitionH >= 677) {
+      whatcontboxnum2.style.right = "0";
+    }
+    if (animaitionH >= 1239) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1849) {
+      h2secnum3.style.top = "0";
+    }
+
+    if (animaitionH >= 2212) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2641) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2784) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 6641) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 7067) {
+      contactsh2.style.top = "0px";
+    }
+  }
+  // from 500 to 600 px
+
+  if (animaitionW >= 500 && animaitionW < 600) {
+    // default
+
+    if (animaitionH < 572) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1120) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
+
+    if (animaitionH < 1655) {
+      h2secnum3.style.top = "-150px";
+    }
+
+    if (animaitionH < 1946) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2418) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2590) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 5701) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 6140) {
+      contactsh2.style.top = "-150px";
+    }
+
+    // animation
+
+    if (animaitionH >= 572) {
+      whatcontboxnum2.style.right = "0";
+    }
+    if (animaitionH >= 1120) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1655) {
+      h2secnum3.style.top = "0";
+    }
+
+    if (animaitionH >= 1946) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2418) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2590) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 5701) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 6140) {
+      contactsh2.style.top = "0px";
+    }
+  }
+  // from 402 too 500px
+
+  if (animaitionW >= 403 && animaitionW < 500) {
+    // default
+
+    if (animaitionH < 572) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1120) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
+
+    if (animaitionH < 1655) {
+      h2secnum3.style.top = "-150px";
+    }
+
+    if (animaitionH < 1946) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2418) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2590) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 5701) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 6140) {
+      contactsh2.style.top = "-150px";
+    }
+
+    // animation
+
+    if (animaitionH >= 572) {
+      whatcontboxnum2.style.right = "0";
+    }
+    if (animaitionH >= 1120) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1655) {
+      h2secnum3.style.top = "0";
+    }
+
+    if (animaitionH >= 1946) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2418) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2590) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 5701) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 6140) {
       contactsh2.style.top = "0px";
     }
   }
