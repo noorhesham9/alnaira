@@ -9,7 +9,6 @@ OrangelineINHead.style.setProperty("--opacity", opacityNumber());
 let width = innerWidth;
 let imagesLanding = document.getElementById("imagesLanding");
 
-
 let totopbutton = document.getElementById("top");
 window.onscroll = function () {
   if (window.scrollY >= 130) {
@@ -558,7 +557,6 @@ let loadddd = document.getElementById("loadddd");
 //   );
 // }
 
-
 let palette = document.getElementById("palette");
 
 let paletteIMG = document.getElementById("paletteIMG");
@@ -719,9 +717,7 @@ function clear() {
   sky.innerHTML = "";
 }
 
-function init() {
-
-}
+function init() {}
 
 // window.onload = init;
 window.onresize = WindowSize;
@@ -731,7 +727,6 @@ let myWidth = window.innerWidth;
 function WindowSize() {
   // loadddd.style.top = `${window.scrollY.toString()}px` ;
 
-  console.log(window.scrollY)
   myWidth = window.innerWidth;
 
   imagesLanding.style.width = `${myWidth.toString()}px - 20px`;
@@ -753,10 +748,6 @@ function WindowSize() {
     OrangelineINHead.style.setProperty("--opacity", opacityNumber());
   }
 
-
-
-
-
   sky = document.querySelector("#sky");
   center = {
     x: sky.clientWidth / 2,
@@ -764,21 +755,299 @@ function WindowSize() {
   };
   clear();
   for (let i = 0; i < 360; i++) sky.appendChild(dot(i));
-
-
-    document.body.style.overflow = "hidden ";
-
-
 }
 
-setTimeout(function(){
-  loadddd.style.top = `${window.scrollY.toString()}px` ;
-},300)
+document.body.style.overflow = "hidden ";
+
+setTimeout(function () {
+  loadddd.style.top = `${window.scrollY.toString()}px`;
+}, 300);
+
 setTimeout(function () {
   loadddd.style.top = "-100vh";
   document.body.style.overflow = "visible ";
 }, 3500);
 
+// products animation
+let AlLbutton = document.getElementById("Allproducts");
+let inDoorbutton = document.getElementById("inDoorproducts");
+let outDoorbutton = document.getElementById("outDoorproducts");
+let decorbutton = document.getElementById("decorproducts");
+let Allproducts = document.querySelectorAll(".ALL");
+let inDoorproducts = document.querySelectorAll(".indoor");
+let outDoorproducts = document.querySelectorAll(".outdoor");
+let decorproducts = document.querySelectorAll(".decor");
 
+AlLbutton.addEventListener("click", function () {
+  inDoorbutton.classList.remove("active");
+  AlLbutton.classList.add("active");
+  outDoorbutton.classList.remove("active");
+  decorbutton.classList.remove("active");
 
-// animaition js 
+  Allproducts.forEach(function (product) {
+    // product.style.display = "block";
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "block";
+    }, 350);
+    setTimeout(function () {
+      product.style.opacity = "1";
+    }, 650);
+  });
+});
+inDoorbutton.addEventListener("click", function () {
+  inDoorbutton.classList.add("active");
+  AlLbutton.classList.remove("active");
+  outDoorbutton.classList.remove("active");
+  decorbutton.classList.remove("active");
+
+  outDoorproducts.forEach(function (product) {
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "none";
+    }, 350);
+  });
+  decorproducts.forEach(function (product) {
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "none";
+    }, 350);
+  });
+
+  inDoorproducts.forEach(function (product) {
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "block";
+    }, 350);
+    setTimeout(function () {
+      product.style.opacity = "1";
+    }, 650);
+  });
+});
+outDoorbutton.addEventListener("click", function () {
+  inDoorbutton.classList.remove("active");
+  AlLbutton.classList.remove("active");
+  outDoorbutton.classList.add("active");
+  decorbutton.classList.remove("active");
+
+  inDoorproducts.forEach(function (product) {
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "none";
+    }, 350);
+  });
+  decorproducts.forEach(function (product) {
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "none";
+    }, 350);
+  });
+
+  outDoorproducts.forEach(function (product) {
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "block";
+    }, 350);
+    setTimeout(function () {
+      product.style.opacity = "1";
+    }, 650);
+  });
+});
+decorbutton.addEventListener("click", function () {
+  inDoorbutton.classList.remove("active");
+  AlLbutton.classList.remove("active");
+  outDoorbutton.classList.remove("active");
+  decorbutton.classList.add("active");
+
+  inDoorproducts.forEach(function (product) {
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "none";
+    }, 350);
+  });
+  outDoorproducts.forEach(function (product) {
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "none";
+    }, 350);
+  });
+
+  decorproducts.forEach(function (product) {
+    product.style.opacity = "0";
+    setTimeout(function () {
+      product.style.display = "block";
+    }, 350);
+    setTimeout(function () {
+      product.style.opacity = "1";
+    }, 650);
+  });
+});
+// Allproducts.forEach(function (product) {
+//   product.addEventListener("click", function () {
+//     console.log("a7a");
+//   });
+// });
+
+// animaition js
+let animaitionW;
+let animaitionH;
+let whatdoH2 = document.getElementById("whatdoH2");
+let h2fortitleForOurCom = document.getElementById("h2fortitleForOurCom");
+let pfortitleForOurCom = document.getElementById("pfortitleForOurCom");
+let whatcontboxnum1 = document.getElementById("boxnum1");
+let whatcontboxnum2 = document.getElementById("boxnum2");
+let whatcontboxnum3 = document.getElementById("boxnum3");
+
+let h2secnum3 = document.getElementById("h2secnum3");
+let productsh2 = document.getElementById("productsh2");
+
+let secnum3img = document.getElementById("secnum3img");
+let secnum3points = document.getElementById("secnum3points");
+
+// let AlLbutton = document.getElementById("Allproducts");
+// let inDoorbutton = document.getElementById("inDoorproducts");
+// let outDoorbutton = document.getElementById("outDoorproducts");
+// let decorbutton = document.getElementById("decorproducts");
+let moreproducts = document.getElementById("moreproducts");
+let customerh2 = document.getElementById("customerh2");
+let contactsh2 = document.getElementById("contactsh2");
+function animation() {
+  animaitionW = window.innerWidth;
+  animaitionH = window.scrollY;
+  console.log(animaitionH);
+
+  if (animaitionW >= 1300 && animaitionW < 1600) {
+    // default
+    if (animaitionH < 170) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 200) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 410) {
+      whatcontboxnum1.style.left = "-50vw";
+
+      whatcontboxnum3.style.right = "-50vw";
+      whatcontboxnum2.style.top = "-120%";
+    }
+
+    if (animaitionH < 880) {
+      h2secnum3.style.top = "-150px";
+    }
+    // animation
+    if (animaitionH >= 170) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 200) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 410) {
+      whatcontboxnum1.style.left = "0px";
+      whatcontboxnum3.style.right = "0px";
+      whatcontboxnum2.style.top = "0px";
+    }
+
+    if (animaitionH >= 880) {
+      h2secnum3.style.top = "0";
+    }
+  }
+  // **************************************
+  // **************************************
+  // **************************************
+  if (animaitionW >= 1600) {
+    // default
+    if (animaitionH < 620) {
+      whatcontboxnum1.style.left = "-50vw";
+    }
+    if (animaitionH < 620) {
+      whatcontboxnum3.style.right = "-50vw";
+    }
+    if (animaitionH < 300) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 330) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 620) {
+      whatcontboxnum2.style.top = "-120%";
+    }
+
+    if (animaitionH < 1061) {
+      h2secnum3.style.top = "-150px";
+    }
+    if (animaitionH < 1061) {
+      h2secnum3.style.top = "-150px";
+    }
+    if (animaitionH < 1463) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1463) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 1836) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2014) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
+    if (animaitionH < 2809) {
+      customerh2.style.top = "-150px";
+    }
+    if (animaitionH < 3182) {
+      contactsh2.style.top = "-150px";
+    }
+    // animation&&&&&&&&&&
+    if (animaitionH >= 300) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 330) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 620) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 620) {
+      whatcontboxnum3.style.right = "0px";
+    }
+    if (animaitionH >= 620) {
+      whatcontboxnum2.style.top = "0px";
+    }
+
+    if (animaitionH >= 1061) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1463) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1463) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 1836) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2014) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+    if (animaitionH >= 2809) {
+      customerh2.style.top = "0px";
+    }
+    if (animaitionH >= 3182) {
+      contactsh2.style.top = "0px";
+    }
+  }
+}
+window.addEventListener("load", animation);
+window.addEventListener("resize", animation);
+window.addEventListener("scroll", animation);

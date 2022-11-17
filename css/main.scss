@@ -807,7 +807,7 @@ nav {
   z-index: 200;
   position: absolute;
   transition: 1s;
-  
+
   left: 0;
   span {
     font-family: "Pacifico", cursive;
@@ -1157,28 +1157,31 @@ section {
   padding-top: 60px;
   padding-bottom: 80px;
   position: relative;
+  overflow: hidden;
   // top: 110px;
+
   .titleForOurCom {
     h2 {
       position: relative;
       font-family: "Rubik Bubbles", cursive;
       // font-family: "Pacifico", cursive;
-      min-width: 230px;
+      min-width: 250px;
       font-size: 40px;
       margin-right: 8px;
       color: white;
       transition: 0.4s;
-      left: 0px;
       top: 0px;
       &:hover {
         color: var(--secondcolor);
-        left: -10px;
+        left: -10px !important;
       }
     }
     p {
+      position: relative;
       flex-basis: 80%;
       font-size: 18px;
       color: #c5c2c2;
+      transition: 0.4s;
     }
     text-align: center;
     padding: 0px 30px 70px;
@@ -1187,6 +1190,7 @@ section {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
   }
   @media (max-width: 550px) {
     .titleForOurCom {
@@ -1287,6 +1291,9 @@ section .main-title {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
+    overflow: hidden;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
 }
 @media (max-width: 520px) {
@@ -1303,6 +1310,8 @@ section .main-title {
   border-radius: 6px;
   overflow: hidden;
   transition: transform 0.4s, box-shadow 0.4s;
+  position: relative;
+  transition: 0.7s;
 }
 
 .whatdo .box:hover {
@@ -1532,6 +1541,7 @@ section .main-title {
 /* end secnum2  */
 /* end secnum3  */
 .secnum3 {
+  overflow: hidden;
   .backgroundsection {
     background-image: url(../image/choosen/pexels-igor-haritanovich-1695052.jpg);
     background-size: cover;
@@ -1549,6 +1559,8 @@ section .main-title {
         height: 100%;
         display: flex;
         justify-content: center;
+        position: relative;
+        transition: 0.6s;
         img {
           height: 100%;
           /* width: 100%; */
@@ -1565,6 +1577,7 @@ section .main-title {
       .points {
         padding: 50px;
         position: relative;
+        transition: 0.6s;
         top: 50%;
         /* width: 50%; */
         -webkit-box-flex: 1;
@@ -1639,11 +1652,14 @@ section .main-title {
 .products {
   padding-top: 60px;
   padding-bottom: 80px;
+  overflow: hidden;
   .shuffle {
+    overflow: hidden;
     // margin: 0 auto 100px;
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
     a.active {
       // background-color: var(--secondcolor);
       color: black;
@@ -1691,7 +1707,9 @@ section .main-title {
     justify-content: center;
     transition: 0.4s;
     gap: 10px;
+    overflow: hidden;
     .box {
+      // display: none;
       position: relative;
       overflow: hidden;
       transition: 0.4s;
@@ -1701,7 +1719,6 @@ section .main-title {
         height: 100%;
         transition: 0.4s;
       }
-
       .mask {
         transition: 0.4s;
         position: absolute;
@@ -1831,6 +1848,7 @@ section .main-title {
 .customer {
   padding-top: 60px;
   padding-bottom: 80px;
+  overflow: hidden;
   .container {
     color: white;
     overflow: hidden;
@@ -2170,7 +2188,6 @@ footer {
         justify-content: space-evenly;
         align-items: center;
         gap: 10px;
-
 
         li {
           position: relative;

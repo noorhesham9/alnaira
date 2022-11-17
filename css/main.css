@@ -863,7 +863,6 @@ nav .colors .blue {
   position: absolute;
   -webkit-transition: 1s;
   transition: 1s;
-  top: 0;
   left: 0;
 }
 .loading span {
@@ -1328,6 +1327,7 @@ section .whatImage div img {
   padding-top: 60px;
   padding-bottom: 80px;
   position: relative;
+  overflow: hidden;
 }
 .whatdo .titleForOurCom {
   text-align: center;
@@ -1343,28 +1343,31 @@ section .whatImage div img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  overflow: hidden;
 }
 .whatdo .titleForOurCom h2 {
   position: relative;
   font-family: "Rubik Bubbles", cursive;
-  min-width: 230px;
+  min-width: 250px;
   font-size: 40px;
   margin-right: 8px;
   color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  left: 0px;
   top: 0px;
 }
 .whatdo .titleForOurCom h2:hover {
   color: var(--secondcolor);
-  left: -10px;
+  left: -10px !important;
 }
 .whatdo .titleForOurCom p {
+  position: relative;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
   font-size: 18px;
   color: #c5c2c2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 @media (max-width: 550px) {
   .whatdo .titleForOurCom {
@@ -1503,6 +1506,9 @@ section .main-title:hover::after {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
+  overflow: hidden;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 @media (max-width: 520px) {
@@ -1522,6 +1528,9 @@ section .main-title:hover::after {
   transition: -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
   transition: transform 0.4s, box-shadow 0.4s;
   transition: transform 0.4s, box-shadow 0.4s, -webkit-transform 0.4s, -webkit-box-shadow 0.4s;
+  position: relative;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .whatdo .box:hover {
@@ -1787,6 +1796,9 @@ section .main-title:hover::after {
 
 /* end secnum2  */
 /* end secnum3  */
+.secnum3 {
+  overflow: hidden;
+}
 .secnum3 .backgroundsection {
   background-image: url(../image/choosen/pexels-igor-haritanovich-1695052.jpg);
   background-size: cover;
@@ -1812,6 +1824,9 @@ section .main-title:hover::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 .secnum3 .backgroundsection .contain .image img {
   height: 100%;
@@ -1827,6 +1842,8 @@ section .main-title:hover::after {
 .secnum3 .backgroundsection .contain .points {
   padding: 50px;
   position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   top: 50%;
   /* width: 50%; */
   -webkit-box-flex: 1;
@@ -1909,8 +1926,10 @@ section .main-title:hover::after {
 .products {
   padding-top: 60px;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 .products .shuffle {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1918,6 +1937,8 @@ section .main-title:hover::after {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .products .shuffle a.active {
   color: black;
@@ -1972,6 +1993,7 @@ section .main-title:hover::after {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   gap: 10px;
+  overflow: hidden;
 }
 .products .imgs-container .box {
   position: relative;
@@ -2119,6 +2141,7 @@ section .main-title:hover::after {
 .customer {
   padding-top: 60px;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 .customer .container {
   color: white;
@@ -2298,1810 +2321,1810 @@ section .main-title:hover::after {
 }
 
 .axis-1 {
-  -webkit-animation: anim0 32388ms, fade1 32388ms;
-          animation: anim0 32388ms, fade1 32388ms;
+  -webkit-animation: anim0 31614ms, fade7 31614ms;
+          animation: anim0 31614ms, fade7 31614ms;
 }
 
 .axis-2 {
-  -webkit-animation: anim0 23186ms, fade1 23186ms;
-          animation: anim0 23186ms, fade1 23186ms;
+  -webkit-animation: anim0 27586ms, fade9 27586ms;
+          animation: anim0 27586ms, fade9 27586ms;
 }
 
 .axis-3 {
-  -webkit-animation: anim0 41244ms, fade8 41244ms;
-          animation: anim0 41244ms, fade8 41244ms;
+  -webkit-animation: anim0 36397ms, fade4 36397ms;
+          animation: anim0 36397ms, fade4 36397ms;
 }
 
 .axis-4 {
-  -webkit-animation: anim4 30181ms, fade4 30181ms;
-          animation: anim4 30181ms, fade4 30181ms;
+  -webkit-animation: anim4 13113ms, fade4 13113ms;
+          animation: anim4 13113ms, fade4 13113ms;
 }
 
 .axis-5 {
-  -webkit-animation: anim4 28199ms, fade3 28199ms;
-          animation: anim4 28199ms, fade3 28199ms;
+  -webkit-animation: anim4 10431ms, fade6 10431ms;
+          animation: anim4 10431ms, fade6 10431ms;
 }
 
 .axis-6 {
-  -webkit-animation: anim4 44887ms, fade10 44887ms;
-          animation: anim4 44887ms, fade10 44887ms;
+  -webkit-animation: anim4 33115ms, fade3 33115ms;
+          animation: anim4 33115ms, fade3 33115ms;
 }
 
 .axis-7 {
-  -webkit-animation: anim4 36951ms, fade8 36951ms;
-          animation: anim4 36951ms, fade8 36951ms;
+  -webkit-animation: anim4 30313ms, fade10 30313ms;
+          animation: anim4 30313ms, fade10 30313ms;
 }
 
 .axis-8 {
-  -webkit-animation: anim8 29329ms, fade8 29329ms;
-          animation: anim8 29329ms, fade8 29329ms;
+  -webkit-animation: anim8 41967ms, fade7 41967ms;
+          animation: anim8 41967ms, fade7 41967ms;
 }
 
 .axis-9 {
-  -webkit-animation: anim8 42052ms, fade9 42052ms;
-          animation: anim8 42052ms, fade9 42052ms;
+  -webkit-animation: anim8 24339ms, fade4 24339ms;
+          animation: anim8 24339ms, fade4 24339ms;
 }
 
 .axis-10 {
-  -webkit-animation: anim8 30884ms, fade4 30884ms;
-          animation: anim8 30884ms, fade4 30884ms;
+  -webkit-animation: anim8 26310ms, fade4 26310ms;
+          animation: anim8 26310ms, fade4 26310ms;
 }
 
 .axis-11 {
-  -webkit-animation: anim8 11742ms, fade3 11742ms;
-          animation: anim8 11742ms, fade3 11742ms;
+  -webkit-animation: anim8 26009ms, fade6 26009ms;
+          animation: anim8 26009ms, fade6 26009ms;
 }
 
 .axis-12 {
-  -webkit-animation: anim12 27572ms, fade10 27572ms;
-          animation: anim12 27572ms, fade10 27572ms;
+  -webkit-animation: anim12 25578ms, fade4 25578ms;
+          animation: anim12 25578ms, fade4 25578ms;
 }
 
 .axis-13 {
-  -webkit-animation: anim12 22379ms, fade6 22379ms;
-          animation: anim12 22379ms, fade6 22379ms;
+  -webkit-animation: anim12 21761ms, fade10 21761ms;
+          animation: anim12 21761ms, fade10 21761ms;
 }
 
 .axis-14 {
-  -webkit-animation: anim12 34871ms, fade7 34871ms;
-          animation: anim12 34871ms, fade7 34871ms;
+  -webkit-animation: anim12 29036ms, fade7 29036ms;
+          animation: anim12 29036ms, fade7 29036ms;
 }
 
 .axis-15 {
-  -webkit-animation: anim12 37701ms, fade3 37701ms;
-          animation: anim12 37701ms, fade3 37701ms;
+  -webkit-animation: anim12 30040ms, fade5 30040ms;
+          animation: anim12 30040ms, fade5 30040ms;
 }
 
 .axis-16 {
-  -webkit-animation: anim16 20328ms, fade5 20328ms;
-          animation: anim16 20328ms, fade5 20328ms;
+  -webkit-animation: anim16 32982ms, fade8 32982ms;
+          animation: anim16 32982ms, fade8 32982ms;
 }
 
 .axis-17 {
-  -webkit-animation: anim16 21593ms, fade7 21593ms;
-          animation: anim16 21593ms, fade7 21593ms;
+  -webkit-animation: anim16 24342ms, fade5 24342ms;
+          animation: anim16 24342ms, fade5 24342ms;
 }
 
 .axis-18 {
-  -webkit-animation: anim16 18369ms, fade7 18369ms;
-          animation: anim16 18369ms, fade7 18369ms;
+  -webkit-animation: anim16 38320ms, fade3 38320ms;
+          animation: anim16 38320ms, fade3 38320ms;
 }
 
 .axis-19 {
-  -webkit-animation: anim16 38533ms, fade8 38533ms;
-          animation: anim16 38533ms, fade8 38533ms;
+  -webkit-animation: anim16 5086ms, fade5 5086ms;
+          animation: anim16 5086ms, fade5 5086ms;
 }
 
 .axis-20 {
-  -webkit-animation: anim20 40557ms, fade3 40557ms;
-          animation: anim20 40557ms, fade3 40557ms;
+  -webkit-animation: anim20 32858ms, fade6 32858ms;
+          animation: anim20 32858ms, fade6 32858ms;
 }
 
 .axis-21 {
-  -webkit-animation: anim20 39933ms, fade1 39933ms;
-          animation: anim20 39933ms, fade1 39933ms;
+  -webkit-animation: anim20 32758ms, fade3 32758ms;
+          animation: anim20 32758ms, fade3 32758ms;
 }
 
 .axis-22 {
-  -webkit-animation: anim20 23824ms, fade9 23824ms;
-          animation: anim20 23824ms, fade9 23824ms;
+  -webkit-animation: anim20 41499ms, fade10 41499ms;
+          animation: anim20 41499ms, fade10 41499ms;
 }
 
 .axis-23 {
-  -webkit-animation: anim20 13124ms, fade4 13124ms;
-          animation: anim20 13124ms, fade4 13124ms;
+  -webkit-animation: anim20 5638ms, fade7 5638ms;
+          animation: anim20 5638ms, fade7 5638ms;
 }
 
 .axis-24 {
-  -webkit-animation: anim24 40810ms, fade9 40810ms;
-          animation: anim24 40810ms, fade9 40810ms;
+  -webkit-animation: anim24 18294ms, fade8 18294ms;
+          animation: anim24 18294ms, fade8 18294ms;
 }
 
 .axis-25 {
-  -webkit-animation: anim24 8193ms, fade2 8193ms;
-          animation: anim24 8193ms, fade2 8193ms;
+  -webkit-animation: anim24 10506ms, fade9 10506ms;
+          animation: anim24 10506ms, fade9 10506ms;
 }
 
 .axis-26 {
-  -webkit-animation: anim24 41108ms, fade3 41108ms;
-          animation: anim24 41108ms, fade3 41108ms;
+  -webkit-animation: anim24 29723ms, fade1 29723ms;
+          animation: anim24 29723ms, fade1 29723ms;
 }
 
 .axis-27 {
-  -webkit-animation: anim24 21973ms, fade9 21973ms;
-          animation: anim24 21973ms, fade9 21973ms;
+  -webkit-animation: anim24 7128ms, fade5 7128ms;
+          animation: anim24 7128ms, fade5 7128ms;
 }
 
 .axis-28 {
-  -webkit-animation: anim28 6062ms, fade5 6062ms;
-          animation: anim28 6062ms, fade5 6062ms;
+  -webkit-animation: anim28 19887ms, fade1 19887ms;
+          animation: anim28 19887ms, fade1 19887ms;
 }
 
 .axis-29 {
-  -webkit-animation: anim28 13899ms, fade9 13899ms;
-          animation: anim28 13899ms, fade9 13899ms;
+  -webkit-animation: anim28 17573ms, fade10 17573ms;
+          animation: anim28 17573ms, fade10 17573ms;
 }
 
 .axis-30 {
-  -webkit-animation: anim28 31089ms, fade7 31089ms;
-          animation: anim28 31089ms, fade7 31089ms;
+  -webkit-animation: anim28 31610ms, fade4 31610ms;
+          animation: anim28 31610ms, fade4 31610ms;
 }
 
 .axis-31 {
-  -webkit-animation: anim28 35700ms, fade6 35700ms;
-          animation: anim28 35700ms, fade6 35700ms;
+  -webkit-animation: anim28 14453ms, fade5 14453ms;
+          animation: anim28 14453ms, fade5 14453ms;
 }
 
 .axis-32 {
-  -webkit-animation: anim32 17188ms, fade3 17188ms;
-          animation: anim32 17188ms, fade3 17188ms;
+  -webkit-animation: anim32 32086ms, fade9 32086ms;
+          animation: anim32 32086ms, fade9 32086ms;
 }
 
 .axis-33 {
-  -webkit-animation: anim32 39227ms, fade6 39227ms;
-          animation: anim32 39227ms, fade6 39227ms;
+  -webkit-animation: anim32 34499ms, fade6 34499ms;
+          animation: anim32 34499ms, fade6 34499ms;
 }
 
 .axis-34 {
-  -webkit-animation: anim32 5680ms, fade8 5680ms;
-          animation: anim32 5680ms, fade8 5680ms;
+  -webkit-animation: anim32 21083ms, fade7 21083ms;
+          animation: anim32 21083ms, fade7 21083ms;
 }
 
 .axis-35 {
-  -webkit-animation: anim32 43047ms, fade2 43047ms;
-          animation: anim32 43047ms, fade2 43047ms;
+  -webkit-animation: anim32 31460ms, fade3 31460ms;
+          animation: anim32 31460ms, fade3 31460ms;
 }
 
 .axis-36 {
-  -webkit-animation: anim36 33434ms, fade5 33434ms;
-          animation: anim36 33434ms, fade5 33434ms;
+  -webkit-animation: anim36 27853ms, fade4 27853ms;
+          animation: anim36 27853ms, fade4 27853ms;
 }
 
 .axis-37 {
-  -webkit-animation: anim36 37952ms, fade4 37952ms;
-          animation: anim36 37952ms, fade4 37952ms;
+  -webkit-animation: anim36 21074ms, fade10 21074ms;
+          animation: anim36 21074ms, fade10 21074ms;
 }
 
 .axis-38 {
-  -webkit-animation: anim36 27854ms, fade3 27854ms;
-          animation: anim36 27854ms, fade3 27854ms;
+  -webkit-animation: anim36 19652ms, fade6 19652ms;
+          animation: anim36 19652ms, fade6 19652ms;
 }
 
 .axis-39 {
-  -webkit-animation: anim36 14350ms, fade9 14350ms;
-          animation: anim36 14350ms, fade9 14350ms;
+  -webkit-animation: anim36 18735ms, fade5 18735ms;
+          animation: anim36 18735ms, fade5 18735ms;
 }
 
 .axis-40 {
-  -webkit-animation: anim40 37966ms, fade1 37966ms;
-          animation: anim40 37966ms, fade1 37966ms;
+  -webkit-animation: anim40 19621ms, fade4 19621ms;
+          animation: anim40 19621ms, fade4 19621ms;
 }
 
 .axis-41 {
-  -webkit-animation: anim40 39757ms, fade4 39757ms;
-          animation: anim40 39757ms, fade4 39757ms;
+  -webkit-animation: anim40 37191ms, fade3 37191ms;
+          animation: anim40 37191ms, fade3 37191ms;
 }
 
 .axis-42 {
-  -webkit-animation: anim40 11940ms, fade8 11940ms;
-          animation: anim40 11940ms, fade8 11940ms;
+  -webkit-animation: anim40 23848ms, fade4 23848ms;
+          animation: anim40 23848ms, fade4 23848ms;
 }
 
 .axis-43 {
-  -webkit-animation: anim40 9274ms, fade9 9274ms;
-          animation: anim40 9274ms, fade9 9274ms;
+  -webkit-animation: anim40 39217ms, fade4 39217ms;
+          animation: anim40 39217ms, fade4 39217ms;
 }
 
 .axis-44 {
-  -webkit-animation: anim44 32791ms, fade4 32791ms;
-          animation: anim44 32791ms, fade4 32791ms;
+  -webkit-animation: anim44 39247ms, fade9 39247ms;
+          animation: anim44 39247ms, fade9 39247ms;
 }
 
 .axis-45 {
-  -webkit-animation: anim44 38402ms, fade4 38402ms;
-          animation: anim44 38402ms, fade4 38402ms;
+  -webkit-animation: anim44 24077ms, fade2 24077ms;
+          animation: anim44 24077ms, fade2 24077ms;
 }
 
 .axis-46 {
-  -webkit-animation: anim44 22850ms, fade9 22850ms;
-          animation: anim44 22850ms, fade9 22850ms;
+  -webkit-animation: anim44 7233ms, fade10 7233ms;
+          animation: anim44 7233ms, fade10 7233ms;
 }
 
 .axis-47 {
-  -webkit-animation: anim44 5679ms, fade1 5679ms;
-          animation: anim44 5679ms, fade1 5679ms;
+  -webkit-animation: anim44 33511ms, fade2 33511ms;
+          animation: anim44 33511ms, fade2 33511ms;
 }
 
 .axis-48 {
-  -webkit-animation: anim48 19827ms, fade2 19827ms;
-          animation: anim48 19827ms, fade2 19827ms;
+  -webkit-animation: anim48 38665ms, fade8 38665ms;
+          animation: anim48 38665ms, fade8 38665ms;
 }
 
 .axis-49 {
-  -webkit-animation: anim48 35484ms, fade8 35484ms;
-          animation: anim48 35484ms, fade8 35484ms;
+  -webkit-animation: anim48 42161ms, fade3 42161ms;
+          animation: anim48 42161ms, fade3 42161ms;
 }
 
 .axis-50 {
-  -webkit-animation: anim48 44360ms, fade3 44360ms;
-          animation: anim48 44360ms, fade3 44360ms;
+  -webkit-animation: anim48 16340ms, fade1 16340ms;
+          animation: anim48 16340ms, fade1 16340ms;
 }
 
 .axis-51 {
-  -webkit-animation: anim48 5115ms, fade2 5115ms;
-          animation: anim48 5115ms, fade2 5115ms;
+  -webkit-animation: anim48 40064ms, fade8 40064ms;
+          animation: anim48 40064ms, fade8 40064ms;
 }
 
 .axis-52 {
-  -webkit-animation: anim52 34199ms, fade5 34199ms;
-          animation: anim52 34199ms, fade5 34199ms;
+  -webkit-animation: anim52 41195ms, fade2 41195ms;
+          animation: anim52 41195ms, fade2 41195ms;
 }
 
 .axis-53 {
-  -webkit-animation: anim52 27864ms, fade5 27864ms;
-          animation: anim52 27864ms, fade5 27864ms;
+  -webkit-animation: anim52 30049ms, fade10 30049ms;
+          animation: anim52 30049ms, fade10 30049ms;
 }
 
 .axis-54 {
-  -webkit-animation: anim52 5726ms, fade8 5726ms;
-          animation: anim52 5726ms, fade8 5726ms;
+  -webkit-animation: anim52 11585ms, fade1 11585ms;
+          animation: anim52 11585ms, fade1 11585ms;
 }
 
 .axis-55 {
-  -webkit-animation: anim52 35629ms, fade1 35629ms;
-          animation: anim52 35629ms, fade1 35629ms;
+  -webkit-animation: anim52 6083ms, fade5 6083ms;
+          animation: anim52 6083ms, fade5 6083ms;
 }
 
 .axis-56 {
-  -webkit-animation: anim56 29149ms, fade5 29149ms;
-          animation: anim56 29149ms, fade5 29149ms;
+  -webkit-animation: anim56 8658ms, fade5 8658ms;
+          animation: anim56 8658ms, fade5 8658ms;
 }
 
 .axis-57 {
-  -webkit-animation: anim56 31933ms, fade3 31933ms;
-          animation: anim56 31933ms, fade3 31933ms;
+  -webkit-animation: anim56 28493ms, fade10 28493ms;
+          animation: anim56 28493ms, fade10 28493ms;
 }
 
 .axis-58 {
-  -webkit-animation: anim56 26747ms, fade10 26747ms;
-          animation: anim56 26747ms, fade10 26747ms;
+  -webkit-animation: anim56 36614ms, fade4 36614ms;
+          animation: anim56 36614ms, fade4 36614ms;
 }
 
 .axis-59 {
-  -webkit-animation: anim56 12005ms, fade1 12005ms;
-          animation: anim56 12005ms, fade1 12005ms;
+  -webkit-animation: anim56 37955ms, fade6 37955ms;
+          animation: anim56 37955ms, fade6 37955ms;
 }
 
 .axis-60 {
-  -webkit-animation: anim60 40706ms, fade8 40706ms;
-          animation: anim60 40706ms, fade8 40706ms;
+  -webkit-animation: anim60 19723ms, fade1 19723ms;
+          animation: anim60 19723ms, fade1 19723ms;
 }
 
 .axis-61 {
-  -webkit-animation: anim60 31193ms, fade5 31193ms;
-          animation: anim60 31193ms, fade5 31193ms;
+  -webkit-animation: anim60 13185ms, fade1 13185ms;
+          animation: anim60 13185ms, fade1 13185ms;
 }
 
 .axis-62 {
-  -webkit-animation: anim60 10210ms, fade5 10210ms;
-          animation: anim60 10210ms, fade5 10210ms;
+  -webkit-animation: anim60 31626ms, fade2 31626ms;
+          animation: anim60 31626ms, fade2 31626ms;
 }
 
 .axis-63 {
-  -webkit-animation: anim60 32747ms, fade10 32747ms;
-          animation: anim60 32747ms, fade10 32747ms;
+  -webkit-animation: anim60 36179ms, fade7 36179ms;
+          animation: anim60 36179ms, fade7 36179ms;
 }
 
 .axis-64 {
-  -webkit-animation: anim64 44959ms, fade4 44959ms;
-          animation: anim64 44959ms, fade4 44959ms;
+  -webkit-animation: anim64 30418ms, fade6 30418ms;
+          animation: anim64 30418ms, fade6 30418ms;
 }
 
 .axis-65 {
-  -webkit-animation: anim64 39646ms, fade7 39646ms;
-          animation: anim64 39646ms, fade7 39646ms;
+  -webkit-animation: anim64 17244ms, fade7 17244ms;
+          animation: anim64 17244ms, fade7 17244ms;
 }
 
 .axis-66 {
-  -webkit-animation: anim64 11580ms, fade1 11580ms;
-          animation: anim64 11580ms, fade1 11580ms;
+  -webkit-animation: anim64 29024ms, fade2 29024ms;
+          animation: anim64 29024ms, fade2 29024ms;
 }
 
 .axis-67 {
-  -webkit-animation: anim64 40618ms, fade8 40618ms;
-          animation: anim64 40618ms, fade8 40618ms;
+  -webkit-animation: anim64 17823ms, fade3 17823ms;
+          animation: anim64 17823ms, fade3 17823ms;
 }
 
 .axis-68 {
-  -webkit-animation: anim68 22105ms, fade3 22105ms;
-          animation: anim68 22105ms, fade3 22105ms;
+  -webkit-animation: anim68 5497ms, fade6 5497ms;
+          animation: anim68 5497ms, fade6 5497ms;
 }
 
 .axis-69 {
-  -webkit-animation: anim68 12221ms, fade7 12221ms;
-          animation: anim68 12221ms, fade7 12221ms;
+  -webkit-animation: anim68 35916ms, fade5 35916ms;
+          animation: anim68 35916ms, fade5 35916ms;
 }
 
 .axis-70 {
-  -webkit-animation: anim68 33472ms, fade3 33472ms;
-          animation: anim68 33472ms, fade3 33472ms;
+  -webkit-animation: anim68 5198ms, fade9 5198ms;
+          animation: anim68 5198ms, fade9 5198ms;
 }
 
 .axis-71 {
-  -webkit-animation: anim68 6956ms, fade2 6956ms;
-          animation: anim68 6956ms, fade2 6956ms;
+  -webkit-animation: anim68 17829ms, fade10 17829ms;
+          animation: anim68 17829ms, fade10 17829ms;
 }
 
 .axis-72 {
-  -webkit-animation: anim72 44741ms, fade8 44741ms;
-          animation: anim72 44741ms, fade8 44741ms;
+  -webkit-animation: anim72 19954ms, fade4 19954ms;
+          animation: anim72 19954ms, fade4 19954ms;
 }
 
 .axis-73 {
-  -webkit-animation: anim72 11600ms, fade1 11600ms;
-          animation: anim72 11600ms, fade1 11600ms;
+  -webkit-animation: anim72 24986ms, fade1 24986ms;
+          animation: anim72 24986ms, fade1 24986ms;
 }
 
 .axis-74 {
-  -webkit-animation: anim72 5559ms, fade1 5559ms;
-          animation: anim72 5559ms, fade1 5559ms;
+  -webkit-animation: anim72 42551ms, fade9 42551ms;
+          animation: anim72 42551ms, fade9 42551ms;
 }
 
 .axis-75 {
-  -webkit-animation: anim72 8380ms, fade7 8380ms;
-          animation: anim72 8380ms, fade7 8380ms;
+  -webkit-animation: anim72 28229ms, fade3 28229ms;
+          animation: anim72 28229ms, fade3 28229ms;
 }
 
 .axis-76 {
-  -webkit-animation: anim76 37687ms, fade2 37687ms;
-          animation: anim76 37687ms, fade2 37687ms;
+  -webkit-animation: anim76 32164ms, fade3 32164ms;
+          animation: anim76 32164ms, fade3 32164ms;
 }
 
 .axis-77 {
-  -webkit-animation: anim76 42532ms, fade1 42532ms;
-          animation: anim76 42532ms, fade1 42532ms;
+  -webkit-animation: anim76 20738ms, fade4 20738ms;
+          animation: anim76 20738ms, fade4 20738ms;
 }
 
 .axis-78 {
-  -webkit-animation: anim76 15787ms, fade10 15787ms;
-          animation: anim76 15787ms, fade10 15787ms;
+  -webkit-animation: anim76 11309ms, fade9 11309ms;
+          animation: anim76 11309ms, fade9 11309ms;
 }
 
 .axis-79 {
-  -webkit-animation: anim76 30385ms, fade9 30385ms;
-          animation: anim76 30385ms, fade9 30385ms;
+  -webkit-animation: anim76 37930ms, fade3 37930ms;
+          animation: anim76 37930ms, fade3 37930ms;
 }
 
 .axis-80 {
-  -webkit-animation: anim80 34774ms, fade9 34774ms;
-          animation: anim80 34774ms, fade9 34774ms;
+  -webkit-animation: anim80 28724ms, fade10 28724ms;
+          animation: anim80 28724ms, fade10 28724ms;
 }
 
 .axis-81 {
-  -webkit-animation: anim80 15651ms, fade9 15651ms;
-          animation: anim80 15651ms, fade9 15651ms;
+  -webkit-animation: anim80 10895ms, fade2 10895ms;
+          animation: anim80 10895ms, fade2 10895ms;
 }
 
 .axis-82 {
-  -webkit-animation: anim80 33945ms, fade2 33945ms;
-          animation: anim80 33945ms, fade2 33945ms;
+  -webkit-animation: anim80 13876ms, fade2 13876ms;
+          animation: anim80 13876ms, fade2 13876ms;
 }
 
 .axis-83 {
-  -webkit-animation: anim80 32881ms, fade3 32881ms;
-          animation: anim80 32881ms, fade3 32881ms;
+  -webkit-animation: anim80 20111ms, fade8 20111ms;
+          animation: anim80 20111ms, fade8 20111ms;
 }
 
 .axis-84 {
-  -webkit-animation: anim84 13584ms, fade7 13584ms;
-          animation: anim84 13584ms, fade7 13584ms;
+  -webkit-animation: anim84 41788ms, fade4 41788ms;
+          animation: anim84 41788ms, fade4 41788ms;
 }
 
 .axis-85 {
-  -webkit-animation: anim84 35435ms, fade6 35435ms;
-          animation: anim84 35435ms, fade6 35435ms;
+  -webkit-animation: anim84 15250ms, fade8 15250ms;
+          animation: anim84 15250ms, fade8 15250ms;
 }
 
 .axis-86 {
-  -webkit-animation: anim84 26035ms, fade7 26035ms;
-          animation: anim84 26035ms, fade7 26035ms;
+  -webkit-animation: anim84 16909ms, fade5 16909ms;
+          animation: anim84 16909ms, fade5 16909ms;
 }
 
 .axis-87 {
-  -webkit-animation: anim84 42611ms, fade9 42611ms;
-          animation: anim84 42611ms, fade9 42611ms;
+  -webkit-animation: anim84 22995ms, fade6 22995ms;
+          animation: anim84 22995ms, fade6 22995ms;
 }
 
 .axis-88 {
-  -webkit-animation: anim88 35703ms, fade5 35703ms;
-          animation: anim88 35703ms, fade5 35703ms;
+  -webkit-animation: anim88 25767ms, fade4 25767ms;
+          animation: anim88 25767ms, fade4 25767ms;
 }
 
 .axis-89 {
-  -webkit-animation: anim88 14160ms, fade6 14160ms;
-          animation: anim88 14160ms, fade6 14160ms;
+  -webkit-animation: anim88 25621ms, fade5 25621ms;
+          animation: anim88 25621ms, fade5 25621ms;
 }
 
 .axis-90 {
-  -webkit-animation: anim88 43172ms, fade6 43172ms;
-          animation: anim88 43172ms, fade6 43172ms;
+  -webkit-animation: anim88 25106ms, fade6 25106ms;
+          animation: anim88 25106ms, fade6 25106ms;
 }
 
 .axis-91 {
-  -webkit-animation: anim88 20903ms, fade2 20903ms;
-          animation: anim88 20903ms, fade2 20903ms;
+  -webkit-animation: anim88 6571ms, fade3 6571ms;
+          animation: anim88 6571ms, fade3 6571ms;
 }
 
 .axis-92 {
-  -webkit-animation: anim92 40431ms, fade7 40431ms;
-          animation: anim92 40431ms, fade7 40431ms;
+  -webkit-animation: anim92 24346ms, fade3 24346ms;
+          animation: anim92 24346ms, fade3 24346ms;
 }
 
 .axis-93 {
-  -webkit-animation: anim92 7772ms, fade9 7772ms;
-          animation: anim92 7772ms, fade9 7772ms;
+  -webkit-animation: anim92 39356ms, fade4 39356ms;
+          animation: anim92 39356ms, fade4 39356ms;
 }
 
 .axis-94 {
-  -webkit-animation: anim92 41094ms, fade9 41094ms;
-          animation: anim92 41094ms, fade9 41094ms;
+  -webkit-animation: anim92 36344ms, fade9 36344ms;
+          animation: anim92 36344ms, fade9 36344ms;
 }
 
 .axis-95 {
-  -webkit-animation: anim92 39950ms, fade4 39950ms;
-          animation: anim92 39950ms, fade4 39950ms;
+  -webkit-animation: anim92 31330ms, fade1 31330ms;
+          animation: anim92 31330ms, fade1 31330ms;
 }
 
 .axis-96 {
-  -webkit-animation: anim96 40113ms, fade2 40113ms;
-          animation: anim96 40113ms, fade2 40113ms;
+  -webkit-animation: anim96 35221ms, fade5 35221ms;
+          animation: anim96 35221ms, fade5 35221ms;
 }
 
 .axis-97 {
-  -webkit-animation: anim96 30427ms, fade3 30427ms;
-          animation: anim96 30427ms, fade3 30427ms;
+  -webkit-animation: anim96 5605ms, fade1 5605ms;
+          animation: anim96 5605ms, fade1 5605ms;
 }
 
 .axis-98 {
-  -webkit-animation: anim96 42897ms, fade5 42897ms;
-          animation: anim96 42897ms, fade5 42897ms;
+  -webkit-animation: anim96 17313ms, fade8 17313ms;
+          animation: anim96 17313ms, fade8 17313ms;
 }
 
 .axis-99 {
-  -webkit-animation: anim96 6637ms, fade8 6637ms;
-          animation: anim96 6637ms, fade8 6637ms;
+  -webkit-animation: anim96 41140ms, fade6 41140ms;
+          animation: anim96 41140ms, fade6 41140ms;
 }
 
 .axis-100 {
-  -webkit-animation: anim100 44793ms, fade1 44793ms;
-          animation: anim100 44793ms, fade1 44793ms;
+  -webkit-animation: anim100 35632ms, fade2 35632ms;
+          animation: anim100 35632ms, fade2 35632ms;
 }
 
 .axis-101 {
-  -webkit-animation: anim100 18777ms, fade8 18777ms;
-          animation: anim100 18777ms, fade8 18777ms;
+  -webkit-animation: anim100 20246ms, fade7 20246ms;
+          animation: anim100 20246ms, fade7 20246ms;
 }
 
 .axis-102 {
-  -webkit-animation: anim100 29835ms, fade5 29835ms;
-          animation: anim100 29835ms, fade5 29835ms;
+  -webkit-animation: anim100 29053ms, fade7 29053ms;
+          animation: anim100 29053ms, fade7 29053ms;
 }
 
 .axis-103 {
-  -webkit-animation: anim100 19925ms, fade8 19925ms;
-          animation: anim100 19925ms, fade8 19925ms;
+  -webkit-animation: anim100 37244ms, fade4 37244ms;
+          animation: anim100 37244ms, fade4 37244ms;
 }
 
 .axis-104 {
-  -webkit-animation: anim104 34305ms, fade7 34305ms;
-          animation: anim104 34305ms, fade7 34305ms;
+  -webkit-animation: anim104 16109ms, fade8 16109ms;
+          animation: anim104 16109ms, fade8 16109ms;
 }
 
 .axis-105 {
-  -webkit-animation: anim104 13285ms, fade3 13285ms;
-          animation: anim104 13285ms, fade3 13285ms;
+  -webkit-animation: anim104 42077ms, fade3 42077ms;
+          animation: anim104 42077ms, fade3 42077ms;
 }
 
 .axis-106 {
-  -webkit-animation: anim104 29486ms, fade6 29486ms;
-          animation: anim104 29486ms, fade6 29486ms;
+  -webkit-animation: anim104 7564ms, fade8 7564ms;
+          animation: anim104 7564ms, fade8 7564ms;
 }
 
 .axis-107 {
-  -webkit-animation: anim104 11856ms, fade6 11856ms;
-          animation: anim104 11856ms, fade6 11856ms;
+  -webkit-animation: anim104 20162ms, fade6 20162ms;
+          animation: anim104 20162ms, fade6 20162ms;
 }
 
 .axis-108 {
-  -webkit-animation: anim108 26976ms, fade8 26976ms;
-          animation: anim108 26976ms, fade8 26976ms;
+  -webkit-animation: anim108 15121ms, fade7 15121ms;
+          animation: anim108 15121ms, fade7 15121ms;
 }
 
 .axis-109 {
-  -webkit-animation: anim108 14581ms, fade5 14581ms;
-          animation: anim108 14581ms, fade5 14581ms;
+  -webkit-animation: anim108 36062ms, fade10 36062ms;
+          animation: anim108 36062ms, fade10 36062ms;
 }
 
 .axis-110 {
-  -webkit-animation: anim108 17307ms, fade7 17307ms;
-          animation: anim108 17307ms, fade7 17307ms;
+  -webkit-animation: anim108 21676ms, fade8 21676ms;
+          animation: anim108 21676ms, fade8 21676ms;
 }
 
 .axis-111 {
-  -webkit-animation: anim108 31365ms, fade6 31365ms;
-          animation: anim108 31365ms, fade6 31365ms;
+  -webkit-animation: anim108 32957ms, fade3 32957ms;
+          animation: anim108 32957ms, fade3 32957ms;
 }
 
 .axis-112 {
-  -webkit-animation: anim112 18382ms, fade7 18382ms;
-          animation: anim112 18382ms, fade7 18382ms;
+  -webkit-animation: anim112 42667ms, fade4 42667ms;
+          animation: anim112 42667ms, fade4 42667ms;
 }
 
 .axis-113 {
-  -webkit-animation: anim112 21417ms, fade5 21417ms;
-          animation: anim112 21417ms, fade5 21417ms;
+  -webkit-animation: anim112 44462ms, fade10 44462ms;
+          animation: anim112 44462ms, fade10 44462ms;
 }
 
 .axis-114 {
-  -webkit-animation: anim112 6908ms, fade6 6908ms;
-          animation: anim112 6908ms, fade6 6908ms;
+  -webkit-animation: anim112 34709ms, fade9 34709ms;
+          animation: anim112 34709ms, fade9 34709ms;
 }
 
 .axis-115 {
-  -webkit-animation: anim112 9615ms, fade2 9615ms;
-          animation: anim112 9615ms, fade2 9615ms;
+  -webkit-animation: anim112 29902ms, fade8 29902ms;
+          animation: anim112 29902ms, fade8 29902ms;
 }
 
 .axis-116 {
-  -webkit-animation: anim116 21770ms, fade10 21770ms;
-          animation: anim116 21770ms, fade10 21770ms;
+  -webkit-animation: anim116 25308ms, fade6 25308ms;
+          animation: anim116 25308ms, fade6 25308ms;
 }
 
 .axis-117 {
-  -webkit-animation: anim116 40252ms, fade7 40252ms;
-          animation: anim116 40252ms, fade7 40252ms;
+  -webkit-animation: anim116 17286ms, fade7 17286ms;
+          animation: anim116 17286ms, fade7 17286ms;
 }
 
 .axis-118 {
-  -webkit-animation: anim116 31080ms, fade5 31080ms;
-          animation: anim116 31080ms, fade5 31080ms;
+  -webkit-animation: anim116 42314ms, fade2 42314ms;
+          animation: anim116 42314ms, fade2 42314ms;
 }
 
 .axis-119 {
-  -webkit-animation: anim116 6118ms, fade7 6118ms;
-          animation: anim116 6118ms, fade7 6118ms;
+  -webkit-animation: anim116 25826ms, fade8 25826ms;
+          animation: anim116 25826ms, fade8 25826ms;
 }
 
 .axis-120 {
-  -webkit-animation: anim120 7434ms, fade4 7434ms;
-          animation: anim120 7434ms, fade4 7434ms;
+  -webkit-animation: anim120 6791ms, fade10 6791ms;
+          animation: anim120 6791ms, fade10 6791ms;
 }
 
 .axis-121 {
-  -webkit-animation: anim120 37100ms, fade1 37100ms;
-          animation: anim120 37100ms, fade1 37100ms;
+  -webkit-animation: anim120 43428ms, fade2 43428ms;
+          animation: anim120 43428ms, fade2 43428ms;
 }
 
 .axis-122 {
-  -webkit-animation: anim120 23066ms, fade4 23066ms;
-          animation: anim120 23066ms, fade4 23066ms;
+  -webkit-animation: anim120 13420ms, fade6 13420ms;
+          animation: anim120 13420ms, fade6 13420ms;
 }
 
 .axis-123 {
-  -webkit-animation: anim120 37135ms, fade9 37135ms;
-          animation: anim120 37135ms, fade9 37135ms;
+  -webkit-animation: anim120 43455ms, fade3 43455ms;
+          animation: anim120 43455ms, fade3 43455ms;
 }
 
 .axis-124 {
-  -webkit-animation: anim124 28929ms, fade6 28929ms;
-          animation: anim124 28929ms, fade6 28929ms;
+  -webkit-animation: anim124 20185ms, fade1 20185ms;
+          animation: anim124 20185ms, fade1 20185ms;
 }
 
 .axis-125 {
-  -webkit-animation: anim124 44023ms, fade9 44023ms;
-          animation: anim124 44023ms, fade9 44023ms;
+  -webkit-animation: anim124 32263ms, fade2 32263ms;
+          animation: anim124 32263ms, fade2 32263ms;
 }
 
 .axis-126 {
-  -webkit-animation: anim124 13073ms, fade9 13073ms;
-          animation: anim124 13073ms, fade9 13073ms;
+  -webkit-animation: anim124 9888ms, fade10 9888ms;
+          animation: anim124 9888ms, fade10 9888ms;
 }
 
 .axis-127 {
-  -webkit-animation: anim124 27750ms, fade4 27750ms;
-          animation: anim124 27750ms, fade4 27750ms;
+  -webkit-animation: anim124 13510ms, fade10 13510ms;
+          animation: anim124 13510ms, fade10 13510ms;
 }
 
 .axis-128 {
-  -webkit-animation: anim128 27417ms, fade4 27417ms;
-          animation: anim128 27417ms, fade4 27417ms;
+  -webkit-animation: anim128 32726ms, fade8 32726ms;
+          animation: anim128 32726ms, fade8 32726ms;
 }
 
 .axis-129 {
-  -webkit-animation: anim128 28776ms, fade10 28776ms;
-          animation: anim128 28776ms, fade10 28776ms;
+  -webkit-animation: anim128 27394ms, fade4 27394ms;
+          animation: anim128 27394ms, fade4 27394ms;
 }
 
 .axis-130 {
-  -webkit-animation: anim128 42177ms, fade7 42177ms;
-          animation: anim128 42177ms, fade7 42177ms;
+  -webkit-animation: anim128 27047ms, fade6 27047ms;
+          animation: anim128 27047ms, fade6 27047ms;
 }
 
 .axis-131 {
-  -webkit-animation: anim128 32527ms, fade3 32527ms;
-          animation: anim128 32527ms, fade3 32527ms;
+  -webkit-animation: anim128 11264ms, fade7 11264ms;
+          animation: anim128 11264ms, fade7 11264ms;
 }
 
 .axis-132 {
-  -webkit-animation: anim132 35199ms, fade1 35199ms;
-          animation: anim132 35199ms, fade1 35199ms;
+  -webkit-animation: anim132 26597ms, fade7 26597ms;
+          animation: anim132 26597ms, fade7 26597ms;
 }
 
 .axis-133 {
-  -webkit-animation: anim132 17802ms, fade6 17802ms;
-          animation: anim132 17802ms, fade6 17802ms;
+  -webkit-animation: anim132 8727ms, fade3 8727ms;
+          animation: anim132 8727ms, fade3 8727ms;
 }
 
 .axis-134 {
-  -webkit-animation: anim132 7132ms, fade1 7132ms;
-          animation: anim132 7132ms, fade1 7132ms;
+  -webkit-animation: anim132 16753ms, fade7 16753ms;
+          animation: anim132 16753ms, fade7 16753ms;
 }
 
 .axis-135 {
-  -webkit-animation: anim132 36426ms, fade1 36426ms;
-          animation: anim132 36426ms, fade1 36426ms;
+  -webkit-animation: anim132 30860ms, fade5 30860ms;
+          animation: anim132 30860ms, fade5 30860ms;
 }
 
 .axis-136 {
-  -webkit-animation: anim136 13947ms, fade7 13947ms;
-          animation: anim136 13947ms, fade7 13947ms;
+  -webkit-animation: anim136 40432ms, fade8 40432ms;
+          animation: anim136 40432ms, fade8 40432ms;
 }
 
 .axis-137 {
-  -webkit-animation: anim136 31551ms, fade3 31551ms;
-          animation: anim136 31551ms, fade3 31551ms;
+  -webkit-animation: anim136 22183ms, fade2 22183ms;
+          animation: anim136 22183ms, fade2 22183ms;
 }
 
 .axis-138 {
-  -webkit-animation: anim136 44290ms, fade2 44290ms;
-          animation: anim136 44290ms, fade2 44290ms;
+  -webkit-animation: anim136 41026ms, fade4 41026ms;
+          animation: anim136 41026ms, fade4 41026ms;
 }
 
 .axis-139 {
-  -webkit-animation: anim136 29258ms, fade6 29258ms;
-          animation: anim136 29258ms, fade6 29258ms;
+  -webkit-animation: anim136 29344ms, fade2 29344ms;
+          animation: anim136 29344ms, fade2 29344ms;
 }
 
 .axis-140 {
-  -webkit-animation: anim140 24759ms, fade2 24759ms;
-          animation: anim140 24759ms, fade2 24759ms;
+  -webkit-animation: anim140 33119ms, fade1 33119ms;
+          animation: anim140 33119ms, fade1 33119ms;
 }
 
 .axis-141 {
-  -webkit-animation: anim140 15444ms, fade1 15444ms;
-          animation: anim140 15444ms, fade1 15444ms;
+  -webkit-animation: anim140 13637ms, fade7 13637ms;
+          animation: anim140 13637ms, fade7 13637ms;
 }
 
 .axis-142 {
-  -webkit-animation: anim140 14749ms, fade9 14749ms;
-          animation: anim140 14749ms, fade9 14749ms;
+  -webkit-animation: anim140 29727ms, fade9 29727ms;
+          animation: anim140 29727ms, fade9 29727ms;
 }
 
 .axis-143 {
-  -webkit-animation: anim140 12705ms, fade7 12705ms;
-          animation: anim140 12705ms, fade7 12705ms;
+  -webkit-animation: anim140 34108ms, fade6 34108ms;
+          animation: anim140 34108ms, fade6 34108ms;
 }
 
 .axis-144 {
-  -webkit-animation: anim144 25528ms, fade3 25528ms;
-          animation: anim144 25528ms, fade3 25528ms;
+  -webkit-animation: anim144 24418ms, fade9 24418ms;
+          animation: anim144 24418ms, fade9 24418ms;
 }
 
 .axis-145 {
-  -webkit-animation: anim144 23338ms, fade6 23338ms;
-          animation: anim144 23338ms, fade6 23338ms;
+  -webkit-animation: anim144 12775ms, fade10 12775ms;
+          animation: anim144 12775ms, fade10 12775ms;
 }
 
 .axis-146 {
-  -webkit-animation: anim144 32677ms, fade7 32677ms;
-          animation: anim144 32677ms, fade7 32677ms;
+  -webkit-animation: anim144 22868ms, fade6 22868ms;
+          animation: anim144 22868ms, fade6 22868ms;
 }
 
 .axis-147 {
-  -webkit-animation: anim144 21900ms, fade6 21900ms;
-          animation: anim144 21900ms, fade6 21900ms;
+  -webkit-animation: anim144 23670ms, fade8 23670ms;
+          animation: anim144 23670ms, fade8 23670ms;
 }
 
 .axis-148 {
-  -webkit-animation: anim148 6759ms, fade3 6759ms;
-          animation: anim148 6759ms, fade3 6759ms;
+  -webkit-animation: anim148 37753ms, fade10 37753ms;
+          animation: anim148 37753ms, fade10 37753ms;
 }
 
 .axis-149 {
-  -webkit-animation: anim148 10173ms, fade3 10173ms;
-          animation: anim148 10173ms, fade3 10173ms;
+  -webkit-animation: anim148 29402ms, fade1 29402ms;
+          animation: anim148 29402ms, fade1 29402ms;
 }
 
 .axis-150 {
-  -webkit-animation: anim148 40917ms, fade9 40917ms;
-          animation: anim148 40917ms, fade9 40917ms;
+  -webkit-animation: anim148 40658ms, fade5 40658ms;
+          animation: anim148 40658ms, fade5 40658ms;
 }
 
 .axis-151 {
-  -webkit-animation: anim148 40464ms, fade1 40464ms;
-          animation: anim148 40464ms, fade1 40464ms;
+  -webkit-animation: anim148 22963ms, fade8 22963ms;
+          animation: anim148 22963ms, fade8 22963ms;
 }
 
 .axis-152 {
-  -webkit-animation: anim152 29056ms, fade9 29056ms;
-          animation: anim152 29056ms, fade9 29056ms;
+  -webkit-animation: anim152 12429ms, fade3 12429ms;
+          animation: anim152 12429ms, fade3 12429ms;
 }
 
 .axis-153 {
-  -webkit-animation: anim152 17717ms, fade8 17717ms;
-          animation: anim152 17717ms, fade8 17717ms;
+  -webkit-animation: anim152 25790ms, fade5 25790ms;
+          animation: anim152 25790ms, fade5 25790ms;
 }
 
 .axis-154 {
-  -webkit-animation: anim152 11099ms, fade5 11099ms;
-          animation: anim152 11099ms, fade5 11099ms;
+  -webkit-animation: anim152 28690ms, fade4 28690ms;
+          animation: anim152 28690ms, fade4 28690ms;
 }
 
 .axis-155 {
-  -webkit-animation: anim152 44885ms, fade7 44885ms;
-          animation: anim152 44885ms, fade7 44885ms;
+  -webkit-animation: anim152 35365ms, fade9 35365ms;
+          animation: anim152 35365ms, fade9 35365ms;
 }
 
 .axis-156 {
-  -webkit-animation: anim156 21029ms, fade9 21029ms;
-          animation: anim156 21029ms, fade9 21029ms;
+  -webkit-animation: anim156 16094ms, fade5 16094ms;
+          animation: anim156 16094ms, fade5 16094ms;
 }
 
 .axis-157 {
-  -webkit-animation: anim156 19449ms, fade3 19449ms;
-          animation: anim156 19449ms, fade3 19449ms;
+  -webkit-animation: anim156 7777ms, fade2 7777ms;
+          animation: anim156 7777ms, fade2 7777ms;
 }
 
 .axis-158 {
-  -webkit-animation: anim156 8023ms, fade4 8023ms;
-          animation: anim156 8023ms, fade4 8023ms;
+  -webkit-animation: anim156 28835ms, fade1 28835ms;
+          animation: anim156 28835ms, fade1 28835ms;
 }
 
 .axis-159 {
-  -webkit-animation: anim156 40488ms, fade2 40488ms;
-          animation: anim156 40488ms, fade2 40488ms;
+  -webkit-animation: anim156 33413ms, fade3 33413ms;
+          animation: anim156 33413ms, fade3 33413ms;
 }
 
 .axis-160 {
-  -webkit-animation: anim160 23864ms, fade1 23864ms;
-          animation: anim160 23864ms, fade1 23864ms;
+  -webkit-animation: anim160 10574ms, fade8 10574ms;
+          animation: anim160 10574ms, fade8 10574ms;
 }
 
 .axis-161 {
-  -webkit-animation: anim160 25672ms, fade6 25672ms;
-          animation: anim160 25672ms, fade6 25672ms;
+  -webkit-animation: anim160 12252ms, fade1 12252ms;
+          animation: anim160 12252ms, fade1 12252ms;
 }
 
 .axis-162 {
-  -webkit-animation: anim160 32232ms, fade1 32232ms;
-          animation: anim160 32232ms, fade1 32232ms;
+  -webkit-animation: anim160 40903ms, fade4 40903ms;
+          animation: anim160 40903ms, fade4 40903ms;
 }
 
 .axis-163 {
-  -webkit-animation: anim160 14662ms, fade6 14662ms;
-          animation: anim160 14662ms, fade6 14662ms;
+  -webkit-animation: anim160 5498ms, fade7 5498ms;
+          animation: anim160 5498ms, fade7 5498ms;
 }
 
 .axis-164 {
-  -webkit-animation: anim164 9441ms, fade2 9441ms;
-          animation: anim164 9441ms, fade2 9441ms;
+  -webkit-animation: anim164 18241ms, fade5 18241ms;
+          animation: anim164 18241ms, fade5 18241ms;
 }
 
 .axis-165 {
-  -webkit-animation: anim164 8891ms, fade3 8891ms;
-          animation: anim164 8891ms, fade3 8891ms;
+  -webkit-animation: anim164 34097ms, fade8 34097ms;
+          animation: anim164 34097ms, fade8 34097ms;
 }
 
 .axis-166 {
-  -webkit-animation: anim164 28630ms, fade9 28630ms;
-          animation: anim164 28630ms, fade9 28630ms;
+  -webkit-animation: anim164 33326ms, fade10 33326ms;
+          animation: anim164 33326ms, fade10 33326ms;
 }
 
 .axis-167 {
-  -webkit-animation: anim164 6299ms, fade7 6299ms;
-          animation: anim164 6299ms, fade7 6299ms;
+  -webkit-animation: anim164 31844ms, fade10 31844ms;
+          animation: anim164 31844ms, fade10 31844ms;
 }
 
 .axis-168 {
-  -webkit-animation: anim168 7001ms, fade4 7001ms;
-          animation: anim168 7001ms, fade4 7001ms;
+  -webkit-animation: anim168 32929ms, fade3 32929ms;
+          animation: anim168 32929ms, fade3 32929ms;
 }
 
 .axis-169 {
-  -webkit-animation: anim168 5649ms, fade10 5649ms;
-          animation: anim168 5649ms, fade10 5649ms;
+  -webkit-animation: anim168 35461ms, fade1 35461ms;
+          animation: anim168 35461ms, fade1 35461ms;
 }
 
 .axis-170 {
-  -webkit-animation: anim168 36422ms, fade6 36422ms;
-          animation: anim168 36422ms, fade6 36422ms;
+  -webkit-animation: anim168 42321ms, fade8 42321ms;
+          animation: anim168 42321ms, fade8 42321ms;
 }
 
 .axis-171 {
-  -webkit-animation: anim168 13442ms, fade9 13442ms;
-          animation: anim168 13442ms, fade9 13442ms;
+  -webkit-animation: anim168 14394ms, fade5 14394ms;
+          animation: anim168 14394ms, fade5 14394ms;
 }
 
 .axis-172 {
-  -webkit-animation: anim172 5048ms, fade8 5048ms;
-          animation: anim172 5048ms, fade8 5048ms;
+  -webkit-animation: anim172 13920ms, fade7 13920ms;
+          animation: anim172 13920ms, fade7 13920ms;
 }
 
 .axis-173 {
-  -webkit-animation: anim172 44274ms, fade10 44274ms;
-          animation: anim172 44274ms, fade10 44274ms;
+  -webkit-animation: anim172 23930ms, fade4 23930ms;
+          animation: anim172 23930ms, fade4 23930ms;
 }
 
 .axis-174 {
-  -webkit-animation: anim172 11238ms, fade1 11238ms;
-          animation: anim172 11238ms, fade1 11238ms;
+  -webkit-animation: anim172 35809ms, fade5 35809ms;
+          animation: anim172 35809ms, fade5 35809ms;
 }
 
 .axis-175 {
-  -webkit-animation: anim172 25562ms, fade6 25562ms;
-          animation: anim172 25562ms, fade6 25562ms;
+  -webkit-animation: anim172 27822ms, fade2 27822ms;
+          animation: anim172 27822ms, fade2 27822ms;
 }
 
 .axis-176 {
-  -webkit-animation: anim176 20372ms, fade2 20372ms;
-          animation: anim176 20372ms, fade2 20372ms;
+  -webkit-animation: anim176 44019ms, fade3 44019ms;
+          animation: anim176 44019ms, fade3 44019ms;
 }
 
 .axis-177 {
-  -webkit-animation: anim176 6226ms, fade10 6226ms;
-          animation: anim176 6226ms, fade10 6226ms;
+  -webkit-animation: anim176 39400ms, fade7 39400ms;
+          animation: anim176 39400ms, fade7 39400ms;
 }
 
 .axis-178 {
-  -webkit-animation: anim176 11783ms, fade10 11783ms;
-          animation: anim176 11783ms, fade10 11783ms;
+  -webkit-animation: anim176 21458ms, fade4 21458ms;
+          animation: anim176 21458ms, fade4 21458ms;
 }
 
 .axis-179 {
-  -webkit-animation: anim176 28127ms, fade9 28127ms;
-          animation: anim176 28127ms, fade9 28127ms;
+  -webkit-animation: anim176 37175ms, fade5 37175ms;
+          animation: anim176 37175ms, fade5 37175ms;
 }
 
 .axis-180 {
-  -webkit-animation: anim180 32954ms, fade4 32954ms;
-          animation: anim180 32954ms, fade4 32954ms;
+  -webkit-animation: anim180 19958ms, fade3 19958ms;
+          animation: anim180 19958ms, fade3 19958ms;
 }
 
 .axis-181 {
-  -webkit-animation: anim180 41175ms, fade4 41175ms;
-          animation: anim180 41175ms, fade4 41175ms;
+  -webkit-animation: anim180 16389ms, fade4 16389ms;
+          animation: anim180 16389ms, fade4 16389ms;
 }
 
 .axis-182 {
-  -webkit-animation: anim180 37248ms, fade7 37248ms;
-          animation: anim180 37248ms, fade7 37248ms;
+  -webkit-animation: anim180 11660ms, fade4 11660ms;
+          animation: anim180 11660ms, fade4 11660ms;
 }
 
 .axis-183 {
-  -webkit-animation: anim180 22584ms, fade6 22584ms;
-          animation: anim180 22584ms, fade6 22584ms;
+  -webkit-animation: anim180 14640ms, fade7 14640ms;
+          animation: anim180 14640ms, fade7 14640ms;
 }
 
 .axis-184 {
-  -webkit-animation: anim184 5533ms, fade6 5533ms;
-          animation: anim184 5533ms, fade6 5533ms;
+  -webkit-animation: anim184 19497ms, fade9 19497ms;
+          animation: anim184 19497ms, fade9 19497ms;
 }
 
 .axis-185 {
-  -webkit-animation: anim184 35204ms, fade1 35204ms;
-          animation: anim184 35204ms, fade1 35204ms;
+  -webkit-animation: anim184 22998ms, fade4 22998ms;
+          animation: anim184 22998ms, fade4 22998ms;
 }
 
 .axis-186 {
-  -webkit-animation: anim184 8155ms, fade5 8155ms;
-          animation: anim184 8155ms, fade5 8155ms;
+  -webkit-animation: anim184 22018ms, fade8 22018ms;
+          animation: anim184 22018ms, fade8 22018ms;
 }
 
 .axis-187 {
-  -webkit-animation: anim184 26599ms, fade3 26599ms;
-          animation: anim184 26599ms, fade3 26599ms;
+  -webkit-animation: anim184 41601ms, fade10 41601ms;
+          animation: anim184 41601ms, fade10 41601ms;
 }
 
 .axis-188 {
-  -webkit-animation: anim188 23743ms, fade10 23743ms;
-          animation: anim188 23743ms, fade10 23743ms;
+  -webkit-animation: anim188 26437ms, fade4 26437ms;
+          animation: anim188 26437ms, fade4 26437ms;
 }
 
 .axis-189 {
-  -webkit-animation: anim188 15386ms, fade9 15386ms;
-          animation: anim188 15386ms, fade9 15386ms;
+  -webkit-animation: anim188 30127ms, fade3 30127ms;
+          animation: anim188 30127ms, fade3 30127ms;
 }
 
 .axis-190 {
-  -webkit-animation: anim188 28063ms, fade5 28063ms;
-          animation: anim188 28063ms, fade5 28063ms;
+  -webkit-animation: anim188 8216ms, fade10 8216ms;
+          animation: anim188 8216ms, fade10 8216ms;
 }
 
 .axis-191 {
-  -webkit-animation: anim188 34122ms, fade5 34122ms;
-          animation: anim188 34122ms, fade5 34122ms;
+  -webkit-animation: anim188 17916ms, fade2 17916ms;
+          animation: anim188 17916ms, fade2 17916ms;
 }
 
 .axis-192 {
-  -webkit-animation: anim192 33897ms, fade1 33897ms;
-          animation: anim192 33897ms, fade1 33897ms;
+  -webkit-animation: anim192 29313ms, fade9 29313ms;
+          animation: anim192 29313ms, fade9 29313ms;
 }
 
 .axis-193 {
-  -webkit-animation: anim192 41317ms, fade5 41317ms;
-          animation: anim192 41317ms, fade5 41317ms;
+  -webkit-animation: anim192 15558ms, fade1 15558ms;
+          animation: anim192 15558ms, fade1 15558ms;
 }
 
 .axis-194 {
-  -webkit-animation: anim192 32931ms, fade2 32931ms;
-          animation: anim192 32931ms, fade2 32931ms;
+  -webkit-animation: anim192 19291ms, fade7 19291ms;
+          animation: anim192 19291ms, fade7 19291ms;
 }
 
 .axis-195 {
-  -webkit-animation: anim192 44656ms, fade6 44656ms;
-          animation: anim192 44656ms, fade6 44656ms;
+  -webkit-animation: anim192 15632ms, fade2 15632ms;
+          animation: anim192 15632ms, fade2 15632ms;
 }
 
 .axis-196 {
-  -webkit-animation: anim196 35658ms, fade4 35658ms;
-          animation: anim196 35658ms, fade4 35658ms;
+  -webkit-animation: anim196 26755ms, fade4 26755ms;
+          animation: anim196 26755ms, fade4 26755ms;
 }
 
 .axis-197 {
-  -webkit-animation: anim196 21461ms, fade2 21461ms;
-          animation: anim196 21461ms, fade2 21461ms;
+  -webkit-animation: anim196 44622ms, fade6 44622ms;
+          animation: anim196 44622ms, fade6 44622ms;
 }
 
 .axis-198 {
-  -webkit-animation: anim196 26007ms, fade8 26007ms;
-          animation: anim196 26007ms, fade8 26007ms;
+  -webkit-animation: anim196 41190ms, fade8 41190ms;
+          animation: anim196 41190ms, fade8 41190ms;
 }
 
 .axis-199 {
-  -webkit-animation: anim196 43796ms, fade8 43796ms;
-          animation: anim196 43796ms, fade8 43796ms;
+  -webkit-animation: anim196 37745ms, fade6 37745ms;
+          animation: anim196 37745ms, fade6 37745ms;
 }
 
 .axis-200 {
-  -webkit-animation: anim200 25539ms, fade9 25539ms;
-          animation: anim200 25539ms, fade9 25539ms;
+  -webkit-animation: anim200 29758ms, fade3 29758ms;
+          animation: anim200 29758ms, fade3 29758ms;
 }
 
 .axis-201 {
-  -webkit-animation: anim200 29100ms, fade2 29100ms;
-          animation: anim200 29100ms, fade2 29100ms;
+  -webkit-animation: anim200 36209ms, fade9 36209ms;
+          animation: anim200 36209ms, fade9 36209ms;
 }
 
 .axis-202 {
-  -webkit-animation: anim200 15663ms, fade5 15663ms;
-          animation: anim200 15663ms, fade5 15663ms;
+  -webkit-animation: anim200 20766ms, fade6 20766ms;
+          animation: anim200 20766ms, fade6 20766ms;
 }
 
 .axis-203 {
-  -webkit-animation: anim200 32500ms, fade2 32500ms;
-          animation: anim200 32500ms, fade2 32500ms;
+  -webkit-animation: anim200 27351ms, fade6 27351ms;
+          animation: anim200 27351ms, fade6 27351ms;
 }
 
 .axis-204 {
-  -webkit-animation: anim204 28613ms, fade7 28613ms;
-          animation: anim204 28613ms, fade7 28613ms;
+  -webkit-animation: anim204 9014ms, fade4 9014ms;
+          animation: anim204 9014ms, fade4 9014ms;
 }
 
 .axis-205 {
-  -webkit-animation: anim204 33644ms, fade5 33644ms;
-          animation: anim204 33644ms, fade5 33644ms;
+  -webkit-animation: anim204 5902ms, fade1 5902ms;
+          animation: anim204 5902ms, fade1 5902ms;
 }
 
 .axis-206 {
-  -webkit-animation: anim204 30341ms, fade8 30341ms;
-          animation: anim204 30341ms, fade8 30341ms;
+  -webkit-animation: anim204 34197ms, fade4 34197ms;
+          animation: anim204 34197ms, fade4 34197ms;
 }
 
 .axis-207 {
-  -webkit-animation: anim204 21888ms, fade7 21888ms;
-          animation: anim204 21888ms, fade7 21888ms;
+  -webkit-animation: anim204 37843ms, fade5 37843ms;
+          animation: anim204 37843ms, fade5 37843ms;
 }
 
 .axis-208 {
-  -webkit-animation: anim208 13805ms, fade7 13805ms;
-          animation: anim208 13805ms, fade7 13805ms;
+  -webkit-animation: anim208 41093ms, fade2 41093ms;
+          animation: anim208 41093ms, fade2 41093ms;
 }
 
 .axis-209 {
-  -webkit-animation: anim208 24063ms, fade1 24063ms;
-          animation: anim208 24063ms, fade1 24063ms;
+  -webkit-animation: anim208 24675ms, fade3 24675ms;
+          animation: anim208 24675ms, fade3 24675ms;
 }
 
 .axis-210 {
-  -webkit-animation: anim208 33001ms, fade1 33001ms;
-          animation: anim208 33001ms, fade1 33001ms;
+  -webkit-animation: anim208 6035ms, fade10 6035ms;
+          animation: anim208 6035ms, fade10 6035ms;
 }
 
 .axis-211 {
-  -webkit-animation: anim208 40610ms, fade10 40610ms;
-          animation: anim208 40610ms, fade10 40610ms;
+  -webkit-animation: anim208 16822ms, fade2 16822ms;
+          animation: anim208 16822ms, fade2 16822ms;
 }
 
 .axis-212 {
-  -webkit-animation: anim212 26700ms, fade2 26700ms;
-          animation: anim212 26700ms, fade2 26700ms;
+  -webkit-animation: anim212 42471ms, fade7 42471ms;
+          animation: anim212 42471ms, fade7 42471ms;
 }
 
 .axis-213 {
-  -webkit-animation: anim212 11534ms, fade2 11534ms;
-          animation: anim212 11534ms, fade2 11534ms;
+  -webkit-animation: anim212 44083ms, fade9 44083ms;
+          animation: anim212 44083ms, fade9 44083ms;
 }
 
 .axis-214 {
-  -webkit-animation: anim212 35748ms, fade6 35748ms;
-          animation: anim212 35748ms, fade6 35748ms;
+  -webkit-animation: anim212 26613ms, fade10 26613ms;
+          animation: anim212 26613ms, fade10 26613ms;
 }
 
 .axis-215 {
-  -webkit-animation: anim212 37472ms, fade9 37472ms;
-          animation: anim212 37472ms, fade9 37472ms;
+  -webkit-animation: anim212 38601ms, fade1 38601ms;
+          animation: anim212 38601ms, fade1 38601ms;
 }
 
 .axis-216 {
-  -webkit-animation: anim216 20030ms, fade1 20030ms;
-          animation: anim216 20030ms, fade1 20030ms;
+  -webkit-animation: anim216 15468ms, fade5 15468ms;
+          animation: anim216 15468ms, fade5 15468ms;
 }
 
 .axis-217 {
-  -webkit-animation: anim216 7363ms, fade1 7363ms;
-          animation: anim216 7363ms, fade1 7363ms;
+  -webkit-animation: anim216 26872ms, fade7 26872ms;
+          animation: anim216 26872ms, fade7 26872ms;
 }
 
 .axis-218 {
-  -webkit-animation: anim216 17397ms, fade1 17397ms;
-          animation: anim216 17397ms, fade1 17397ms;
+  -webkit-animation: anim216 24320ms, fade10 24320ms;
+          animation: anim216 24320ms, fade10 24320ms;
 }
 
 .axis-219 {
-  -webkit-animation: anim216 39859ms, fade4 39859ms;
-          animation: anim216 39859ms, fade4 39859ms;
+  -webkit-animation: anim216 36491ms, fade1 36491ms;
+          animation: anim216 36491ms, fade1 36491ms;
 }
 
 .axis-220 {
-  -webkit-animation: anim220 26290ms, fade3 26290ms;
-          animation: anim220 26290ms, fade3 26290ms;
+  -webkit-animation: anim220 10780ms, fade4 10780ms;
+          animation: anim220 10780ms, fade4 10780ms;
 }
 
 .axis-221 {
-  -webkit-animation: anim220 42568ms, fade6 42568ms;
-          animation: anim220 42568ms, fade6 42568ms;
+  -webkit-animation: anim220 13903ms, fade7 13903ms;
+          animation: anim220 13903ms, fade7 13903ms;
 }
 
 .axis-222 {
-  -webkit-animation: anim220 25036ms, fade1 25036ms;
-          animation: anim220 25036ms, fade1 25036ms;
+  -webkit-animation: anim220 8067ms, fade3 8067ms;
+          animation: anim220 8067ms, fade3 8067ms;
 }
 
 .axis-223 {
-  -webkit-animation: anim220 27447ms, fade8 27447ms;
-          animation: anim220 27447ms, fade8 27447ms;
+  -webkit-animation: anim220 39035ms, fade9 39035ms;
+          animation: anim220 39035ms, fade9 39035ms;
 }
 
 .axis-224 {
-  -webkit-animation: anim224 40766ms, fade9 40766ms;
-          animation: anim224 40766ms, fade9 40766ms;
+  -webkit-animation: anim224 6888ms, fade9 6888ms;
+          animation: anim224 6888ms, fade9 6888ms;
 }
 
 .axis-225 {
-  -webkit-animation: anim224 6439ms, fade10 6439ms;
-          animation: anim224 6439ms, fade10 6439ms;
+  -webkit-animation: anim224 24466ms, fade9 24466ms;
+          animation: anim224 24466ms, fade9 24466ms;
 }
 
 .axis-226 {
-  -webkit-animation: anim224 26065ms, fade2 26065ms;
-          animation: anim224 26065ms, fade2 26065ms;
+  -webkit-animation: anim224 43203ms, fade7 43203ms;
+          animation: anim224 43203ms, fade7 43203ms;
 }
 
 .axis-227 {
-  -webkit-animation: anim224 12966ms, fade7 12966ms;
-          animation: anim224 12966ms, fade7 12966ms;
+  -webkit-animation: anim224 31456ms, fade7 31456ms;
+          animation: anim224 31456ms, fade7 31456ms;
 }
 
 .axis-228 {
-  -webkit-animation: anim228 26984ms, fade6 26984ms;
-          animation: anim228 26984ms, fade6 26984ms;
+  -webkit-animation: anim228 21228ms, fade3 21228ms;
+          animation: anim228 21228ms, fade3 21228ms;
 }
 
 .axis-229 {
-  -webkit-animation: anim228 43624ms, fade10 43624ms;
-          animation: anim228 43624ms, fade10 43624ms;
+  -webkit-animation: anim228 20193ms, fade2 20193ms;
+          animation: anim228 20193ms, fade2 20193ms;
 }
 
 .axis-230 {
-  -webkit-animation: anim228 10750ms, fade2 10750ms;
-          animation: anim228 10750ms, fade2 10750ms;
+  -webkit-animation: anim228 26784ms, fade8 26784ms;
+          animation: anim228 26784ms, fade8 26784ms;
 }
 
 .axis-231 {
-  -webkit-animation: anim228 16482ms, fade7 16482ms;
-          animation: anim228 16482ms, fade7 16482ms;
+  -webkit-animation: anim228 7371ms, fade1 7371ms;
+          animation: anim228 7371ms, fade1 7371ms;
 }
 
 .axis-232 {
-  -webkit-animation: anim232 14645ms, fade7 14645ms;
-          animation: anim232 14645ms, fade7 14645ms;
+  -webkit-animation: anim232 15462ms, fade5 15462ms;
+          animation: anim232 15462ms, fade5 15462ms;
 }
 
 .axis-233 {
-  -webkit-animation: anim232 34653ms, fade7 34653ms;
-          animation: anim232 34653ms, fade7 34653ms;
+  -webkit-animation: anim232 11485ms, fade4 11485ms;
+          animation: anim232 11485ms, fade4 11485ms;
 }
 
 .axis-234 {
-  -webkit-animation: anim232 39970ms, fade5 39970ms;
-          animation: anim232 39970ms, fade5 39970ms;
+  -webkit-animation: anim232 40894ms, fade8 40894ms;
+          animation: anim232 40894ms, fade8 40894ms;
 }
 
 .axis-235 {
-  -webkit-animation: anim232 22605ms, fade4 22605ms;
-          animation: anim232 22605ms, fade4 22605ms;
+  -webkit-animation: anim232 15379ms, fade2 15379ms;
+          animation: anim232 15379ms, fade2 15379ms;
 }
 
 .axis-236 {
-  -webkit-animation: anim236 36484ms, fade8 36484ms;
-          animation: anim236 36484ms, fade8 36484ms;
+  -webkit-animation: anim236 10118ms, fade10 10118ms;
+          animation: anim236 10118ms, fade10 10118ms;
 }
 
 .axis-237 {
-  -webkit-animation: anim236 23812ms, fade3 23812ms;
-          animation: anim236 23812ms, fade3 23812ms;
+  -webkit-animation: anim236 10848ms, fade3 10848ms;
+          animation: anim236 10848ms, fade3 10848ms;
 }
 
 .axis-238 {
-  -webkit-animation: anim236 25667ms, fade2 25667ms;
-          animation: anim236 25667ms, fade2 25667ms;
+  -webkit-animation: anim236 26150ms, fade3 26150ms;
+          animation: anim236 26150ms, fade3 26150ms;
 }
 
 .axis-239 {
-  -webkit-animation: anim236 42852ms, fade3 42852ms;
-          animation: anim236 42852ms, fade3 42852ms;
+  -webkit-animation: anim236 33808ms, fade4 33808ms;
+          animation: anim236 33808ms, fade4 33808ms;
 }
 
 .axis-240 {
-  -webkit-animation: anim240 36419ms, fade5 36419ms;
-          animation: anim240 36419ms, fade5 36419ms;
+  -webkit-animation: anim240 28420ms, fade2 28420ms;
+          animation: anim240 28420ms, fade2 28420ms;
 }
 
 .axis-241 {
-  -webkit-animation: anim240 14785ms, fade6 14785ms;
-          animation: anim240 14785ms, fade6 14785ms;
+  -webkit-animation: anim240 24113ms, fade10 24113ms;
+          animation: anim240 24113ms, fade10 24113ms;
 }
 
 .axis-242 {
-  -webkit-animation: anim240 19965ms, fade6 19965ms;
-          animation: anim240 19965ms, fade6 19965ms;
+  -webkit-animation: anim240 39004ms, fade1 39004ms;
+          animation: anim240 39004ms, fade1 39004ms;
 }
 
 .axis-243 {
-  -webkit-animation: anim240 44620ms, fade5 44620ms;
-          animation: anim240 44620ms, fade5 44620ms;
+  -webkit-animation: anim240 21423ms, fade8 21423ms;
+          animation: anim240 21423ms, fade8 21423ms;
 }
 
 .axis-244 {
-  -webkit-animation: anim244 39265ms, fade8 39265ms;
-          animation: anim244 39265ms, fade8 39265ms;
+  -webkit-animation: anim244 17848ms, fade6 17848ms;
+          animation: anim244 17848ms, fade6 17848ms;
 }
 
 .axis-245 {
-  -webkit-animation: anim244 13507ms, fade1 13507ms;
-          animation: anim244 13507ms, fade1 13507ms;
+  -webkit-animation: anim244 38329ms, fade3 38329ms;
+          animation: anim244 38329ms, fade3 38329ms;
 }
 
 .axis-246 {
-  -webkit-animation: anim244 20004ms, fade7 20004ms;
-          animation: anim244 20004ms, fade7 20004ms;
+  -webkit-animation: anim244 39582ms, fade6 39582ms;
+          animation: anim244 39582ms, fade6 39582ms;
 }
 
 .axis-247 {
-  -webkit-animation: anim244 21516ms, fade6 21516ms;
-          animation: anim244 21516ms, fade6 21516ms;
+  -webkit-animation: anim244 24241ms, fade5 24241ms;
+          animation: anim244 24241ms, fade5 24241ms;
 }
 
 .axis-248 {
-  -webkit-animation: anim248 5610ms, fade8 5610ms;
-          animation: anim248 5610ms, fade8 5610ms;
+  -webkit-animation: anim248 8849ms, fade8 8849ms;
+          animation: anim248 8849ms, fade8 8849ms;
 }
 
 .axis-249 {
-  -webkit-animation: anim248 42198ms, fade6 42198ms;
-          animation: anim248 42198ms, fade6 42198ms;
+  -webkit-animation: anim248 27814ms, fade6 27814ms;
+          animation: anim248 27814ms, fade6 27814ms;
 }
 
 .axis-250 {
-  -webkit-animation: anim248 9469ms, fade4 9469ms;
-          animation: anim248 9469ms, fade4 9469ms;
+  -webkit-animation: anim248 13425ms, fade4 13425ms;
+          animation: anim248 13425ms, fade4 13425ms;
 }
 
 .axis-251 {
-  -webkit-animation: anim248 42034ms, fade7 42034ms;
-          animation: anim248 42034ms, fade7 42034ms;
+  -webkit-animation: anim248 38355ms, fade4 38355ms;
+          animation: anim248 38355ms, fade4 38355ms;
 }
 
 .axis-252 {
-  -webkit-animation: anim252 34867ms, fade7 34867ms;
-          animation: anim252 34867ms, fade7 34867ms;
+  -webkit-animation: anim252 32328ms, fade3 32328ms;
+          animation: anim252 32328ms, fade3 32328ms;
 }
 
 .axis-253 {
-  -webkit-animation: anim252 30542ms, fade9 30542ms;
-          animation: anim252 30542ms, fade9 30542ms;
+  -webkit-animation: anim252 24268ms, fade1 24268ms;
+          animation: anim252 24268ms, fade1 24268ms;
 }
 
 .axis-254 {
-  -webkit-animation: anim252 32048ms, fade7 32048ms;
-          animation: anim252 32048ms, fade7 32048ms;
+  -webkit-animation: anim252 43532ms, fade2 43532ms;
+          animation: anim252 43532ms, fade2 43532ms;
 }
 
 .axis-255 {
-  -webkit-animation: anim252 19537ms, fade2 19537ms;
-          animation: anim252 19537ms, fade2 19537ms;
+  -webkit-animation: anim252 6205ms, fade9 6205ms;
+          animation: anim252 6205ms, fade9 6205ms;
 }
 
 .axis-256 {
-  -webkit-animation: anim256 31943ms, fade9 31943ms;
-          animation: anim256 31943ms, fade9 31943ms;
+  -webkit-animation: anim256 22457ms, fade8 22457ms;
+          animation: anim256 22457ms, fade8 22457ms;
 }
 
 .axis-257 {
-  -webkit-animation: anim256 11406ms, fade8 11406ms;
-          animation: anim256 11406ms, fade8 11406ms;
+  -webkit-animation: anim256 39834ms, fade1 39834ms;
+          animation: anim256 39834ms, fade1 39834ms;
 }
 
 .axis-258 {
-  -webkit-animation: anim256 38064ms, fade3 38064ms;
-          animation: anim256 38064ms, fade3 38064ms;
+  -webkit-animation: anim256 9202ms, fade4 9202ms;
+          animation: anim256 9202ms, fade4 9202ms;
 }
 
 .axis-259 {
-  -webkit-animation: anim256 39865ms, fade10 39865ms;
-          animation: anim256 39865ms, fade10 39865ms;
+  -webkit-animation: anim256 43512ms, fade8 43512ms;
+          animation: anim256 43512ms, fade8 43512ms;
 }
 
 .axis-260 {
-  -webkit-animation: anim260 6913ms, fade9 6913ms;
-          animation: anim260 6913ms, fade9 6913ms;
+  -webkit-animation: anim260 27478ms, fade5 27478ms;
+          animation: anim260 27478ms, fade5 27478ms;
 }
 
 .axis-261 {
-  -webkit-animation: anim260 34945ms, fade3 34945ms;
-          animation: anim260 34945ms, fade3 34945ms;
+  -webkit-animation: anim260 6095ms, fade4 6095ms;
+          animation: anim260 6095ms, fade4 6095ms;
 }
 
 .axis-262 {
-  -webkit-animation: anim260 6494ms, fade8 6494ms;
-          animation: anim260 6494ms, fade8 6494ms;
+  -webkit-animation: anim260 18710ms, fade5 18710ms;
+          animation: anim260 18710ms, fade5 18710ms;
 }
 
 .axis-263 {
-  -webkit-animation: anim260 27708ms, fade8 27708ms;
-          animation: anim260 27708ms, fade8 27708ms;
+  -webkit-animation: anim260 37735ms, fade7 37735ms;
+          animation: anim260 37735ms, fade7 37735ms;
 }
 
 .axis-264 {
-  -webkit-animation: anim264 21203ms, fade4 21203ms;
-          animation: anim264 21203ms, fade4 21203ms;
+  -webkit-animation: anim264 33297ms, fade10 33297ms;
+          animation: anim264 33297ms, fade10 33297ms;
 }
 
 .axis-265 {
-  -webkit-animation: anim264 18399ms, fade2 18399ms;
-          animation: anim264 18399ms, fade2 18399ms;
+  -webkit-animation: anim264 20886ms, fade8 20886ms;
+          animation: anim264 20886ms, fade8 20886ms;
 }
 
 .axis-266 {
-  -webkit-animation: anim264 18245ms, fade1 18245ms;
-          animation: anim264 18245ms, fade1 18245ms;
+  -webkit-animation: anim264 23859ms, fade5 23859ms;
+          animation: anim264 23859ms, fade5 23859ms;
 }
 
 .axis-267 {
-  -webkit-animation: anim264 38748ms, fade3 38748ms;
-          animation: anim264 38748ms, fade3 38748ms;
+  -webkit-animation: anim264 28487ms, fade7 28487ms;
+          animation: anim264 28487ms, fade7 28487ms;
 }
 
 .axis-268 {
-  -webkit-animation: anim268 38221ms, fade8 38221ms;
-          animation: anim268 38221ms, fade8 38221ms;
+  -webkit-animation: anim268 25857ms, fade7 25857ms;
+          animation: anim268 25857ms, fade7 25857ms;
 }
 
 .axis-269 {
-  -webkit-animation: anim268 39820ms, fade10 39820ms;
-          animation: anim268 39820ms, fade10 39820ms;
+  -webkit-animation: anim268 22094ms, fade1 22094ms;
+          animation: anim268 22094ms, fade1 22094ms;
 }
 
 .axis-270 {
-  -webkit-animation: anim268 41420ms, fade4 41420ms;
-          animation: anim268 41420ms, fade4 41420ms;
+  -webkit-animation: anim268 10380ms, fade8 10380ms;
+          animation: anim268 10380ms, fade8 10380ms;
 }
 
 .axis-271 {
-  -webkit-animation: anim268 12704ms, fade10 12704ms;
-          animation: anim268 12704ms, fade10 12704ms;
+  -webkit-animation: anim268 41575ms, fade2 41575ms;
+          animation: anim268 41575ms, fade2 41575ms;
 }
 
 .axis-272 {
-  -webkit-animation: anim272 17781ms, fade4 17781ms;
-          animation: anim272 17781ms, fade4 17781ms;
+  -webkit-animation: anim272 11367ms, fade1 11367ms;
+          animation: anim272 11367ms, fade1 11367ms;
 }
 
 .axis-273 {
-  -webkit-animation: anim272 35359ms, fade2 35359ms;
-          animation: anim272 35359ms, fade2 35359ms;
+  -webkit-animation: anim272 39017ms, fade1 39017ms;
+          animation: anim272 39017ms, fade1 39017ms;
 }
 
 .axis-274 {
-  -webkit-animation: anim272 28711ms, fade4 28711ms;
-          animation: anim272 28711ms, fade4 28711ms;
+  -webkit-animation: anim272 18820ms, fade7 18820ms;
+          animation: anim272 18820ms, fade7 18820ms;
 }
 
 .axis-275 {
-  -webkit-animation: anim272 13183ms, fade6 13183ms;
-          animation: anim272 13183ms, fade6 13183ms;
+  -webkit-animation: anim272 43249ms, fade9 43249ms;
+          animation: anim272 43249ms, fade9 43249ms;
 }
 
 .axis-276 {
-  -webkit-animation: anim276 35331ms, fade2 35331ms;
-          animation: anim276 35331ms, fade2 35331ms;
+  -webkit-animation: anim276 30291ms, fade1 30291ms;
+          animation: anim276 30291ms, fade1 30291ms;
 }
 
 .axis-277 {
-  -webkit-animation: anim276 24838ms, fade6 24838ms;
-          animation: anim276 24838ms, fade6 24838ms;
+  -webkit-animation: anim276 8342ms, fade1 8342ms;
+          animation: anim276 8342ms, fade1 8342ms;
 }
 
 .axis-278 {
-  -webkit-animation: anim276 22052ms, fade2 22052ms;
-          animation: anim276 22052ms, fade2 22052ms;
+  -webkit-animation: anim276 44726ms, fade1 44726ms;
+          animation: anim276 44726ms, fade1 44726ms;
 }
 
 .axis-279 {
-  -webkit-animation: anim276 20948ms, fade5 20948ms;
-          animation: anim276 20948ms, fade5 20948ms;
+  -webkit-animation: anim276 12440ms, fade3 12440ms;
+          animation: anim276 12440ms, fade3 12440ms;
 }
 
 .axis-280 {
-  -webkit-animation: anim280 29596ms, fade7 29596ms;
-          animation: anim280 29596ms, fade7 29596ms;
+  -webkit-animation: anim280 30026ms, fade2 30026ms;
+          animation: anim280 30026ms, fade2 30026ms;
 }
 
 .axis-281 {
-  -webkit-animation: anim280 24249ms, fade6 24249ms;
-          animation: anim280 24249ms, fade6 24249ms;
+  -webkit-animation: anim280 44989ms, fade6 44989ms;
+          animation: anim280 44989ms, fade6 44989ms;
 }
 
 .axis-282 {
-  -webkit-animation: anim280 31808ms, fade2 31808ms;
-          animation: anim280 31808ms, fade2 31808ms;
+  -webkit-animation: anim280 24518ms, fade5 24518ms;
+          animation: anim280 24518ms, fade5 24518ms;
 }
 
 .axis-283 {
-  -webkit-animation: anim280 42094ms, fade5 42094ms;
-          animation: anim280 42094ms, fade5 42094ms;
+  -webkit-animation: anim280 33442ms, fade8 33442ms;
+          animation: anim280 33442ms, fade8 33442ms;
 }
 
 .axis-284 {
-  -webkit-animation: anim284 6947ms, fade7 6947ms;
-          animation: anim284 6947ms, fade7 6947ms;
+  -webkit-animation: anim284 24469ms, fade9 24469ms;
+          animation: anim284 24469ms, fade9 24469ms;
 }
 
 .axis-285 {
-  -webkit-animation: anim284 6053ms, fade5 6053ms;
-          animation: anim284 6053ms, fade5 6053ms;
+  -webkit-animation: anim284 14447ms, fade10 14447ms;
+          animation: anim284 14447ms, fade10 14447ms;
 }
 
 .axis-286 {
-  -webkit-animation: anim284 40440ms, fade10 40440ms;
-          animation: anim284 40440ms, fade10 40440ms;
+  -webkit-animation: anim284 12735ms, fade6 12735ms;
+          animation: anim284 12735ms, fade6 12735ms;
 }
 
 .axis-287 {
-  -webkit-animation: anim284 16056ms, fade2 16056ms;
-          animation: anim284 16056ms, fade2 16056ms;
+  -webkit-animation: anim284 44199ms, fade10 44199ms;
+          animation: anim284 44199ms, fade10 44199ms;
 }
 
 .axis-288 {
-  -webkit-animation: anim288 9037ms, fade10 9037ms;
-          animation: anim288 9037ms, fade10 9037ms;
+  -webkit-animation: anim288 36745ms, fade9 36745ms;
+          animation: anim288 36745ms, fade9 36745ms;
 }
 
 .axis-289 {
-  -webkit-animation: anim288 7441ms, fade10 7441ms;
-          animation: anim288 7441ms, fade10 7441ms;
+  -webkit-animation: anim288 18608ms, fade8 18608ms;
+          animation: anim288 18608ms, fade8 18608ms;
 }
 
 .axis-290 {
-  -webkit-animation: anim288 24575ms, fade6 24575ms;
-          animation: anim288 24575ms, fade6 24575ms;
+  -webkit-animation: anim288 18118ms, fade8 18118ms;
+          animation: anim288 18118ms, fade8 18118ms;
 }
 
 .axis-291 {
-  -webkit-animation: anim288 18306ms, fade9 18306ms;
-          animation: anim288 18306ms, fade9 18306ms;
+  -webkit-animation: anim288 40339ms, fade3 40339ms;
+          animation: anim288 40339ms, fade3 40339ms;
 }
 
 .axis-292 {
-  -webkit-animation: anim292 29288ms, fade8 29288ms;
-          animation: anim292 29288ms, fade8 29288ms;
+  -webkit-animation: anim292 32238ms, fade3 32238ms;
+          animation: anim292 32238ms, fade3 32238ms;
 }
 
 .axis-293 {
-  -webkit-animation: anim292 39676ms, fade2 39676ms;
-          animation: anim292 39676ms, fade2 39676ms;
+  -webkit-animation: anim292 10810ms, fade6 10810ms;
+          animation: anim292 10810ms, fade6 10810ms;
 }
 
 .axis-294 {
-  -webkit-animation: anim292 24007ms, fade4 24007ms;
-          animation: anim292 24007ms, fade4 24007ms;
+  -webkit-animation: anim292 7995ms, fade6 7995ms;
+          animation: anim292 7995ms, fade6 7995ms;
 }
 
 .axis-295 {
-  -webkit-animation: anim292 24216ms, fade1 24216ms;
-          animation: anim292 24216ms, fade1 24216ms;
+  -webkit-animation: anim292 21002ms, fade7 21002ms;
+          animation: anim292 21002ms, fade7 21002ms;
 }
 
 .axis-296 {
-  -webkit-animation: anim296 40141ms, fade2 40141ms;
-          animation: anim296 40141ms, fade2 40141ms;
+  -webkit-animation: anim296 44638ms, fade1 44638ms;
+          animation: anim296 44638ms, fade1 44638ms;
 }
 
 .axis-297 {
-  -webkit-animation: anim296 23238ms, fade9 23238ms;
-          animation: anim296 23238ms, fade9 23238ms;
+  -webkit-animation: anim296 20448ms, fade9 20448ms;
+          animation: anim296 20448ms, fade9 20448ms;
 }
 
 .axis-298 {
-  -webkit-animation: anim296 9589ms, fade4 9589ms;
-          animation: anim296 9589ms, fade4 9589ms;
+  -webkit-animation: anim296 38494ms, fade3 38494ms;
+          animation: anim296 38494ms, fade3 38494ms;
 }
 
 .axis-299 {
-  -webkit-animation: anim296 21344ms, fade6 21344ms;
-          animation: anim296 21344ms, fade6 21344ms;
+  -webkit-animation: anim296 30627ms, fade9 30627ms;
+          animation: anim296 30627ms, fade9 30627ms;
 }
 
 .axis-300 {
-  -webkit-animation: anim300 34691ms, fade9 34691ms;
-          animation: anim300 34691ms, fade9 34691ms;
+  -webkit-animation: anim300 14981ms, fade10 14981ms;
+          animation: anim300 14981ms, fade10 14981ms;
 }
 
 .axis-301 {
-  -webkit-animation: anim300 14289ms, fade6 14289ms;
-          animation: anim300 14289ms, fade6 14289ms;
+  -webkit-animation: anim300 44203ms, fade8 44203ms;
+          animation: anim300 44203ms, fade8 44203ms;
 }
 
 .axis-302 {
-  -webkit-animation: anim300 30887ms, fade7 30887ms;
-          animation: anim300 30887ms, fade7 30887ms;
+  -webkit-animation: anim300 17875ms, fade7 17875ms;
+          animation: anim300 17875ms, fade7 17875ms;
 }
 
 .axis-303 {
-  -webkit-animation: anim300 14106ms, fade4 14106ms;
-          animation: anim300 14106ms, fade4 14106ms;
+  -webkit-animation: anim300 35388ms, fade8 35388ms;
+          animation: anim300 35388ms, fade8 35388ms;
 }
 
 .axis-304 {
-  -webkit-animation: anim304 9748ms, fade9 9748ms;
-          animation: anim304 9748ms, fade9 9748ms;
+  -webkit-animation: anim304 28671ms, fade6 28671ms;
+          animation: anim304 28671ms, fade6 28671ms;
 }
 
 .axis-305 {
-  -webkit-animation: anim304 6082ms, fade3 6082ms;
-          animation: anim304 6082ms, fade3 6082ms;
+  -webkit-animation: anim304 9358ms, fade3 9358ms;
+          animation: anim304 9358ms, fade3 9358ms;
 }
 
 .axis-306 {
-  -webkit-animation: anim304 22446ms, fade10 22446ms;
-          animation: anim304 22446ms, fade10 22446ms;
+  -webkit-animation: anim304 41453ms, fade1 41453ms;
+          animation: anim304 41453ms, fade1 41453ms;
 }
 
 .axis-307 {
-  -webkit-animation: anim304 22710ms, fade10 22710ms;
-          animation: anim304 22710ms, fade10 22710ms;
+  -webkit-animation: anim304 41782ms, fade8 41782ms;
+          animation: anim304 41782ms, fade8 41782ms;
 }
 
 .axis-308 {
-  -webkit-animation: anim308 23231ms, fade2 23231ms;
-          animation: anim308 23231ms, fade2 23231ms;
+  -webkit-animation: anim308 30227ms, fade7 30227ms;
+          animation: anim308 30227ms, fade7 30227ms;
 }
 
 .axis-309 {
-  -webkit-animation: anim308 17285ms, fade5 17285ms;
-          animation: anim308 17285ms, fade5 17285ms;
+  -webkit-animation: anim308 29913ms, fade1 29913ms;
+          animation: anim308 29913ms, fade1 29913ms;
 }
 
 .axis-310 {
-  -webkit-animation: anim308 42078ms, fade1 42078ms;
-          animation: anim308 42078ms, fade1 42078ms;
+  -webkit-animation: anim308 24730ms, fade6 24730ms;
+          animation: anim308 24730ms, fade6 24730ms;
 }
 
 .axis-311 {
-  -webkit-animation: anim308 7013ms, fade7 7013ms;
-          animation: anim308 7013ms, fade7 7013ms;
+  -webkit-animation: anim308 11506ms, fade10 11506ms;
+          animation: anim308 11506ms, fade10 11506ms;
 }
 
 .axis-312 {
-  -webkit-animation: anim312 21736ms, fade8 21736ms;
-          animation: anim312 21736ms, fade8 21736ms;
+  -webkit-animation: anim312 34392ms, fade5 34392ms;
+          animation: anim312 34392ms, fade5 34392ms;
 }
 
 .axis-313 {
-  -webkit-animation: anim312 8649ms, fade1 8649ms;
-          animation: anim312 8649ms, fade1 8649ms;
+  -webkit-animation: anim312 42090ms, fade9 42090ms;
+          animation: anim312 42090ms, fade9 42090ms;
 }
 
 .axis-314 {
-  -webkit-animation: anim312 21741ms, fade4 21741ms;
-          animation: anim312 21741ms, fade4 21741ms;
+  -webkit-animation: anim312 19639ms, fade7 19639ms;
+          animation: anim312 19639ms, fade7 19639ms;
 }
 
 .axis-315 {
-  -webkit-animation: anim312 13780ms, fade1 13780ms;
-          animation: anim312 13780ms, fade1 13780ms;
+  -webkit-animation: anim312 6467ms, fade9 6467ms;
+          animation: anim312 6467ms, fade9 6467ms;
 }
 
 .axis-316 {
-  -webkit-animation: anim316 38378ms, fade7 38378ms;
-          animation: anim316 38378ms, fade7 38378ms;
+  -webkit-animation: anim316 27591ms, fade2 27591ms;
+          animation: anim316 27591ms, fade2 27591ms;
 }
 
 .axis-317 {
-  -webkit-animation: anim316 10142ms, fade6 10142ms;
-          animation: anim316 10142ms, fade6 10142ms;
+  -webkit-animation: anim316 9847ms, fade3 9847ms;
+          animation: anim316 9847ms, fade3 9847ms;
 }
 
 .axis-318 {
-  -webkit-animation: anim316 27264ms, fade6 27264ms;
-          animation: anim316 27264ms, fade6 27264ms;
+  -webkit-animation: anim316 13074ms, fade10 13074ms;
+          animation: anim316 13074ms, fade10 13074ms;
 }
 
 .axis-319 {
-  -webkit-animation: anim316 14229ms, fade10 14229ms;
-          animation: anim316 14229ms, fade10 14229ms;
+  -webkit-animation: anim316 13143ms, fade10 13143ms;
+          animation: anim316 13143ms, fade10 13143ms;
 }
 
 .axis-320 {
-  -webkit-animation: anim320 19862ms, fade2 19862ms;
-          animation: anim320 19862ms, fade2 19862ms;
+  -webkit-animation: anim320 24754ms, fade9 24754ms;
+          animation: anim320 24754ms, fade9 24754ms;
 }
 
 .axis-321 {
-  -webkit-animation: anim320 33407ms, fade6 33407ms;
-          animation: anim320 33407ms, fade6 33407ms;
+  -webkit-animation: anim320 43836ms, fade4 43836ms;
+          animation: anim320 43836ms, fade4 43836ms;
 }
 
 .axis-322 {
-  -webkit-animation: anim320 43923ms, fade4 43923ms;
-          animation: anim320 43923ms, fade4 43923ms;
+  -webkit-animation: anim320 23535ms, fade2 23535ms;
+          animation: anim320 23535ms, fade2 23535ms;
 }
 
 .axis-323 {
-  -webkit-animation: anim320 35245ms, fade9 35245ms;
-          animation: anim320 35245ms, fade9 35245ms;
+  -webkit-animation: anim320 31526ms, fade10 31526ms;
+          animation: anim320 31526ms, fade10 31526ms;
 }
 
 .axis-324 {
-  -webkit-animation: anim324 36129ms, fade2 36129ms;
-          animation: anim324 36129ms, fade2 36129ms;
+  -webkit-animation: anim324 32103ms, fade6 32103ms;
+          animation: anim324 32103ms, fade6 32103ms;
 }
 
 .axis-325 {
-  -webkit-animation: anim324 11067ms, fade5 11067ms;
-          animation: anim324 11067ms, fade5 11067ms;
+  -webkit-animation: anim324 37164ms, fade10 37164ms;
+          animation: anim324 37164ms, fade10 37164ms;
 }
 
 .axis-326 {
-  -webkit-animation: anim324 15210ms, fade2 15210ms;
-          animation: anim324 15210ms, fade2 15210ms;
+  -webkit-animation: anim324 11416ms, fade5 11416ms;
+          animation: anim324 11416ms, fade5 11416ms;
 }
 
 .axis-327 {
-  -webkit-animation: anim324 13290ms, fade10 13290ms;
-          animation: anim324 13290ms, fade10 13290ms;
+  -webkit-animation: anim324 44943ms, fade6 44943ms;
+          animation: anim324 44943ms, fade6 44943ms;
 }
 
 .axis-328 {
-  -webkit-animation: anim328 16547ms, fade8 16547ms;
-          animation: anim328 16547ms, fade8 16547ms;
+  -webkit-animation: anim328 39565ms, fade1 39565ms;
+          animation: anim328 39565ms, fade1 39565ms;
 }
 
 .axis-329 {
-  -webkit-animation: anim328 33012ms, fade2 33012ms;
-          animation: anim328 33012ms, fade2 33012ms;
+  -webkit-animation: anim328 31858ms, fade5 31858ms;
+          animation: anim328 31858ms, fade5 31858ms;
 }
 
 .axis-330 {
-  -webkit-animation: anim328 36339ms, fade3 36339ms;
-          animation: anim328 36339ms, fade3 36339ms;
+  -webkit-animation: anim328 19574ms, fade7 19574ms;
+          animation: anim328 19574ms, fade7 19574ms;
 }
 
 .axis-331 {
-  -webkit-animation: anim328 36824ms, fade4 36824ms;
-          animation: anim328 36824ms, fade4 36824ms;
+  -webkit-animation: anim328 36071ms, fade10 36071ms;
+          animation: anim328 36071ms, fade10 36071ms;
 }
 
 .axis-332 {
-  -webkit-animation: anim332 41015ms, fade1 41015ms;
-          animation: anim332 41015ms, fade1 41015ms;
+  -webkit-animation: anim332 38370ms, fade9 38370ms;
+          animation: anim332 38370ms, fade9 38370ms;
 }
 
 .axis-333 {
-  -webkit-animation: anim332 32054ms, fade10 32054ms;
-          animation: anim332 32054ms, fade10 32054ms;
+  -webkit-animation: anim332 27675ms, fade5 27675ms;
+          animation: anim332 27675ms, fade5 27675ms;
 }
 
 .axis-334 {
-  -webkit-animation: anim332 35685ms, fade10 35685ms;
-          animation: anim332 35685ms, fade10 35685ms;
+  -webkit-animation: anim332 44768ms, fade2 44768ms;
+          animation: anim332 44768ms, fade2 44768ms;
 }
 
 .axis-335 {
-  -webkit-animation: anim332 18010ms, fade5 18010ms;
-          animation: anim332 18010ms, fade5 18010ms;
+  -webkit-animation: anim332 7912ms, fade3 7912ms;
+          animation: anim332 7912ms, fade3 7912ms;
 }
 
 .axis-336 {
-  -webkit-animation: anim336 14686ms, fade9 14686ms;
-          animation: anim336 14686ms, fade9 14686ms;
+  -webkit-animation: anim336 9803ms, fade10 9803ms;
+          animation: anim336 9803ms, fade10 9803ms;
 }
 
 .axis-337 {
-  -webkit-animation: anim336 23099ms, fade3 23099ms;
-          animation: anim336 23099ms, fade3 23099ms;
+  -webkit-animation: anim336 42262ms, fade6 42262ms;
+          animation: anim336 42262ms, fade6 42262ms;
 }
 
 .axis-338 {
-  -webkit-animation: anim336 42412ms, fade7 42412ms;
-          animation: anim336 42412ms, fade7 42412ms;
+  -webkit-animation: anim336 25842ms, fade9 25842ms;
+          animation: anim336 25842ms, fade9 25842ms;
 }
 
 .axis-339 {
-  -webkit-animation: anim336 42057ms, fade3 42057ms;
-          animation: anim336 42057ms, fade3 42057ms;
+  -webkit-animation: anim336 33361ms, fade4 33361ms;
+          animation: anim336 33361ms, fade4 33361ms;
 }
 
 .axis-340 {
-  -webkit-animation: anim340 18033ms, fade4 18033ms;
-          animation: anim340 18033ms, fade4 18033ms;
+  -webkit-animation: anim340 19963ms, fade1 19963ms;
+          animation: anim340 19963ms, fade1 19963ms;
 }
 
 .axis-341 {
-  -webkit-animation: anim340 14300ms, fade3 14300ms;
-          animation: anim340 14300ms, fade3 14300ms;
+  -webkit-animation: anim340 8996ms, fade9 8996ms;
+          animation: anim340 8996ms, fade9 8996ms;
 }
 
 .axis-342 {
-  -webkit-animation: anim340 28035ms, fade7 28035ms;
-          animation: anim340 28035ms, fade7 28035ms;
+  -webkit-animation: anim340 37899ms, fade9 37899ms;
+          animation: anim340 37899ms, fade9 37899ms;
 }
 
 .axis-343 {
-  -webkit-animation: anim340 20159ms, fade1 20159ms;
-          animation: anim340 20159ms, fade1 20159ms;
+  -webkit-animation: anim340 8362ms, fade5 8362ms;
+          animation: anim340 8362ms, fade5 8362ms;
 }
 
 .axis-344 {
-  -webkit-animation: anim344 44370ms, fade1 44370ms;
-          animation: anim344 44370ms, fade1 44370ms;
+  -webkit-animation: anim344 18488ms, fade7 18488ms;
+          animation: anim344 18488ms, fade7 18488ms;
 }
 
 .axis-345 {
-  -webkit-animation: anim344 37709ms, fade1 37709ms;
-          animation: anim344 37709ms, fade1 37709ms;
+  -webkit-animation: anim344 40119ms, fade10 40119ms;
+          animation: anim344 40119ms, fade10 40119ms;
 }
 
 .axis-346 {
-  -webkit-animation: anim344 35172ms, fade1 35172ms;
-          animation: anim344 35172ms, fade1 35172ms;
+  -webkit-animation: anim344 9040ms, fade2 9040ms;
+          animation: anim344 9040ms, fade2 9040ms;
 }
 
 .axis-347 {
-  -webkit-animation: anim344 26330ms, fade3 26330ms;
-          animation: anim344 26330ms, fade3 26330ms;
+  -webkit-animation: anim344 18976ms, fade7 18976ms;
+          animation: anim344 18976ms, fade7 18976ms;
 }
 
 .axis-348 {
-  -webkit-animation: anim348 8225ms, fade1 8225ms;
-          animation: anim348 8225ms, fade1 8225ms;
+  -webkit-animation: anim348 19803ms, fade3 19803ms;
+          animation: anim348 19803ms, fade3 19803ms;
 }
 
 .axis-349 {
-  -webkit-animation: anim348 41853ms, fade6 41853ms;
-          animation: anim348 41853ms, fade6 41853ms;
+  -webkit-animation: anim348 21129ms, fade10 21129ms;
+          animation: anim348 21129ms, fade10 21129ms;
 }
 
 .axis-350 {
-  -webkit-animation: anim348 42145ms, fade5 42145ms;
-          animation: anim348 42145ms, fade5 42145ms;
+  -webkit-animation: anim348 9316ms, fade2 9316ms;
+          animation: anim348 9316ms, fade2 9316ms;
 }
 
 .axis-351 {
-  -webkit-animation: anim348 33259ms, fade3 33259ms;
-          animation: anim348 33259ms, fade3 33259ms;
+  -webkit-animation: anim348 44896ms, fade2 44896ms;
+          animation: anim348 44896ms, fade2 44896ms;
 }
 
 .axis-352 {
-  -webkit-animation: anim352 18690ms, fade2 18690ms;
-          animation: anim352 18690ms, fade2 18690ms;
+  -webkit-animation: anim352 35134ms, fade10 35134ms;
+          animation: anim352 35134ms, fade10 35134ms;
 }
 
 .axis-353 {
-  -webkit-animation: anim352 12952ms, fade5 12952ms;
-          animation: anim352 12952ms, fade5 12952ms;
+  -webkit-animation: anim352 17070ms, fade9 17070ms;
+          animation: anim352 17070ms, fade9 17070ms;
 }
 
 .axis-354 {
-  -webkit-animation: anim352 15314ms, fade8 15314ms;
-          animation: anim352 15314ms, fade8 15314ms;
+  -webkit-animation: anim352 21351ms, fade4 21351ms;
+          animation: anim352 21351ms, fade4 21351ms;
 }
 
 .axis-355 {
-  -webkit-animation: anim352 17822ms, fade9 17822ms;
-          animation: anim352 17822ms, fade9 17822ms;
+  -webkit-animation: anim352 21234ms, fade1 21234ms;
+          animation: anim352 21234ms, fade1 21234ms;
 }
 
 .axis-356 {
-  -webkit-animation: anim356 32556ms, fade8 32556ms;
-          animation: anim356 32556ms, fade8 32556ms;
+  -webkit-animation: anim356 11690ms, fade3 11690ms;
+          animation: anim356 11690ms, fade3 11690ms;
 }
 
 .axis-357 {
-  -webkit-animation: anim356 31365ms, fade5 31365ms;
-          animation: anim356 31365ms, fade5 31365ms;
+  -webkit-animation: anim356 15005ms, fade10 15005ms;
+          animation: anim356 15005ms, fade10 15005ms;
 }
 
 .axis-358 {
-  -webkit-animation: anim356 17086ms, fade2 17086ms;
-          animation: anim356 17086ms, fade2 17086ms;
+  -webkit-animation: anim356 5857ms, fade9 5857ms;
+          animation: anim356 5857ms, fade9 5857ms;
 }
 
 .axis-359 {
-  -webkit-animation: anim356 10409ms, fade8 10409ms;
-          animation: anim356 10409ms, fade8 10409ms;
+  -webkit-animation: anim356 42516ms, fade5 42516ms;
+          animation: anim356 42516ms, fade5 42516ms;
 }
 
 .axis-360 {
-  -webkit-animation: anim360 39697ms, fade9 39697ms;
-          animation: anim360 39697ms, fade9 39697ms;
+  -webkit-animation: anim360 22086ms, fade3 22086ms;
+          animation: anim360 22086ms, fade3 22086ms;
 }
 
 @-webkit-keyframes fade1 {
-  6% {
+  12% {
     opacity: 0;
   }
-  16% {
+  22% {
     opacity: 1;
   }
   100% {
@@ -4110,10 +4133,10 @@ section .main-title:hover::after {
 }
 
 @keyframes fade1 {
-  6% {
+  12% {
     opacity: 0;
   }
-  16% {
+  22% {
     opacity: 1;
   }
   100% {
@@ -4121,10 +4144,10 @@ section .main-title:hover::after {
   }
 }
 @-webkit-keyframes fade2 {
-  9% {
+  20% {
     opacity: 0;
   }
-  19% {
+  30% {
     opacity: 1;
   }
   100% {
@@ -4132,10 +4155,10 @@ section .main-title:hover::after {
   }
 }
 @keyframes fade2 {
-  9% {
+  20% {
     opacity: 0;
   }
-  19% {
+  30% {
     opacity: 1;
   }
   100% {
@@ -4143,10 +4166,10 @@ section .main-title:hover::after {
   }
 }
 @-webkit-keyframes fade3 {
-  1% {
+  14% {
     opacity: 0;
   }
-  11% {
+  24% {
     opacity: 1;
   }
   100% {
@@ -4154,10 +4177,10 @@ section .main-title:hover::after {
   }
 }
 @keyframes fade3 {
-  1% {
+  14% {
     opacity: 0;
   }
-  11% {
+  24% {
     opacity: 1;
   }
   100% {
@@ -4165,10 +4188,10 @@ section .main-title:hover::after {
   }
 }
 @-webkit-keyframes fade4 {
-  3% {
+  20% {
     opacity: 0;
   }
-  13% {
+  30% {
     opacity: 1;
   }
   100% {
@@ -4176,10 +4199,10 @@ section .main-title:hover::after {
   }
 }
 @keyframes fade4 {
-  3% {
+  20% {
     opacity: 0;
   }
-  13% {
+  30% {
     opacity: 1;
   }
   100% {
@@ -4209,10 +4232,10 @@ section .main-title:hover::after {
   }
 }
 @-webkit-keyframes fade6 {
-  6% {
+  4% {
     opacity: 0;
   }
-  16% {
+  14% {
     opacity: 1;
   }
   100% {
@@ -4220,10 +4243,10 @@ section .main-title:hover::after {
   }
 }
 @keyframes fade6 {
-  6% {
+  4% {
     opacity: 0;
   }
-  16% {
+  14% {
     opacity: 1;
   }
   100% {
@@ -4231,10 +4254,10 @@ section .main-title:hover::after {
   }
 }
 @-webkit-keyframes fade7 {
-  2% {
+  10% {
     opacity: 0;
   }
-  12% {
+  20% {
     opacity: 1;
   }
   100% {
@@ -4242,10 +4265,10 @@ section .main-title:hover::after {
   }
 }
 @keyframes fade7 {
-  2% {
+  10% {
     opacity: 0;
   }
-  12% {
+  20% {
     opacity: 1;
   }
   100% {
@@ -4253,10 +4276,10 @@ section .main-title:hover::after {
   }
 }
 @-webkit-keyframes fade8 {
-  20% {
+  3% {
     opacity: 0;
   }
-  30% {
+  13% {
     opacity: 1;
   }
   100% {
@@ -4264,10 +4287,10 @@ section .main-title:hover::after {
   }
 }
 @keyframes fade8 {
-  20% {
+  3% {
     opacity: 0;
   }
-  30% {
+  13% {
     opacity: 1;
   }
   100% {
@@ -4275,10 +4298,10 @@ section .main-title:hover::after {
   }
 }
 @-webkit-keyframes fade9 {
-  5% {
+  17% {
     opacity: 0;
   }
-  15% {
+  27% {
     opacity: 1;
   }
   100% {
@@ -4286,10 +4309,10 @@ section .main-title:hover::after {
   }
 }
 @keyframes fade9 {
-  5% {
+  17% {
     opacity: 0;
   }
-  15% {
+  27% {
     opacity: 1;
   }
   100% {
@@ -4297,10 +4320,10 @@ section .main-title:hover::after {
   }
 }
 @-webkit-keyframes fade10 {
-  13% {
+  8% {
     opacity: 0;
   }
-  23% {
+  18% {
     opacity: 1;
   }
   100% {
@@ -4308,10 +4331,10 @@ section .main-title:hover::after {
   }
 }
 @keyframes fade10 {
-  13% {
+  8% {
     opacity: 0;
   }
-  23% {
+  18% {
     opacity: 1;
   }
   100% {
