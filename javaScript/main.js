@@ -2024,11 +2024,11 @@ function animation() {
       productsh2.style.top = "-150px";
     }
     if (animaitionH < 2900) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
+      AlLbutton.style.top = "-200px";
+      outDoorbutton.style.top = "-200px";
+      moreproducts.style.top = "-200px";
+      inDoorbutton.style.bottom = "-200px";
+      decorbutton.style.bottom = "-200px";
     }
 
     // animation
