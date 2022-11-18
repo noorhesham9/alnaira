@@ -1006,984 +1006,984 @@ function animation() {
   // **************************************
   // **************************************
   // from 1600 px to above
-  // if (animaitionW >= 1600) {
-  //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 294) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
+  if (animaitionW >= 1600) {
+    // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 294) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
 
-  //   if (animaitionH < 483) {
-  //     whatcontboxnum1.style.left = "-50vw";
-  //   }
-  //   if (animaitionH < 483) {
-  //     whatcontboxnum3.style.right = "-50vw";
-  //   }
+    if (animaitionH < 483) {
+      whatcontboxnum1.style.left = "-50vw";
+    }
+    if (animaitionH < 483) {
+      whatcontboxnum3.style.right = "-50vw";
+    }
 
-  //   if (animaitionH < 483) {
-  //     whatcontboxnum2.style.top = "-120%";
-  //   }
+    if (animaitionH < 483) {
+      whatcontboxnum2.style.top = "-120%";
+    }
 
-  //   if (animaitionH < 972) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 972) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 1315) {
-  //     secnum3img.style.right = "100%";
-  //   }
-  //   if (animaitionH < 1315) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 1731) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 1894) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 1315) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1315) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 1731) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 1894) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation&&&&&&&&&&
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 294) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 483) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 483) {
-  //     whatcontboxnum3.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 483) {
-  //     whatcontboxnum2.style.top = "0px";
-  //   }
+    // animation&&&&&&&&&&
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 294) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 483) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 483) {
+      whatcontboxnum3.style.right = "0px";
+    }
+    if (animaitionH >= 483) {
+      whatcontboxnum2.style.top = "0px";
+    }
 
-  //   if (animaitionH >= 972) {
-  //     h2secnum3.style.top = "0";
-  //   }
-  //   if (animaitionH >= 1315) {
-  //     secnum3img.style.right = "0";
-  //   }
-  //   if (animaitionH >= 1315) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 1731) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 1894) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 972) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1315) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1315) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 1731) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 1894) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // form 1200 px too 1300px
-  // if (animaitionW >= 1200 && animaitionW < 1300) {
-  //   //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 294) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
+  if (animaitionW >= 1200 && animaitionW < 1300) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 294) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
 
-  //   if (animaitionH < 483) {
-  //     whatcontboxnum1.style.left = "-50vw";
-  //   }
-  //   if (animaitionH < 483) {
-  //     whatcontboxnum3.style.right = "-50vw";
-  //   }
+    if (animaitionH < 483) {
+      whatcontboxnum1.style.left = "-50vw";
+    }
+    if (animaitionH < 483) {
+      whatcontboxnum3.style.right = "-50vw";
+    }
 
-  //   if (animaitionH < 483) {
-  //     whatcontboxnum2.style.top = "-120%";
-  //   }
+    if (animaitionH < 483) {
+      whatcontboxnum2.style.top = "-120%";
+    }
 
-  //   if (animaitionH < 972) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 972) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 1315) {
-  //     secnum3img.style.right = "100%";
-  //   }
-  //   if (animaitionH < 1315) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 1731) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 1894) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 1315) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1315) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 1731) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 1894) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation&&&&&&&&&&
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 294) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 483) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 483) {
-  //     whatcontboxnum3.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 483) {
-  //     whatcontboxnum2.style.top = "0px";
-  //   }
+    // animation&&&&&&&&&&
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 294) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 483) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 483) {
+      whatcontboxnum3.style.right = "0px";
+    }
+    if (animaitionH >= 483) {
+      whatcontboxnum2.style.top = "0px";
+    }
 
-  //   if (animaitionH >= 972) {
-  //     h2secnum3.style.top = "0";
-  //   }
-  //   if (animaitionH >= 1315) {
-  //     secnum3img.style.right = "0";
-  //   }
-  //   if (animaitionH >= 1315) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 1731) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 1894) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 972) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1315) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1315) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 1731) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 1894) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // form 800 px too 1200px
-  // if (animaitionW >= 992 && animaitionW < 1200) {
-  //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 342) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
-  //   if (animaitionH < 560) {
-  //     whatcontboxnum1.style.left = "-50vw";
-  //     whatcontboxnum2.style.right = "-50vw";
-  //   }
-  //   if (animaitionH < 1010) {
-  //     whatcontboxnum3.style.left = "-50vw";
-  //   }
+  if (animaitionW >= 992 && animaitionW < 1200) {
+    // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 342) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 560) {
+      whatcontboxnum1.style.left = "-50vw";
+      whatcontboxnum2.style.right = "-50vw";
+    }
+    if (animaitionH < 1010) {
+      whatcontboxnum3.style.left = "-50vw";
+    }
 
-  //   if (animaitionH < 1550) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 1924) {
-  //     secnum3img.style.right = "100%";
-  //   }
-  //   if (animaitionH < 1924) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 2344) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 2478) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 1550) {
+      h2secnum3.style.top = "-150px";
+    }
+    if (animaitionH < 1924) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1924) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2344) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2478) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 342) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 560) {
-  //     whatcontboxnum1.style.left = "0px";
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 342) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 560) {
+      whatcontboxnum1.style.left = "0px";
 
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1010) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 1550) {
-  //     h2secnum3.style.top = "0";
-  //   }
-  //   if (animaitionH >= 1944) {
-  //     secnum3img.style.right = "0";
-  //   }
-  //   if (animaitionH >= 1924) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2344) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 2478) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1010) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1550) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1944) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1924) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2344) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2478) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // form 768 px too 992
-  // if (animaitionW >= 768 && animaitionW < 992) {
-  //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 342) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
-  //   if (animaitionH < 501) {
-  //     whatcontboxnum1.style.left = "-50vw";
-  //     whatcontboxnum2.style.right = "-50vw";
-  //   }
-  //   if (animaitionH < 930) {
-  //     whatcontboxnum3.style.left = "-50vw";
-  //   }
+  if (animaitionW >= 768 && animaitionW < 992) {
+    // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 342) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 501) {
+      whatcontboxnum1.style.left = "-50vw";
+      whatcontboxnum2.style.right = "-50vw";
+    }
+    if (animaitionH < 930) {
+      whatcontboxnum3.style.left = "-50vw";
+    }
 
-  //   if (animaitionH < 1391) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 1731) {
-  //     secnum3img.style.right = "100%";
-  //   }
-  //   if (animaitionH < 1731) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 2192) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 2354) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 1391) {
+      h2secnum3.style.top = "-150px";
+    }
+    if (animaitionH < 1731) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1731) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2192) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2354) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 342) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 501) {
-  //     whatcontboxnum1.style.left = "0px";
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 342) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 501) {
+      whatcontboxnum1.style.left = "0px";
 
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 930) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 1391) {
-  //     h2secnum3.style.top = "0";
-  //   }
-  //   if (animaitionH >= 1731) {
-  //     secnum3img.style.right = "0";
-  //   }
-  //   if (animaitionH >= 1731) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2192) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 2354) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 930) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1391) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1731) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1731) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2192) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2354) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // from 700 to 768 px
-  // if (animaitionW >= 700 && animaitionW < 768) {
-  //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 339) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
-  //   if (animaitionH < 510) {
-  //     whatcontboxnum1.style.left = "-100vw";
-  //   }
-  //   if (animaitionH < 1134) {
-  //     whatcontboxnum2.style.right = "-100vw";
-  //   }
-  //   if (animaitionH < 1755) {
-  //     whatcontboxnum3.style.left = "-100vw";
-  //   }
+  if (animaitionW >= 700 && animaitionW < 768) {
+    // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 510) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 1134) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1755) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
 
-  //   if (animaitionH < 2508) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 2508) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 2858) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 3310) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 3457) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 2858) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 3310) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 3457) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 339) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 510) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 1134) {
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1755) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2508) {
-  //     h2secnum3.style.top = "0";
-  //   }
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 510) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1134) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1755) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 2508) {
+      h2secnum3.style.top = "0";
+    }
 
-  //   if (animaitionH >= 2858) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 3310) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 3457) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 2858) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 3310) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 3457) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // // from 650 to 700 px
-  // if (animaitionW >= 650 && animaitionW < 700) {
-  //   //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 339) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
-  //   if (animaitionH < 510) {
-  //     whatcontboxnum1.style.left = "-100vw";
-  //   }
-  //   if (animaitionH < 1134) {
-  //     whatcontboxnum2.style.right = "-100vw";
-  //   }
-  //   if (animaitionH < 1755) {
-  //     whatcontboxnum3.style.left = "-100vw";
-  //   }
+  if (animaitionW >= 650 && animaitionW < 700) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 510) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 1134) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1755) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
 
-  //   if (animaitionH < 2396) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 2396) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 2743) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 3204) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 3344) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 2743) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 3204) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 3344) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 339) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 510) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 1134) {
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1755) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2396) {
-  //     h2secnum3.style.top = "0";
-  //   }
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 510) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1134) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1755) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 2396) {
+      h2secnum3.style.top = "0";
+    }
 
-  //   if (animaitionH >= 2743) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 3204) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 3344) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 2743) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 3204) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 3344) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // from 600 to 650 px
-  // if (animaitionW >= 600 && animaitionW < 650) {
-  //   //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 339) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
-  //   if (animaitionH < 594) {
-  //     whatcontboxnum1.style.left = "-100vw";
-  //   }
-  //   if (animaitionH < 1147) {
-  //     whatcontboxnum2.style.right = "-100vw";
-  //   }
-  //   if (animaitionH < 1725) {
-  //     whatcontboxnum3.style.left = "-100vw";
-  //   }
+  if (animaitionW >= 600 && animaitionW < 650) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 594) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 1147) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1725) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
 
-  //   if (animaitionH < 2288) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 2288) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 2652) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 3070) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 3236) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 2652) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 3070) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 3236) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 339) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 594) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 1147) {
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1725) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2288) {
-  //     h2secnum3.style.top = "0";
-  //   }
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 594) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1147) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1725) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 2288) {
+      h2secnum3.style.top = "0";
+    }
 
-  //   if (animaitionH >= 2652) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 3070) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 3236) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 2652) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 3070) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 3236) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // from 550 to 600 px
-  // if (animaitionW >= 550 && animaitionW < 600) {
-  //   //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 339) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
-  //   if (animaitionH < 594) {
-  //     whatcontboxnum1.style.left = "-100vw";
-  //   }
-  //   if (animaitionH < 1147) {
-  //     whatcontboxnum2.style.right = "-100vw";
-  //   }
-  //   if (animaitionH < 1725) {
-  //     whatcontboxnum3.style.left = "-100vw";
-  //   }
+  if (animaitionW >= 550 && animaitionW < 600) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 594) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 1147) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1725) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
 
-  //   if (animaitionH < 2288) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 2288) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 2652) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 3070) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 3236) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 2652) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 3070) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 3236) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 339) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 594) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 1147) {
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1725) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2288) {
-  //     h2secnum3.style.top = "0";
-  //   }
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 594) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1147) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1725) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 2288) {
+      h2secnum3.style.top = "0";
+    }
 
-  //   if (animaitionH >= 2652) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 3070) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 3236) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 2652) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 3070) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 3236) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
-  // // from 500 to 550 px
-  // if (animaitionW >= 500 && animaitionW < 550) {
-  //   //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 339) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
-  //   if (animaitionH < 566) {
-  //     whatcontboxnum1.style.left = "-100vw";
-  //   }
-  //   if (animaitionH < 1100) {
-  //     whatcontboxnum2.style.right = "-100vw";
-  //   }
-  //   if (animaitionH < 1642) {
-  //     whatcontboxnum3.style.left = "-100vw";
-  //   }
+  // from 500 to 550 px
+  if (animaitionW >= 500 && animaitionW < 550) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 566) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 1100) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1642) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
 
-  //   if (animaitionH < 2158) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 2158) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 2473) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 2932) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 3109) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 2473) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2932) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 3109) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 339) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 566) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 1100) {
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1642) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2158) {
-  //     h2secnum3.style.top = "0";
-  //   }
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 566) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1100) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1642) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 2158) {
+      h2secnum3.style.top = "0";
+    }
 
-  //   if (animaitionH >= 2473) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2932) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 3109) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 2473) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2932) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 3109) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // // from 450 to 500 px
-  // if (animaitionW >= 450 && animaitionW < 500) {
-  //   //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 339) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
-  //   if (animaitionH < 566) {
-  //     whatcontboxnum1.style.left = "-100vw";
-  //   }
-  //   if (animaitionH < 1066) {
-  //     whatcontboxnum2.style.right = "-100vw";
-  //   }
-  //   if (animaitionH < 1557) {
-  //     whatcontboxnum3.style.left = "-100vw";
-  //   }
+  if (animaitionW >= 450 && animaitionW < 500) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
+    if (animaitionH < 566) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 1066) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1557) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
 
-  //   if (animaitionH < 2055) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 2055) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 2400) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 2875) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 3099) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 2400) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2875) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 3099) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 339) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 566) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 1066) {
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1557) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2055) {
-  //     h2secnum3.style.top = "0";
-  //   }
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 566) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1066) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1557) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 2055) {
+      h2secnum3.style.top = "0";
+    }
 
-  //   if (animaitionH >= 2400) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2875) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 3099) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 2400) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2875) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 3099) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // // from 400 to 450 px
-  // if (animaitionW >= 400 && animaitionW < 450) {
-  //   //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 339) {
-  //     h2fortitleForOurCom.style.left = "-150%";
-  //     pfortitleForOurCom.style.right = "-150%";
-  //   }
-  //   if (animaitionH < 566) {
-  //     whatcontboxnum1.style.left = "-100vw";
-  //   }
-  //   if (animaitionH < 1066) {
-  //     whatcontboxnum2.style.right = "-100vw";
-  //   }
-  //   if (animaitionH < 1525) {
-  //     whatcontboxnum3.style.left = "-100vw";
-  //   }
+  if (animaitionW >= 400 && animaitionW < 450) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-150%";
+      pfortitleForOurCom.style.right = "-150%";
+    }
+    if (animaitionH < 566) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 1066) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1525) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
 
-  //   if (animaitionH < 2030) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 2030) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 2360) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 2781) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 3034) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 2360) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2781) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 3034) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 339) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 566) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 1066) {
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1525) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2030) {
-  //     h2secnum3.style.top = "0";
-  //   }
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 566) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1066) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1525) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 2030) {
+      h2secnum3.style.top = "0";
+    }
 
-  //   if (animaitionH >= 2360) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2781) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 3034) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 2360) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2781) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 3034) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // // from 350 to 400 px
-  // if (animaitionW >= 350 && animaitionW < 400) {
-  //   //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 339) {
-  //     h2fortitleForOurCom.style.left = "-150%";
-  //     pfortitleForOurCom.style.right = "-150%";
-  //   }
-  //   if (animaitionH < 636) {
-  //     whatcontboxnum1.style.left = "-100vw";
-  //   }
-  //   if (animaitionH < 1066) {
-  //     whatcontboxnum2.style.right = "-100vw";
-  //   }
-  //   if (animaitionH < 1525) {
-  //     whatcontboxnum3.style.left = "-100vw";
-  //   }
+  if (animaitionW >= 350 && animaitionW < 400) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-150%";
+      pfortitleForOurCom.style.right = "-150%";
+    }
+    if (animaitionH < 636) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 1066) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1525) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
 
-  //   if (animaitionH < 2030) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 2030) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 2360) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 2781) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 3034) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 2360) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2781) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 3034) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 339) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 636) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 1066) {
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1525) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2030) {
-  //     h2secnum3.style.top = "0";
-  //   }
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 636) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1066) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1525) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 2030) {
+      h2secnum3.style.top = "0";
+    }
 
-  //   if (animaitionH >= 2360) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2781) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 3034) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 2360) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2781) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 3034) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
 
   // // from 300 to 350 px
-  // if (animaitionW >= 310 && animaitionW < 350) {
-  //   //   // default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 339) {
-  //     h2fortitleForOurCom.style.left = "-150%";
-  //     pfortitleForOurCom.style.right = "-150%";
-  //   }
-  //   if (animaitionH < 636) {
-  //     whatcontboxnum1.style.left = "-100vw";
-  //   }
-  //   if (animaitionH < 1045) {
-  //     whatcontboxnum2.style.right = "-100vw";
-  //   }
-  //   if (animaitionH < 1472) {
-  //     whatcontboxnum3.style.left = "-100vw";
-  //   }
+  if (animaitionW >= 310 && animaitionW < 350) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-150%";
+      pfortitleForOurCom.style.right = "-150%";
+    }
+    if (animaitionH < 636) {
+      whatcontboxnum1.style.left = "-100vw";
+    }
+    if (animaitionH < 1045) {
+      whatcontboxnum2.style.right = "-100vw";
+    }
+    if (animaitionH < 1472) {
+      whatcontboxnum3.style.left = "-100vw";
+    }
 
-  //   if (animaitionH < 1929) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 1929) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 2279) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 2720) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 2921) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 2279) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 2720) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 2921) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 339) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 636) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 1045) {
-  //     whatcontboxnum2.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 1472) {
-  //     whatcontboxnum3.style.left = "0";
-  //   }
-  //   if (animaitionH >= 1929) {
-  //     h2secnum3.style.top = "0";
-  //   }
+    // animation
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 636) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1045) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1472) {
+      whatcontboxnum3.style.left = "0";
+    }
+    if (animaitionH >= 1929) {
+      h2secnum3.style.top = "0";
+    }
 
-  //   if (animaitionH >= 2279) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 2720) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 2921) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 2279) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 2720) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 2921) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
   // **************************************
   // **************************************
   // **************************************
