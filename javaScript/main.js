@@ -17,7 +17,7 @@ window.onscroll = function () {
       return `1`;
     };
     OrangelineINHead.style.setProperty("--opacity", opacityNumber());
-    imagesLanding.style.top = "100px";
+    // imagesLanding.style.top = "100px";
   } else if (window.scrollY <= 130 && myWidth > 767) {
     head.style.backgroundColor = "transparent";
     imagesLanding.style.top = "0px";
@@ -726,19 +726,19 @@ let myWidth = window.innerWidth;
 
 function WindowSize() {
   // loadddd.style.top = `${window.scrollY.toString()}px` ;
-  console.log("noor");
+
   myWidth = window.innerWidth;
 
   imagesLanding.style.width = `${myWidth.toString()}px - 20px`;
   // الرقم اللي تحت ده هو ال النسبه بين الطول والعرض للصوره علشان اخلي الاب يتغير علي اساس الصوره
-  imagesLanding.style.height = `calc(${myWidth.toString() / 1.81}px)`;
+  // imagesLanding.style.height = `calc(${myWidth.toString() / 1.81}px)`;
   if (myWidth < 767) {
     head.style.backgroundColor = "black";
     const opacityNumber = () => {
       return `1`;
     };
     OrangelineINHead.style.setProperty("--opacity", opacityNumber());
-    imagesLanding.style.top = "100px";
+    // imagesLanding.style.top = "100px";
   } else {
     head.style.backgroundColor = "transparent";
     imagesLanding.style.top = "0px";
@@ -884,11 +884,12 @@ decorbutton.addEventListener("click", function () {
 });
 // Allproducts.forEach(function (product) {
 //   product.addEventListener("click", function () {
-//     console.log("a7a");
+//
 //   });
 // });
 
 // animaition js
+
 let animaitionW;
 let animaitionH;
 let whatdoH2 = document.getElementById("whatdoH2");
@@ -906,772 +907,1163 @@ let secnum3points = document.getElementById("secnum3points");
 let moreproducts = document.getElementById("moreproducts");
 let customerh2 = document.getElementById("customerh2");
 let contactsh2 = document.getElementById("contactsh2");
+console.log(window.innerHeight);
 function animation() {
   animaitionW = window.innerWidth;
   animaitionH = window.scrollY;
   console.log(animaitionH);
-
-  if (animaitionW >= 1300 && animaitionW < 1600) {
-    // default
-    if (animaitionH < 170) {
-      whatdoH2.style.top = "-200px";
-    }
-    if (animaitionH < 200) {
-      h2fortitleForOurCom.style.left = "-100%";
-      pfortitleForOurCom.style.right = "-100%";
-    }
-    if (animaitionH < 410) {
-      whatcontboxnum1.style.left = "-50vw";
-
-      whatcontboxnum3.style.right = "-50vw";
-      whatcontboxnum2.style.top = "-120%";
-    }
-
-    if (animaitionH < 880) {
-      h2secnum3.style.top = "-150px";
-    }
-    if (animaitionH < 1307) {
-      secnum3img.style.right = "100%";
-    }
-    if (animaitionH < 1307) {
-      secnum3points.style.left = "100%";
-    }
-    if (animaitionH < 1719) {
-      productsh2.style.top = "-150px";
-    }
-    if (animaitionH < 1901) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
-    }
-    if (animaitionH < 2609) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 3021) {
-      contactsh2.style.top = "-150px";
-    }
-
-    // animation
-    if (animaitionH >= 170) {
-      whatdoH2.style.top = "0px";
-    }
-    if (animaitionH >= 200) {
-      h2fortitleForOurCom.style.left = "0";
-      pfortitleForOurCom.style.right = "0%";
-    }
-    if (animaitionH >= 410) {
-      whatcontboxnum1.style.left = "0px";
-      whatcontboxnum3.style.right = "0px";
-      whatcontboxnum2.style.top = "0px";
-    }
-
-    if (animaitionH >= 880) {
-      h2secnum3.style.top = "0";
-    }
-    if (animaitionH >= 1307) {
-      secnum3img.style.right = "0";
-    }
-    if (animaitionH >= 1307) {
-      secnum3points.style.left = "0";
-    }
-    if (animaitionH >= 1719) {
-      productsh2.style.top = "0";
-    }
-    if (animaitionH >= 1901) {
-      AlLbutton.style.top = "0px";
-      outDoorbutton.style.top = "0px";
-      moreproducts.style.top = "0px";
-      inDoorbutton.style.bottom = "0px";
-      decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 2609) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 3021) {
-      contactsh2.style.top = "0px";
-    }
-  }
   // **************************************
   // **************************************
   // **************************************
-  if (animaitionW >= 1600) {
-    // default
-    if (animaitionH < 620) {
-      whatcontboxnum1.style.left = "-50vw";
-    }
-    if (animaitionH < 620) {
-      whatcontboxnum3.style.right = "-50vw";
-    }
-    if (animaitionH < 300) {
-      whatdoH2.style.top = "-200px";
-    }
-    if (animaitionH < 330) {
-      h2fortitleForOurCom.style.left = "-100%";
-      pfortitleForOurCom.style.right = "-100%";
-    }
-    if (animaitionH < 620) {
-      whatcontboxnum2.style.top = "-120%";
-    }
 
-    if (animaitionH < 1061) {
-      h2secnum3.style.top = "-150px";
-    }
-    if (animaitionH < 1061) {
-      h2secnum3.style.top = "-150px";
-    }
-    if (animaitionH < 1463) {
-      secnum3img.style.right = "100%";
-    }
-    if (animaitionH < 1463) {
-      secnum3points.style.left = "100%";
-    }
-    if (animaitionH < 1836) {
-      productsh2.style.top = "-150px";
-    }
-    if (animaitionH < 2014) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
-    }
-    if (animaitionH < 2809) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 3182) {
-      contactsh2.style.top = "-150px";
-    }
-    // animation&&&&&&&&&&
-    if (animaitionH >= 300) {
-      whatdoH2.style.top = "0px";
-    }
-    if (animaitionH >= 330) {
-      h2fortitleForOurCom.style.left = "0";
-      pfortitleForOurCom.style.right = "0%";
-    }
-    if (animaitionH >= 620) {
-      whatcontboxnum1.style.left = "0px";
-    }
-    if (animaitionH >= 620) {
-      whatcontboxnum3.style.right = "0px";
-    }
-    if (animaitionH >= 620) {
-      whatcontboxnum2.style.top = "0px";
-    }
+  // doooooooooooooooone
 
-    if (animaitionH >= 1061) {
-      h2secnum3.style.top = "0";
-    }
-    if (animaitionH >= 1463) {
-      secnum3img.style.right = "0";
-    }
-    if (animaitionH >= 1463) {
-      secnum3points.style.left = "0";
-    }
-    if (animaitionH >= 1836) {
-      productsh2.style.top = "0";
-    }
-    if (animaitionH >= 2014) {
-      AlLbutton.style.top = "0px";
-      outDoorbutton.style.top = "0px";
-      moreproducts.style.top = "0px";
-      inDoorbutton.style.bottom = "0px";
-      decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 2809) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 3182) {
-      contactsh2.style.top = "0px";
-    }
-  }
+  // **************************************
+  // **************************************
+  // **************************************
+  // from 1300 px to 1600px
+  // if (animaitionW >= 1300 && animaitionW < 1600) {
+
+  //   //  default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 294) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+
+  //   if (animaitionH < 483) {
+  //     whatcontboxnum1.style.left = "-50vw";
+  //   }
+  //   if (animaitionH < 483) {
+  //     whatcontboxnum3.style.right = "-50vw";
+  //   }
+
+  //   if (animaitionH < 483) {
+  //     whatcontboxnum2.style.top = "-120%";
+  //   }
+
+  //   if (animaitionH < 972) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+
+  //   if (animaitionH < 1315) {
+  //     secnum3img.style.right = "100%";
+  //   }
+  //   if (animaitionH < 1315) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 1731) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 1894) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
+
+  //   // animation&&&&&&&&&&
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 294) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 483) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 483) {
+  //     whatcontboxnum3.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 483) {
+  //     whatcontboxnum2.style.top = "0px";
+  //   }
+
+  //   if (animaitionH >= 972) {
+  //     h2secnum3.style.top = "0";
+  //   }
+  //   if (animaitionH >= 1315) {
+  //     secnum3img.style.right = "0";
+  //   }
+  //   if (animaitionH >= 1315) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 1731) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 1894) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
+  // **************************************
+  // **************************************
+  // from 1600 px to above
+  // if (animaitionW >= 1600) {
+  //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 294) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+
+  //   if (animaitionH < 483) {
+  //     whatcontboxnum1.style.left = "-50vw";
+  //   }
+  //   if (animaitionH < 483) {
+  //     whatcontboxnum3.style.right = "-50vw";
+  //   }
+
+  //   if (animaitionH < 483) {
+  //     whatcontboxnum2.style.top = "-120%";
+  //   }
+
+  //   if (animaitionH < 972) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+
+  //   if (animaitionH < 1315) {
+  //     secnum3img.style.right = "100%";
+  //   }
+  //   if (animaitionH < 1315) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 1731) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 1894) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
+
+  //   // animation&&&&&&&&&&
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 294) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 483) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 483) {
+  //     whatcontboxnum3.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 483) {
+  //     whatcontboxnum2.style.top = "0px";
+  //   }
+
+  //   if (animaitionH >= 972) {
+  //     h2secnum3.style.top = "0";
+  //   }
+  //   if (animaitionH >= 1315) {
+  //     secnum3img.style.right = "0";
+  //   }
+  //   if (animaitionH >= 1315) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 1731) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 1894) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
+
   // form 1200 px too 1300px
-  if (animaitionW >= 1200 && animaitionW < 1300) {
-    // default
-    if (animaitionH < 200) {
-      h2fortitleForOurCom.style.left = "-100%";
-      pfortitleForOurCom.style.right = "-100%";
-    }
-    if (animaitionH < 410) {
-      whatcontboxnum1.style.left = "-50vw";
+  // if (animaitionW >= 1200 && animaitionW < 1300) {
+  //   //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 294) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
 
-      whatcontboxnum3.style.right = "-50vw";
-      whatcontboxnum2.style.top = "-120%";
-    }
+  //   if (animaitionH < 483) {
+  //     whatcontboxnum1.style.left = "-50vw";
+  //   }
+  //   if (animaitionH < 483) {
+  //     whatcontboxnum3.style.right = "-50vw";
+  //   }
 
-    if (animaitionH < 793) {
-      h2secnum3.style.top = "-150px";
-    }
-    if (animaitionH < 1180) {
-      secnum3img.style.right = "100%";
-    }
-    if (animaitionH < 1180) {
-      secnum3points.style.left = "100%";
-    }
-    if (animaitionH < 1562) {
-      productsh2.style.top = "-150px";
-    }
-    if (animaitionH < 1750) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
-    }
-    if (animaitionH < 2371) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 2742) {
-      contactsh2.style.top = "-150px";
-    }
+  //   if (animaitionH < 483) {
+  //     whatcontboxnum2.style.top = "-120%";
+  //   }
 
-    // animation
+  //   if (animaitionH < 972) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
 
-    if (animaitionH >= 200) {
-      h2fortitleForOurCom.style.left = "0";
-      pfortitleForOurCom.style.right = "0%";
-    }
-    if (animaitionH >= 410) {
-      whatcontboxnum1.style.left = "0px";
-      whatcontboxnum3.style.right = "0px";
-      whatcontboxnum2.style.top = "0px";
-    }
+  //   if (animaitionH < 1315) {
+  //     secnum3img.style.right = "100%";
+  //   }
+  //   if (animaitionH < 1315) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 1731) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 1894) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
 
-    if (animaitionH >= 793) {
-      h2secnum3.style.top = "0";
-    }
-    if (animaitionH >= 1180) {
-      secnum3img.style.right = "0";
-    }
-    if (animaitionH >= 1180) {
-      secnum3points.style.left = "0";
-    }
-    if (animaitionH >= 1562) {
-      productsh2.style.top = "0";
-    }
-    if (animaitionH >= 1750) {
-      AlLbutton.style.top = "0px";
-      outDoorbutton.style.top = "0px";
-      moreproducts.style.top = "0px";
-      inDoorbutton.style.bottom = "0px";
-      decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 2371) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 2742) {
-      contactsh2.style.top = "0px";
-    }
-  }
-  // form 1100 px too 1200px
-  if (animaitionW >= 1100 && animaitionW < 1200) {
-    // default
-    if (animaitionH < 135) {
-      h2fortitleForOurCom.style.left = "-100%";
-      pfortitleForOurCom.style.right = "-100%";
-    }
-    if (animaitionH < 312) {
-      whatcontboxnum1.style.left = "-50vw";
+  //   // animation&&&&&&&&&&
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 294) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 483) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 483) {
+  //     whatcontboxnum3.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 483) {
+  //     whatcontboxnum2.style.top = "0px";
+  //   }
 
-      whatcontboxnum2.style.right = "-50vw";
-    }
-    if (animaitionH < 809) {
-      whatcontboxnum3.style.left = "-50vw";
-    }
+  //   if (animaitionH >= 972) {
+  //     h2secnum3.style.top = "0";
+  //   }
+  //   if (animaitionH >= 1315) {
+  //     secnum3img.style.right = "0";
+  //   }
+  //   if (animaitionH >= 1315) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 1731) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 1894) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
 
-    if (animaitionH < 1316) {
-      h2secnum3.style.top = "-150px";
-    }
-    if (animaitionH < 1707) {
-      secnum3img.style.right = "100%";
-    }
-    if (animaitionH < 1707) {
-      secnum3points.style.left = "100%";
-    }
-    if (animaitionH < 2116) {
-      productsh2.style.top = "-150px";
-    }
-    if (animaitionH < 2253) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
-    }
-    if (animaitionH < 3967) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 4322) {
-      contactsh2.style.top = "-150px";
-    }
+  // form 800 px too 1200px
+  // if (animaitionW >= 992 && animaitionW < 1200) {
+  //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 342) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+  //   if (animaitionH < 560) {
+  //     whatcontboxnum1.style.left = "-50vw";
+  //     whatcontboxnum2.style.right = "-50vw";
+  //   }
+  //   if (animaitionH < 1010) {
+  //     whatcontboxnum3.style.left = "-50vw";
+  //   }
 
-    // animation
+  //   if (animaitionH < 1550) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 1924) {
+  //     secnum3img.style.right = "100%";
+  //   }
+  //   if (animaitionH < 1924) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 2344) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 2478) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
 
-    if (animaitionH >= 135) {
-      h2fortitleForOurCom.style.left = "0";
-      pfortitleForOurCom.style.right = "0%";
-    }
-    if (animaitionH >= 312) {
-      whatcontboxnum1.style.left = "0px";
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 342) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 560) {
+  //     whatcontboxnum1.style.left = "0px";
 
-      whatcontboxnum2.style.right = "0px";
-    }
-    if (animaitionH >= 809) {
-      whatcontboxnum3.style.left = "0";
-    }
-    if (animaitionH >= 1316) {
-      h2secnum3.style.top = "0";
-    }
-    if (animaitionH >= 1707) {
-      secnum3img.style.right = "0";
-    }
-    if (animaitionH >= 1707) {
-      secnum3points.style.left = "0";
-    }
-    if (animaitionH >= 2116) {
-      productsh2.style.top = "0";
-    }
-    if (animaitionH >= 2253) {
-      AlLbutton.style.top = "0px";
-      outDoorbutton.style.top = "0px";
-      moreproducts.style.top = "0px";
-      inDoorbutton.style.bottom = "0px";
-      decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 3967) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 4322) {
-      contactsh2.style.top = "0px";
-    }
-  }
-  // form 1000 px too 1100px
-  if (animaitionW >= 1000 && animaitionW < 1100) {
-    // default
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1010) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 1550) {
+  //     h2secnum3.style.top = "0";
+  //   }
+  //   if (animaitionH >= 1944) {
+  //     secnum3img.style.right = "0";
+  //   }
+  //   if (animaitionH >= 1924) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2344) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 2478) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
 
-    if (animaitionH < 233) {
-      whatcontboxnum1.style.left = "-50vw";
+  // form 768 px too 992
+  // if (animaitionW >= 768 && animaitionW < 992) {
+  //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 342) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+  //   if (animaitionH < 501) {
+  //     whatcontboxnum1.style.left = "-50vw";
+  //     whatcontboxnum2.style.right = "-50vw";
+  //   }
+  //   if (animaitionH < 930) {
+  //     whatcontboxnum3.style.left = "-50vw";
+  //   }
 
-      whatcontboxnum2.style.right = "-50vw";
-    }
-    if (animaitionH < 643) {
-      whatcontboxnum3.style.left = "-50vw";
-    }
+  //   if (animaitionH < 1391) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 1731) {
+  //     secnum3img.style.right = "100%";
+  //   }
+  //   if (animaitionH < 1731) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 2192) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 2354) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
 
-    if (animaitionH < 1077) {
-      h2secnum3.style.top = "-150px";
-    }
-    if (animaitionH < 1512) {
-      secnum3img.style.right = "100%";
-    }
-    if (animaitionH < 1512) {
-      secnum3points.style.left = "100%";
-    }
-    if (animaitionH < 1884) {
-      productsh2.style.top = "-150px";
-    }
-    if (animaitionH < 2010) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
-    }
-    if (animaitionH < 3454) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 3826) {
-      contactsh2.style.top = "-150px";
-    }
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 342) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 501) {
+  //     whatcontboxnum1.style.left = "0px";
 
-    // animation
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 930) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 1391) {
+  //     h2secnum3.style.top = "0";
+  //   }
+  //   if (animaitionH >= 1731) {
+  //     secnum3img.style.right = "0";
+  //   }
+  //   if (animaitionH >= 1731) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2192) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 2354) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
 
-    if (animaitionH >= 233) {
-      whatcontboxnum1.style.left = "0px";
-      whatcontboxnum2.style.right = "0px";
-    }
-    if (animaitionH >= 643) {
-      whatcontboxnum3.style.left = "0";
-    }
-    if (animaitionH >= 1077) {
-      h2secnum3.style.top = "0";
-    }
-    if (animaitionH >= 1512) {
-      secnum3img.style.right = "0";
-    }
-    if (animaitionH >= 1512) {
-      secnum3points.style.left = "0";
-    }
-    if (animaitionH >= 1884) {
-      productsh2.style.top = "0";
-    }
-    if (animaitionH >= 2010) {
-      AlLbutton.style.top = "0px";
-      outDoorbutton.style.top = "0px";
-      moreproducts.style.top = "0px";
-      inDoorbutton.style.bottom = "0px";
-      decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 3454) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 3826) {
-      contactsh2.style.top = "0px";
-    }
-  }
-  // from 900 to 1000 px
-  if (animaitionW >= 900 && animaitionW < 1000) {
-    // default
+  // from 700 to 768 px
+  // if (animaitionW >= 700 && animaitionW < 768) {
+  //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 339) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+  //   if (animaitionH < 510) {
+  //     whatcontboxnum1.style.left = "-100vw";
+  //   }
+  //   if (animaitionH < 1134) {
+  //     whatcontboxnum2.style.right = "-100vw";
+  //   }
+  //   if (animaitionH < 1755) {
+  //     whatcontboxnum3.style.left = "-100vw";
+  //   }
 
-    if (animaitionH < 233) {
-      whatcontboxnum1.style.left = "-50vw";
+  //   if (animaitionH < 2508) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
 
-      whatcontboxnum2.style.right = "-50vw";
-    }
-    if (animaitionH < 643) {
-      whatcontboxnum3.style.left = "-50vw";
-    }
+  //   if (animaitionH < 2858) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 3310) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 3457) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
 
-    if (animaitionH < 1077) {
-      h2secnum3.style.top = "-150px";
-    }
-    if (animaitionH < 1512) {
-      secnum3img.style.right = "100%";
-    }
-    if (animaitionH < 1512) {
-      secnum3points.style.left = "100%";
-    }
-    if (animaitionH < 1884) {
-      productsh2.style.top = "-150px";
-    }
-    if (animaitionH < 2010) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
-    }
-    if (animaitionH < 3454) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 3826) {
-      contactsh2.style.top = "-150px";
-    }
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 339) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 510) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 1134) {
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1755) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2508) {
+  //     h2secnum3.style.top = "0";
+  //   }
 
-    // animation
+  //   if (animaitionH >= 2858) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 3310) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 3457) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
 
-    if (animaitionH >= 233) {
-      whatcontboxnum1.style.left = "0px";
-      whatcontboxnum2.style.right = "0px";
-    }
-    if (animaitionH >= 643) {
-      whatcontboxnum3.style.left = "0";
-    }
-    if (animaitionH >= 1077) {
-      h2secnum3.style.top = "0";
-    }
-    if (animaitionH >= 1512) {
-      secnum3img.style.right = "0";
-    }
-    if (animaitionH >= 1512) {
-      secnum3points.style.left = "0";
-    }
-    if (animaitionH >= 1884) {
-      productsh2.style.top = "0";
-    }
-    if (animaitionH >= 2010) {
-      AlLbutton.style.top = "0px";
-      outDoorbutton.style.top = "0px";
-      moreproducts.style.top = "0px";
-      inDoorbutton.style.bottom = "0px";
-      decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 3454) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 3826) {
-      contactsh2.style.top = "0px";
-    }
-  }
+  // // from 650 to 700 px
+  // if (animaitionW >= 650 && animaitionW < 700) {
+  //   //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 339) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+  //   if (animaitionH < 510) {
+  //     whatcontboxnum1.style.left = "-100vw";
+  //   }
+  //   if (animaitionH < 1134) {
+  //     whatcontboxnum2.style.right = "-100vw";
+  //   }
+  //   if (animaitionH < 1755) {
+  //     whatcontboxnum3.style.left = "-100vw";
+  //   }
 
-  if (animaitionW >= 770 && animaitionW < 900) {
-    // default
+  //   if (animaitionH < 2396) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
 
-    if (animaitionH < 138) {
-      whatcontboxnum1.style.left = "-50vw";
+  //   if (animaitionH < 2743) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 3204) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 3344) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
 
-      whatcontboxnum2.style.right = "-50vw";
-    }
-    if (animaitionH < 560) {
-      whatcontboxnum3.style.left = "-50vw";
-    }
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 339) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 510) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 1134) {
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1755) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2396) {
+  //     h2secnum3.style.top = "0";
+  //   }
 
-    if (animaitionH < 1000) {
-      h2secnum3.style.top = "-150px";
-    }
+  //   if (animaitionH >= 2743) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 3204) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 3344) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
 
-    if (animaitionH < 1385) {
-      secnum3points.style.left = "100%";
-    }
-    if (animaitionH < 1800) {
-      productsh2.style.top = "-150px";
-    }
-    if (animaitionH < 1957) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
-    }
-    if (animaitionH < 3220) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 3540) {
-      contactsh2.style.top = "-150px";
-    }
+  // from 600 to 650 px
+  // if (animaitionW >= 600 && animaitionW < 650) {
+  //   //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 339) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+  //   if (animaitionH < 594) {
+  //     whatcontboxnum1.style.left = "-100vw";
+  //   }
+  //   if (animaitionH < 1147) {
+  //     whatcontboxnum2.style.right = "-100vw";
+  //   }
+  //   if (animaitionH < 1725) {
+  //     whatcontboxnum3.style.left = "-100vw";
+  //   }
 
-    // animation
+  //   if (animaitionH < 2288) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
 
-    if (animaitionH >= 138) {
-      whatcontboxnum1.style.left = "0px";
-      whatcontboxnum2.style.right = "0px";
-    }
-    if (animaitionH >= 560) {
-      whatcontboxnum3.style.left = "0";
-    }
-    if (animaitionH >= 1000) {
-      h2secnum3.style.top = "0";
-    }
+  //   if (animaitionH < 2652) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 3070) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 3236) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
 
-    if (animaitionH >= 1385) {
-      secnum3points.style.left = "0";
-    }
-    if (animaitionH >= 1800) {
-      productsh2.style.top = "0";
-    }
-    if (animaitionH >= 1957) {
-      AlLbutton.style.top = "0px";
-      outDoorbutton.style.top = "0px";
-      moreproducts.style.top = "0px";
-      inDoorbutton.style.bottom = "0px";
-      decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 3220) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 3540) {
-      contactsh2.style.top = "0px";
-    }
-  }
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 339) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 594) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 1147) {
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1725) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2288) {
+  //     h2secnum3.style.top = "0";
+  //   }
 
-  if (animaitionW >= 600 && animaitionW < 770) {
-    // default
+  //   if (animaitionH >= 2652) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 3070) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 3236) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
 
-    if (animaitionH < 95) {
+  // from 550 to 600 px
+  // if (animaitionW >= 550 && animaitionW < 600) {
+  //   //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 339) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+  //   if (animaitionH < 594) {
+  //     whatcontboxnum1.style.left = "-100vw";
+  //   }
+  //   if (animaitionH < 1147) {
+  //     whatcontboxnum2.style.right = "-100vw";
+  //   }
+  //   if (animaitionH < 1725) {
+  //     whatcontboxnum3.style.left = "-100vw";
+  //   }
+
+  //   if (animaitionH < 2288) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+
+  //   if (animaitionH < 2652) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 3070) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 3236) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
+
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 339) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 594) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 1147) {
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1725) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2288) {
+  //     h2secnum3.style.top = "0";
+  //   }
+
+  //   if (animaitionH >= 2652) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 3070) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 3236) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
+
+  // // from 500 to 550 px
+  // if (animaitionW >= 500 && animaitionW < 550) {
+  //   //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 339) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+  //   if (animaitionH < 566) {
+  //     whatcontboxnum1.style.left = "-100vw";
+  //   }
+  //   if (animaitionH < 1100) {
+  //     whatcontboxnum2.style.right = "-100vw";
+  //   }
+  //   if (animaitionH < 1642) {
+  //     whatcontboxnum3.style.left = "-100vw";
+  //   }
+
+  //   if (animaitionH < 2158) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+
+  //   if (animaitionH < 2473) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 2932) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 3109) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
+
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 339) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 566) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 1100) {
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1642) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2158) {
+  //     h2secnum3.style.top = "0";
+  //   }
+
+  //   if (animaitionH >= 2473) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2932) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 3109) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
+
+  // // from 450 to 500 px
+  // if (animaitionW >= 450 && animaitionW < 500) {
+  //   //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 339) {
+  //     h2fortitleForOurCom.style.left = "-100%";
+  //     pfortitleForOurCom.style.right = "-100%";
+  //   }
+  //   if (animaitionH < 566) {
+  //     whatcontboxnum1.style.left = "-100vw";
+  //   }
+  //   if (animaitionH < 1066) {
+  //     whatcontboxnum2.style.right = "-100vw";
+  //   }
+  //   if (animaitionH < 1557) {
+  //     whatcontboxnum3.style.left = "-100vw";
+  //   }
+
+  //   if (animaitionH < 2055) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+
+  //   if (animaitionH < 2400) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 2875) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 3099) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
+
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 339) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 566) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 1066) {
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1557) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2055) {
+  //     h2secnum3.style.top = "0";
+  //   }
+
+  //   if (animaitionH >= 2400) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2875) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 3099) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
+
+  // // from 400 to 450 px
+  // if (animaitionW >= 400 && animaitionW < 450) {
+  //   //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 339) {
+  //     h2fortitleForOurCom.style.left = "-150%";
+  //     pfortitleForOurCom.style.right = "-150%";
+  //   }
+  //   if (animaitionH < 566) {
+  //     whatcontboxnum1.style.left = "-100vw";
+  //   }
+  //   if (animaitionH < 1066) {
+  //     whatcontboxnum2.style.right = "-100vw";
+  //   }
+  //   if (animaitionH < 1525) {
+  //     whatcontboxnum3.style.left = "-100vw";
+  //   }
+
+  //   if (animaitionH < 2030) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+
+  //   if (animaitionH < 2360) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 2781) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 3034) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
+
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 339) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 566) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 1066) {
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1525) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2030) {
+  //     h2secnum3.style.top = "0";
+  //   }
+
+  //   if (animaitionH >= 2360) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2781) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 3034) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
+
+  // // from 350 to 400 px
+  // if (animaitionW >= 350 && animaitionW < 400) {
+  //   //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 339) {
+  //     h2fortitleForOurCom.style.left = "-150%";
+  //     pfortitleForOurCom.style.right = "-150%";
+  //   }
+  //   if (animaitionH < 636) {
+  //     whatcontboxnum1.style.left = "-100vw";
+  //   }
+  //   if (animaitionH < 1066) {
+  //     whatcontboxnum2.style.right = "-100vw";
+  //   }
+  //   if (animaitionH < 1525) {
+  //     whatcontboxnum3.style.left = "-100vw";
+  //   }
+
+  //   if (animaitionH < 2030) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+
+  //   if (animaitionH < 2360) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 2781) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 3034) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
+
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 339) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 636) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 1066) {
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1525) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2030) {
+  //     h2secnum3.style.top = "0";
+  //   }
+
+  //   if (animaitionH >= 2360) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2781) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 3034) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
+
+  // // from 300 to 350 px
+  // if (animaitionW >= 310 && animaitionW < 350) {
+  //   //   // default
+  //   if (animaitionH < 130) {
+  //     whatdoH2.style.top = "-200px";
+  //   }
+  //   if (animaitionH < 339) {
+  //     h2fortitleForOurCom.style.left = "-150%";
+  //     pfortitleForOurCom.style.right = "-150%";
+  //   }
+  //   if (animaitionH < 636) {
+  //     whatcontboxnum1.style.left = "-100vw";
+  //   }
+  //   if (animaitionH < 1045) {
+  //     whatcontboxnum2.style.right = "-100vw";
+  //   }
+  //   if (animaitionH < 1472) {
+  //     whatcontboxnum3.style.left = "-100vw";
+  //   }
+
+  //   if (animaitionH < 1929) {
+  //     h2secnum3.style.top = "-150px";
+  //   }
+
+  //   if (animaitionH < 2279) {
+  //     secnum3points.style.left = "100%";
+  //   }
+  //   if (animaitionH < 2720) {
+  //     productsh2.style.top = "-150px";
+  //   }
+  //   if (animaitionH < 2921) {
+  //     AlLbutton.style.top = "-150px";
+  //     outDoorbutton.style.top = "-150px";
+  //     moreproducts.style.top = "-150px";
+  //     inDoorbutton.style.bottom = "-150px";
+  //     decorbutton.style.bottom = "-150px";
+  //   }
+
+  //   // animation
+  //   if (animaitionH >= 130) {
+  //     whatdoH2.style.top = "0px";
+  //   }
+  //   if (animaitionH >= 339) {
+  //     h2fortitleForOurCom.style.left = "0";
+  //     pfortitleForOurCom.style.right = "0%";
+  //   }
+  //   if (animaitionH >= 636) {
+  //     whatcontboxnum1.style.left = "0px";
+  //   }
+  //   if (animaitionH >= 1045) {
+  //     whatcontboxnum2.style.right = "0px";
+  //   }
+  //   if (animaitionH >= 1472) {
+  //     whatcontboxnum3.style.left = "0";
+  //   }
+  //   if (animaitionH >= 1929) {
+  //     h2secnum3.style.top = "0";
+  //   }
+
+  //   if (animaitionH >= 2279) {
+  //     secnum3points.style.left = "0";
+  //   }
+  //   if (animaitionH >= 2720) {
+  //     productsh2.style.top = "0";
+  //   }
+  //   if (animaitionH >= 2921) {
+  //     AlLbutton.style.top = "0px";
+  //     outDoorbutton.style.top = "0px";
+  //     moreproducts.style.top = "0px";
+  //     inDoorbutton.style.bottom = "0px";
+  //     decorbutton.style.bottom = "0px";
+  //   }
+  // }
+  // **************************************
+  // **************************************
+  // **************************************
+
+  // doooooooooooooooone
+
+  // **************************************
+  // **************************************
+  // **************************************
+  // // from 2800 to 3100 px
+  if (animaitionW >= 280 && animaitionW < 310) {
+    //   // default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 339) {
+      h2fortitleForOurCom.style.left = "-150%";
+      pfortitleForOurCom.style.right = "-150%";
+    }
+    if (animaitionH < 662) {
       whatcontboxnum1.style.left = "-100vw";
     }
-    if (animaitionH < 677) {
+    if (animaitionH < 1026) {
       whatcontboxnum2.style.right = "-100vw";
     }
-    if (animaitionH < 1239) {
+    if (animaitionH < 1425) {
       whatcontboxnum3.style.left = "-100vw";
     }
 
-    if (animaitionH < 1849) {
+    if (animaitionH < 1880) {
       h2secnum3.style.top = "-150px";
     }
 
-    if (animaitionH < 2212) {
+    if (animaitionH < 2222) {
       secnum3points.style.left = "100%";
     }
-    if (animaitionH < 2641) {
+    if (animaitionH < 2678) {
       productsh2.style.top = "-150px";
     }
-    if (animaitionH < 2784) {
+    if (animaitionH < 2900) {
       AlLbutton.style.top = "-150px";
       outDoorbutton.style.top = "-150px";
       moreproducts.style.top = "-150px";
       inDoorbutton.style.bottom = "-150px";
       decorbutton.style.bottom = "-150px";
     }
-    if (animaitionH < 6641) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 7067) {
-      contactsh2.style.top = "-150px";
-    }
 
     // animation
-
-    if (animaitionH >= 95) {
-      whatcontboxnum1.style.left = "0";
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
     }
-    if (animaitionH >= 677) {
-      whatcontboxnum2.style.right = "0";
+    if (animaitionH >= 339) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
     }
-    if (animaitionH >= 1239) {
+    if (animaitionH >= 662) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 1026) {
+      whatcontboxnum2.style.right = "0px";
+    }
+    if (animaitionH >= 1425) {
       whatcontboxnum3.style.left = "0";
     }
-    if (animaitionH >= 1849) {
+    if (animaitionH >= 1880) {
       h2secnum3.style.top = "0";
     }
 
-    if (animaitionH >= 2212) {
+    if (animaitionH >= 2222) {
       secnum3points.style.left = "0";
     }
-    if (animaitionH >= 2641) {
+    if (animaitionH >= 2678) {
       productsh2.style.top = "0";
     }
-    if (animaitionH >= 2784) {
+    if (animaitionH >= 2900) {
       AlLbutton.style.top = "0px";
       outDoorbutton.style.top = "0px";
       moreproducts.style.top = "0px";
       inDoorbutton.style.bottom = "0px";
       decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 6641) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 7067) {
-      contactsh2.style.top = "0px";
-    }
-  }
-  // from 500 to 600 px
-
-  if (animaitionW >= 500 && animaitionW < 600) {
-    // default
-
-    if (animaitionH < 572) {
-      whatcontboxnum2.style.right = "-100vw";
-    }
-    if (animaitionH < 1120) {
-      whatcontboxnum3.style.left = "-100vw";
-    }
-
-    if (animaitionH < 1655) {
-      h2secnum3.style.top = "-150px";
-    }
-
-    if (animaitionH < 1946) {
-      secnum3points.style.left = "100%";
-    }
-    if (animaitionH < 2418) {
-      productsh2.style.top = "-150px";
-    }
-    if (animaitionH < 2590) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
-    }
-    if (animaitionH < 5701) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 6140) {
-      contactsh2.style.top = "-150px";
-    }
-
-    // animation
-
-    if (animaitionH >= 572) {
-      whatcontboxnum2.style.right = "0";
-    }
-    if (animaitionH >= 1120) {
-      whatcontboxnum3.style.left = "0";
-    }
-    if (animaitionH >= 1655) {
-      h2secnum3.style.top = "0";
-    }
-
-    if (animaitionH >= 1946) {
-      secnum3points.style.left = "0";
-    }
-    if (animaitionH >= 2418) {
-      productsh2.style.top = "0";
-    }
-    if (animaitionH >= 2590) {
-      AlLbutton.style.top = "0px";
-      outDoorbutton.style.top = "0px";
-      moreproducts.style.top = "0px";
-      inDoorbutton.style.bottom = "0px";
-      decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 5701) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 6140) {
-      contactsh2.style.top = "0px";
-    }
-  }
-  // from 402 too 500px
-
-  if (animaitionW >= 403 && animaitionW < 500) {
-    // default
-
-    if (animaitionH < 572) {
-      whatcontboxnum2.style.right = "-100vw";
-    }
-    if (animaitionH < 1120) {
-      whatcontboxnum3.style.left = "-100vw";
-    }
-
-    if (animaitionH < 1655) {
-      h2secnum3.style.top = "-150px";
-    }
-
-    if (animaitionH < 1946) {
-      secnum3points.style.left = "100%";
-    }
-    if (animaitionH < 2418) {
-      productsh2.style.top = "-150px";
-    }
-    if (animaitionH < 2590) {
-      AlLbutton.style.top = "-150px";
-      outDoorbutton.style.top = "-150px";
-      moreproducts.style.top = "-150px";
-      inDoorbutton.style.bottom = "-150px";
-      decorbutton.style.bottom = "-150px";
-    }
-    if (animaitionH < 5701) {
-      customerh2.style.top = "-150px";
-    }
-    if (animaitionH < 6140) {
-      contactsh2.style.top = "-150px";
-    }
-
-    // animation
-
-    if (animaitionH >= 572) {
-      whatcontboxnum2.style.right = "0";
-    }
-    if (animaitionH >= 1120) {
-      whatcontboxnum3.style.left = "0";
-    }
-    if (animaitionH >= 1655) {
-      h2secnum3.style.top = "0";
-    }
-
-    if (animaitionH >= 1946) {
-      secnum3points.style.left = "0";
-    }
-    if (animaitionH >= 2418) {
-      productsh2.style.top = "0";
-    }
-    if (animaitionH >= 2590) {
-      AlLbutton.style.top = "0px";
-      outDoorbutton.style.top = "0px";
-      moreproducts.style.top = "0px";
-      inDoorbutton.style.bottom = "0px";
-      decorbutton.style.bottom = "0px";
-    }
-    if (animaitionH >= 5701) {
-      customerh2.style.top = "0px";
-    }
-    if (animaitionH >= 6140) {
-      contactsh2.style.top = "0px";
     }
   }
 }
