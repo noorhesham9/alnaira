@@ -922,87 +922,87 @@ function animation() {
   // **************************************
   // **************************************
   // from 1300 px to 1600px
-  // if (animaitionW >= 1300 && animaitionW < 1600) {
+  if (animaitionW >= 1300 && animaitionW < 1600) {
 
-  //   //  default
-  //   if (animaitionH < 130) {
-  //     whatdoH2.style.top = "-200px";
-  //   }
-  //   if (animaitionH < 294) {
-  //     h2fortitleForOurCom.style.left = "-100%";
-  //     pfortitleForOurCom.style.right = "-100%";
-  //   }
+    //  default
+    if (animaitionH < 130) {
+      whatdoH2.style.top = "-200px";
+    }
+    if (animaitionH < 294) {
+      h2fortitleForOurCom.style.left = "-100%";
+      pfortitleForOurCom.style.right = "-100%";
+    }
 
-  //   if (animaitionH < 483) {
-  //     whatcontboxnum1.style.left = "-50vw";
-  //   }
-  //   if (animaitionH < 483) {
-  //     whatcontboxnum3.style.right = "-50vw";
-  //   }
+    if (animaitionH < 483) {
+      whatcontboxnum1.style.left = "-50vw";
+    }
+    if (animaitionH < 483) {
+      whatcontboxnum3.style.right = "-50vw";
+    }
 
-  //   if (animaitionH < 483) {
-  //     whatcontboxnum2.style.top = "-120%";
-  //   }
+    if (animaitionH < 483) {
+      whatcontboxnum2.style.top = "-120%";
+    }
 
-  //   if (animaitionH < 972) {
-  //     h2secnum3.style.top = "-150px";
-  //   }
+    if (animaitionH < 972) {
+      h2secnum3.style.top = "-150px";
+    }
 
-  //   if (animaitionH < 1315) {
-  //     secnum3img.style.right = "100%";
-  //   }
-  //   if (animaitionH < 1315) {
-  //     secnum3points.style.left = "100%";
-  //   }
-  //   if (animaitionH < 1731) {
-  //     productsh2.style.top = "-150px";
-  //   }
-  //   if (animaitionH < 1894) {
-  //     AlLbutton.style.top = "-150px";
-  //     outDoorbutton.style.top = "-150px";
-  //     moreproducts.style.top = "-150px";
-  //     inDoorbutton.style.bottom = "-150px";
-  //     decorbutton.style.bottom = "-150px";
-  //   }
+    if (animaitionH < 1315) {
+      secnum3img.style.right = "100%";
+    }
+    if (animaitionH < 1315) {
+      secnum3points.style.left = "100%";
+    }
+    if (animaitionH < 1731) {
+      productsh2.style.top = "-150px";
+    }
+    if (animaitionH < 1894) {
+      AlLbutton.style.top = "-150px";
+      outDoorbutton.style.top = "-150px";
+      moreproducts.style.top = "-150px";
+      inDoorbutton.style.bottom = "-150px";
+      decorbutton.style.bottom = "-150px";
+    }
 
-  //   // animation&&&&&&&&&&
-  //   if (animaitionH >= 130) {
-  //     whatdoH2.style.top = "0px";
-  //   }
-  //   if (animaitionH >= 294) {
-  //     h2fortitleForOurCom.style.left = "0";
-  //     pfortitleForOurCom.style.right = "0%";
-  //   }
-  //   if (animaitionH >= 483) {
-  //     whatcontboxnum1.style.left = "0px";
-  //   }
-  //   if (animaitionH >= 483) {
-  //     whatcontboxnum3.style.right = "0px";
-  //   }
-  //   if (animaitionH >= 483) {
-  //     whatcontboxnum2.style.top = "0px";
-  //   }
+    // animation&&&&&&&&&&
+    if (animaitionH >= 130) {
+      whatdoH2.style.top = "0px";
+    }
+    if (animaitionH >= 294) {
+      h2fortitleForOurCom.style.left = "0";
+      pfortitleForOurCom.style.right = "0%";
+    }
+    if (animaitionH >= 483) {
+      whatcontboxnum1.style.left = "0px";
+    }
+    if (animaitionH >= 483) {
+      whatcontboxnum3.style.right = "0px";
+    }
+    if (animaitionH >= 483) {
+      whatcontboxnum2.style.top = "0px";
+    }
 
-  //   if (animaitionH >= 972) {
-  //     h2secnum3.style.top = "0";
-  //   }
-  //   if (animaitionH >= 1315) {
-  //     secnum3img.style.right = "0";
-  //   }
-  //   if (animaitionH >= 1315) {
-  //     secnum3points.style.left = "0";
-  //   }
-  //   if (animaitionH >= 1731) {
-  //     productsh2.style.top = "0";
-  //   }
-  //   if (animaitionH >= 1894) {
-  //     AlLbutton.style.top = "0px";
-  //     outDoorbutton.style.top = "0px";
-  //     moreproducts.style.top = "0px";
-  //     inDoorbutton.style.bottom = "0px";
-  //     decorbutton.style.bottom = "0px";
-  //   }
-  // }
+    if (animaitionH >= 972) {
+      h2secnum3.style.top = "0";
+    }
+    if (animaitionH >= 1315) {
+      secnum3img.style.right = "0";
+    }
+    if (animaitionH >= 1315) {
+      secnum3points.style.left = "0";
+    }
+    if (animaitionH >= 1731) {
+      productsh2.style.top = "0";
+    }
+    if (animaitionH >= 1894) {
+      AlLbutton.style.top = "0px";
+      outDoorbutton.style.top = "0px";
+      moreproducts.style.top = "0px";
+      inDoorbutton.style.bottom = "0px";
+      decorbutton.style.bottom = "0px";
+    }
+  }
   // **************************************
   // **************************************
   // from 1600 px to above
