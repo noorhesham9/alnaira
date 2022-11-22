@@ -907,11 +907,11 @@ let secnum3points = document.getElementById("secnum3points");
 let moreproducts = document.getElementById("moreproducts");
 let customerh2 = document.getElementById("customerh2");
 let contactsh2 = document.getElementById("contactsh2");
-console.log(window.innerHeight);
+// console.log(window.innerHeight);
 function animation() {
   animaitionW = window.innerWidth;
   animaitionH = window.scrollY;
-  console.log(animaitionH);
+  // console.log(animaitionH);
   // **************************************
   // **************************************
   // **************************************
