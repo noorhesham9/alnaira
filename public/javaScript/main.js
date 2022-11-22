@@ -1180,6 +1180,7 @@ function animation() {
     }
     if (animaitionH < 560) {
       whatcontboxnum1.style.left = "-50vw";
+      1600;
       whatcontboxnum2.style.right = "-50vw";
     }
     if (animaitionH < 1010) {
